@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artificial Intelligence and Information Mining - Research Group: Developing and Evaluating Graph Counterfactual Explanation with GRETEL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/be7d5ac8d8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">  
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex 
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/AIIM-Logo.svg"
+                         srcset="/img/AIIM-Logo.svg 2x"
+                         alt="AIIM - Artificial Intelligence and Information Mining research group." id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/news.html">
+                                News
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="/research.html">
+                                Research
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/events.html">
+                                Events
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/code.html">
+                                Resources
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+                <img src="https://www.wsdm-conference.org/2023/sites/default/files/styles/max_1300x1300/public/2022-05/banner-wsdm-2023_dates.png?itok=3RamtEJO"
+                     alt="Developing and Evaluating Graph Counterfactual Explanation with GRETEL"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+            
+
+            
+                <h1>Developing and Evaluating Graph Counterfactual Explanation with GRETEL</h1>
+            
+            
+                <h2>Demo at WSDM 2023: The 16th ACM International Conference on Web Search and Data Mining on Mar. 2, 2023</h2>
+            
+
+            <section id="teaser">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Demo's Teaser</h3>
+                <iframe width="560" height="315" src="/videos/WSDM23.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="table-of-content">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Table of contents</h3>
+                <ul>
+                    <li><a href="#materials">Material</a></li>
+                    <li><a href="#wsdm2023-abstract">Abstract</a></li>
+                    <li><a href="#wsdm2023-overview">GRETEL Overview</a></li>
+                    <li><a href="#wsdm2023-custom-explainer">Creating a Custom Explainer</a></li>
+                    <li><a href="#wsdm2023-custom-dataset">Creating a Custom Synthetic Dataset</a></li>
+                    <li><a href="#wsdm2023-custom-metric">Creating a Custom Metric</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="materials">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Tutorial's Materials</h3>
+                
+                <p class="text-justify">Slides are available <a href="https://slides.com/mprado/gretel-wsdm/embed">HERE</a></p>
+                <p class="text-justify">Tutorial is based on ACM Computing Survey: <a href="https://dl.acm.org/doi/abs/10.1145/3618105">A Survey on Graph Counterfactual Explanations: Definitions, Methods, Evaluation, and Research Challenges</a></p>
+
+              
+                
+            </div>
+            <iframe src="https://slides.com/mprado/gretel-wsdm/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+        </div>
+    </div>
+</section>
+
+<section id="wsdm2023-abstract">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Abstract</h3>
+                <p class="text-justify">The black-box nature and the lack of interpretability detract from constant improvements in Graph Neural Networks (GNNs) performance in social network tasks like friendship prediction and community detection. Graph Counterfactual Explanation (GCE) methods aid in understanding the prediction of GNNs by generating counterfactual examples that promote trustworthiness, debiasing, and privacy in social networks. Alas, the literature on GCE lacks standardised definitions, explainers, datasets, and evaluation metrics. To bridge the gap between the performance and interpretability of GNNs in social networks, we discuss GRETEL, a unified framework for GCE methods development and evaluation. We demonstrate how GRETEL comes with fully extensible built-in components that allow users to define ad-hoc explainer methods, generate synthetic datasets, implement custom evaluation metrics, and integrate state-of-the-art prediction models.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="wsdm2023-overview">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">GRETEL Overview</h3>
+                <p class="text-justify">To provide the readers with a reference picture of GRETEL, we review its basic concepts and architecture. GRETEL was designed keeping in mind the point of view of a user (researcher or company employee) who wants to perform an exhaustive set of evaluations. The users can easily use and extend the framework in terms of datasets, explainers, metrics, and prediction models. The framework was designed using the <i>Object-Oriented</i> paradigm, where the framework's core is constituted mainly by abstract classes which need to be specialised in their implementations. To promote the framework's extensibility, the authors adopted the "Factory Method" design pattern and leveraged configuration files as constituting part of the running framework. The figure below illustrates the interaction between the main components of GRETEL.</p>
+                <img src="/img/GRETEL_overview.png" alt="Overview of the main classes, of GRETEL Framework, and their relations." />
+                <p class="text-justify">The <b>Explainer</b> is the base class used by all explanation methods. The <b>Evaluator</b> evaluates a specific Explainer. The subclasses of <b>EvaluationMetric</b> define specific metrics that will be used to assess the quality of the Explainer. The <b>Oracle</b> provides a generic interface for interacting with the underlying prediction models. The <b>EvaluatorManager</b> facilitates running experiments specified by the configuration files and instantiating all the components needed to perform the different evaluations. The <b>DataInstance</b> class provides an abstract way to interact with data instances. The <b>Dataset</b> class manages all the details related to generating, reading, writing, and transforming the data.</p>
+                <p class="text-justify">To mitigate the efforts needed to evaluate new settings, GRETEL can generate synthetic datasets and train a model on the fly if it is not already stored and readily available. A more detailed description of the framework components can be found <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557608">here</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="wsdm2023-custom-explainer">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Creating a Custom Explainer</h3>
+                <p class="text-justify">Here, we explain how to create a custom explanation method by extending the <b>Explainer</b> base class. Throughout this example, we assume that we use the datasets and oracles already available in GRETEL.</p>
+                
+<figure class="highlight"><pre><code class="language-python" data-lang="python">                <span class="kn">import</span> <span class="nn">Explainer</span>
+                <span class="s">"""
+                  Fragment 1: Minimal Code to implement a Custom Explainer
+                """</span>
+                <span class="k">class</span> <span class="nc">DummyExplainer</span><span class="p">(</span><span class="n">Explainer</span><span class="p">):</span>
+
+                  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">config_dict</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>      
+                    <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">config_dict</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="p">.</span><span class="n">_name</span> <span class="o">=</span> <span class="s">'DummyExplainer'</span>
+                    
+                  <span class="k">def</span> <span class="nf">explain</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">oracle</span><span class="p">,</span> <span class="n">dataset</span><span class="p">):</span>
+                    <span class="n">instance_label</span> <span class="o">=</span> <span class="n">oracle</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">instance</span><span class="p">)</span>
+                    <span class="n">counterfactual</span> <span class="o">=</span> <span class="n">instance</span>
+
+                    <span class="k">for</span> <span class="n">d_inst</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">.</span><span class="n">instances</span><span class="p">:</span>
+                      <span class="n">d_inst_label</span> <span class="o">=</span> <span class="n">oracle</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">d_inst</span><span class="p">)</span>
+
+                      <span class="k">if</span> <span class="n">instance_label</span> <span class="o">!=</span> <span class="n">d_inst_label</span><span class="p">:</span>
+                        <span class="n">counterfactual</span> <span class="o">=</span> <span class="n">d_inst</span>
+                        <span class="k">return</span> <span class="n">counterfactual</span>
+                    
+                    <span class="k">return</span> <span class="n">counterfactual</span>
+                </code></pre></figure>
+
+                <p class="text-justify">The previous code shows how to create a "dummy" explainer that searches for the first counterfactual example in the dataset. The code fragment depicts the class <b>DummyExplainer</b> that inherits from the <b>Explainer</b> abstract class. The <i>__init__</i> method only assigns a name to the explainer and calls the same method from the parent class. Notice that the constructor of the explainer takes as input a configuration dictionary that contains the necessary parameters to build an explanation, including the storage path of the real/synthetic dataset.As shown, the <i>explain</i> method takes in input the instance to explain, the oracle to question, and the dataset to which the counterfactual explainer (might) want to access. This trivial explainer searches the dataset and returns the first instance - the counterfactual explanation - whose label differs from the one taken in the input. Notice that only one method must be implemented to create a custom explainer.</p>
+                <p class="text-justify">The second step, depicted by code fragment 2, explains how to create a <b>CustomExplainerFactory</b> that inherits from the <b>ExplainerFactory</b> base class. This new factory needs to access the <b>DummyExplainer</b> while maintaining access to other explainers already available in GRETEL. Thus, notice that CustomExplainerFactory has a new method called <i>get_dummy_explainer()</i> to create the DummyExplainer. Additionally, it must override the <i>get_explainer_by_name()</i> method of the parent class. Where checks if the explainer specified in the configuration file is an instance of DummyExplainer: in that case, the newly defined explainer is returned; otherwise, the same method in the parent class is called. Finally, it is possible to create the CustomExplainerFactory and pass it to the <b>EvaluatorManager</b>. The main part of the following shows how to create an EvaluatorManager, which uses the newly extended factory.</p>
+                <pre><code>
+                import ExplainerFactory, EvaluationMetricFactory
+                """
+                  Fragment 2: Code to implement a Custom Explainer Factory
+                """
+                class CustomExplainerFactory(ExplainerFactory):
+
+                    def __init__(self, explainer_store_path):
+                        super().__init__(explainer_store_path)
+
+                    def get_explainer_by_name(self, explainer_dict, metric_factory): -&gt; Explainer
+                        explainer_name = explainer_dict['name']
+
+                        if explainer_name == 'dummy_explainer':
+                            # Returning the explainer
+                            return self.get_dummy_explainer(explainer_dict)
+                
+                        return super().get_explainer_by_name(explainer_dict, metric_factory)
+
+                    def get_dummy_explainer(self, config_dict=None):
+                        result = DummyExplainer(self._explainer_id_counter, config_dict) 
+                        self._explainer_id_counter += 1
+                        return result
+
+                if __name__ == '__main__':
+                    ex_factory = CustomExplainerFactory(ex_store_path)
+                    evm = EvaluatorManager(config_file_path, run_number=0, explainer_factory=ex_factory)
+                    evm.create_evaluators()
+                    evm.evaluate()
+                </code></pre>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="wsdm2023-custom-dataset">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Creating a Custom Synthetic Dataset</h3>
+                <p class="text-justify">In this scenario, we want to use an already available explanation method (or the custom one) on an ad-hoc synthetic dataset. The new custom dataset class must inherit from <b>Dataset</b>. The code fragment 3 shows how to create a new synthetic dataset where each instance is a cycle graph with either three (triangle) or four (square) vertices.</p>
+                <pre><code>
+                import DataInstance, Dataset
+                import networkx as nx
+                import numpy as np
+                """
+                  Fragment 3: Code to implement a Custom Dataset
+                """
+                class SquaresTrianglesDataset(Dataset):
+
+                    def __init__(self, id, config_dict=None) -&gt; None:
+                        super().__init__(id, config_dict)
+                        self.instances = []
+
+                    def create_cycle(self, cycle_size, role_label=1):
+                        # Creating an empty graph and adding the nodes
+                        graph = nx.Graph()
+                        graph.add_nodes_from(range(0, cycle_size))
+                        # Adding the edges  of the graph
+                        for i in range(cycle_size - 1):
+                            graph.add_edges_from([(i, i + 1)])
+                        graph.add_edges_from([(cycle_size - 1, 0)])
+                        # Creating the dictionary containing the node labels 
+                        node_labels = {n:role_label for n in graph.nodes}
+                        # Creating the dictionary containing the edge labels
+                        edge_labels = {e:role_label for e in graph.edges}
+                        # Returning the cycle graph and the role labels
+                        return graph, node_labels, edge_labels
+
+                    def generate_squares_triangles_dataset(self, n_instances):
+                        self._name = f'st_ninst-{n_instances}'
+                        result = []
+                        for i in range(0, n_instances):
+                            is_triangle = np.random.randint(0,2)
+                            data_instance = DataInstance(
+                                self._instance_id_counter)
+                            self._instance_id_counter += 1
+                            i_name = f'g{i}'
+                            # Create the instance shape-specific properties
+                            cycle_size = 3 if is_triangle else 4
+                            role_label = 1 if is_triangle else 0
+                            # Create the triangle/square graph
+                            i_graph, i_node_labels, i_edge_labels =
+                                self.create_cycle(cycle_size=cycle_size, role_label=role_label)
+                            data_instance.graph_label = role_label
+                            # Creating the general instance properties
+                            data_instance.graph = i_graph
+                            data_instance.node_labels = i_node_labels
+                            data_instance.edge_labels = i_edge_labels
+                            data_instance.name = i_name
+                            result.append(data_instance)
+                        # return the set of instances
+                        self.instances = result
+                </code></pre>
+                <p class="text-justify">The <b>SquaresTrianglesDataset</b> class has a very simple initialisation method that creates just an empty list of instances. The method <i>create_cycle()</i> builds square and triangle graphs relying on the <b>networkx</b> library. The <i>generate_squares_triangles_dataset()</i> method creates the synthetic dataset choosing at random to populate it with a square or a triangle data instance. The methods <i>write_data()</i> and <i>read_data()</i>, useful to store and load the dataset respectively, are already provided by the parent class, and, thus, they do not need to be implemented in this child one. Once the new dataset class is implemented, we need to create a <b>CustomDatasetFactory</b> to make it available to the framework. Fragment 4 shows how to perform this implementation.</p>
+                <p class="text-justify">The CustomDatasetFactory follows the same main logic as the CustomExplainerFactory. In <i>get_dataset_by_name()</i> method is possible to set the dataset generation parameters. Furthermore, it can be created the <i>get_squares_triangles_dataset()</i> method needed to generate the square and triangle dataset on the fly. The use of CustomDatasetFactory in the EvaluatorManager follows the same steps as in the previous use case.</p>
+                <pre><code>
+                import Dataset, DatasetFactory
+                import os, shutil
+                """
+                  Fragment 4: Code to implement a Custom Dataset Factory
+                """
+                class CustomDatasetFactory(DatasetFactory):
+
+                    def __init__(self, data_store_path) -&gt; None:
+                        self._data_store_path = data_store_path
+                        self._dataset_id_counter = 0
+
+                    def get_dataset_by_name(self, dataset_dict) -&gt; Dataset:
+
+                        dataset_name = dataset_dict['name']
+                        params_dict = dataset_dict['parameters']
+
+                        # Check if the dataset is a squares-triangles dataset
+                        if dataset_name == 'squares-triangles':
+                            if not 'n_inst' in params_dict:
+                                raise ValueError('''"n_inst" parameter is required for squares-triangles dataset''')
+
+                            return self.get_squares_triangles_dataset(params_dict['n_inst'], False, dataset_dict)
+                        else:
+                            # call the base method in to generate any of the originally 
+                            # supported datasets
+                            return super().get_dataset_by_name(dataset_dict)
+
+
+                    def get_squares_triangles_dataset(self, n_instances, regenerate, config_dict) -&gt; Dataset:
+                    
+                        result = SquaresTrianglesDataset(self._dataset_id_counter, config_dict)
+                        self._dataset_id_counter+=1
+
+                        ds_name = f'squares-triangles_instances-{n_instances}'
+                        ds_uri = os.path.join(self._data_store_path, ds_name)
+                        ds_exists = os.path.exists(ds_uri)
+
+                        if regenerate and ds_exists: 
+                            shutil.rmtree(ds_uri)
+
+                        if(ds_exists):
+                            result.read_data(ds_uri)
+                        else:
+                            result.generate_squares_triangles_dataset(n_instances)
+                            result.generate_splits()
+                            result.write_data(self._data_store_path)
+                            
+                        return result
+                </code></pre>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="wsdm2023-custom-metric">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Creating a Custom Metric</h3>
+                <p class="text-justify">We illustrate how to implement a new bespoke metric that better represents the user's evaluation needs by leveraging GRETEL's components. In code fragment 5, we show how to create the <i>Validity</i> metric, which implements (for simplicity) the same logic as the built-in <b>Correctness</b> one. The straightforward implementation of the custom evaluation metric can be achieved by extending the EvaluationMetric base class and overriding the <i>evaluate</i> method. The process to create a custom <b>EvaluationMetricFactory</b> is similar to the one of the other previously explained factories. Hence, we do not provide the reader with the code fragment corresponding to CustomEvaluationMetricFactory. Note that this functionality is useful for future research since, typically, the set of used metrics tends to evolve over time while the field of research becomes more mature.</p>
+                <pre><code>
+                import EvaluationMetric
+                """
+                  Fragment 5: Code to implement a new evaluation metric
+                """
+                class ValidityMetric(EvaluationMetric):
+                    """Verifies that the class from the counterfactual example 
+                    is different from that of the original instance"""
+                    def __init__(self, config_dict=None) -&gt; None:
+                        super().__init__(config_dict)
+                        self._name = 'Validity'
+
+                    def evaluate(self, instance_1, instance_2, oracle):
+                        label_instance_1 = oracle.predict(instance_1)
+                        label_instance_2 = oracle.predict(instance_2)
+                        oracle._call_counter -= 2
+
+                        return int(label_instance_1 != label_instance_2)
+                </code></pre>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+<h2> People </h2>
+<section class="people project-people">
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://scholar.google.es/citations?hl=en&amp;user=NPie5kEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Mario A. Prado-Romero"
+             title="Mario A. Prado-Romero"
+             src="/img/people/mprado.jpeg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://scholar.google.es/citations?hl=en&amp;user=NPie5kEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"> Mario A. Prado-Romero </a>
+     </h6>
+            
+                <div class="bio">Gran Sasso Science Institute</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://scholar.google.com/citations?user=JIidltYAAAAJ&amp;hl=en&amp;oi=ao"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Dr. Bardh Prenkaj"
+             title="Dr. Bardh Prenkaj"
+             src="/img/people/prenkaj.jpeg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://scholar.google.com/citations?user=JIidltYAAAAJ&amp;hl=en&amp;oi=ao"> Dr. Bardh Prenkaj </a>
+     </h6>
+            
+                <div class="bio">Sapienza University of Rome</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://scholar.google.com/citations?user=uTyaicMAAAAJ&amp;hl=en&amp;oi=ao"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Prof. Giovanni Stilo"
+             title="Prof. Giovanni Stilo"
+             src="/img/people/Stilo.jpeg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://scholar.google.com/citations?user=uTyaicMAAAAJ&amp;hl=en&amp;oi=ao"> Prof. Giovanni Stilo </a>
+     </h6>
+            
+                <div class="bio">University of L'Aquila</div>
+            
+        </div>
+    </div>
+
+
+    
+</section>
+
+
+            <div class="footer">
+                <p>
+                    © Copyright 2019-2023 - Artificial Intelligence and Information Mining research group - All rights reserved.
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160388153-1"></script>
+	    <script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
+
+	        gtag('config', 'UA-160388153-1');
+	    </script>
+    </body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artificial Intelligence and Information Mining - Research Group: Challenges and Solutions to the Student Dropout Prediction Problem in Online Courses</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/be7d5ac8d8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/group.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">  
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="header d-flex 
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/AIIM-Logo.svg"
+                         srcset="/img/AIIM-Logo.svg 2x"
+                         alt="AIIM - Artificial Intelligence and Information Mining research group." id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/news.html">
+                                News
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="/research.html">
+                                Research
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/events.html">
+                                Events
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/code.html">
+                                Resources
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+                <img src="https://www.cikm2020.org/wp-content/uploads/2020/05/cropped-cikmlogo_website_online-e1590838301604-1.png"
+                     alt="Challenges and Solutions to the Student Dropout Prediction Problem in Online Courses"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+            
+
+            
+                <h1>Challenges and Solutions to the Student Dropout Prediction Problem in Online Courses</h1>
+            
+            
+                <h2>Tutorial at ACM Conference on Information & Knowledge Management (CIKM), Galway, October 19th-20th, 2020</h2>
+            
+
+            <section id="teaser">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Tutorial's Teaser</h3>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ClNHAL8h_Y8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="table-of-content">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Table of contents</h3>
+
+                <ul>
+                	<li><a href="#cikm2020-materials">Tutorials Materials</a></li>
+                    <li><a href="#cikm2020-abstract">Abstract</a></li>
+                    <li><a href="#cikm2020-motivation">Motivaion and Overview</a></li>
+                    <li><a href="#cikm2020-outline">Tutorial Outline</a></li>
+                    <li><a href="#cikm2020-relevance">Relevance, Audience, and Benefits</a></li>
+                    <li><a href="#cikm2020-bibliography">Bibliography</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cikm2020-materials">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Tutorial's Materials</h3>
+                
+                <p class="text-justify">Slides are available <a href="https://docs.google.com/presentation/d/1En0smRRoRKLJAgVBicqLtXG5G9EVGbIjMcK2mPUt6PE/edit?usp=sharing">HERE</a></p>
+                <p class="text-justify">Tutorial is based on ACM Computing Survey: <a href=" https://dl.acm.org/doi/10.1145/3388792">A Survey of Machine Learning Approaches for Student Dropout Prediction in Online Courses</a></p>
+
+              
+                
+            </div>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRH7L_vUygQBI1WJVfaTIKJQJGUO0aPC1mZNirrvYdIKGGamiPp33bE-eDGjS2MLBjE6nZGGcz-lNVH/embed?start=true&amp;loop=true&amp;delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+        </div>
+    </div>
+</section>
+
+<section id="cikm2020-abstract">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Abstract</h3>
+                
+                <p class="text-justify">Online education is one of the wealthiest industries in the world.
+                    The relevance of this sector has increased due to the COVID-19 emergency, 
+                    forcing nations to convert their education systems towards online environments quickly. 
+                    Despite the benefits of distance learning, students enrolled in online degree programs have a 
+                    higher chance of dropping out than those attending a conventional classroom environment. 
+                    Being able to detect student withdrawals earlyis fundamental to build the 
+                    next generation learning environment. In machine learning, this is known as the student dropout 
+                    prediction (SDP) problem. In this tutorial, intermediate-level academicians, 
+                    industry practitioners, and institutional officers will learn existing 
+                    works and current progress within this particular domain. We provide a 
+                    mathematical formalisation to the SDP problem, and we discuss in a comprehensive review the most useful 
+                    aspects to consider for this specific domain: definition of the prediction problem,
+                    input modelling, adopted prediction technique, evaluation framework, standard benchmark datasets, and privacy concerns.</p>
+
+               
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="cikm2020-motivation">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Motivation and Overview</h3>
+                
+                <p class="text-justify">Online courses and e-degrees, although present since the mid-1990
+                    <a href="https://www.uoc.edu/portal/en/index.html">(link)</a>, 
+                    have received enormous attention only in the last decade.
+                    Moreover, the new Coronavirus disease (COVID-19) outbreak forced many nations 
+                    (e.g. Italy, the US, and other countries) to massively push their education system towards an online environment.
+                    Academics now are also looking at the crisis as an opportunity for universities to adopt digital technologies 
+                    for teaching more broadly. But they will have to understand what possible ways of 
+                    evaluating and effectively teaching will be in this new scenario.</p>
+                <p class="text-justify">
+                    The depicted overview, in conjunction with the utility and ubiquitous access to the educational platforms
+                    of online courses, entails a vast amount of enrolments. Nevertheless, a high enrolment rate usually translates into 
+                    a significant dropout (or withdrawal) rate of students (40-80% of online students drop out <a href="#bibliography27">[27]</a>).
+                </p>
+
+                <p class="text-justify">
+                    Student dropout prediction (SDP) consists of modelling and forecasting student behaviour when interacting with e-learning platforms.
+                    It is a significant phenomenon that has repercussions on online institutions, the involved students and professors.
+                     Early approaches tended to perform manual analytic examinations to devise retention strategies. 
+                     Recent research has adopted automated policies to thoroughly exploit the advantages of student activities 
+                     (hereafter e-tivities) in the e-platforms and identify at-risk students. These approaches include machine learning 
+                     and deep learning techniques to predict the student dropout status.
+                </p>
+
+                <p class="text-justify">
+                    With the growing popularity of Massive Open Online Courses (MOOCs) and online platforms - 
+                    e.g. edX and Coursera - the research has concentrated towards time series methods taking into consideration the faster 
+                    pace of interactive and telematic courses. Therefore, being able to cope with the trend shifting of student interactions 
+                    with the course platforms in real-time has become of paramount importance. For example, by looking at the number of 
+                    e-tivities that a student performs in several course phases, one can determine whether they persist/drop out 
+                    in the next stage <a href="#bibliography11">[11]</a>.
+                </p>
+
+                <p class="text-justify">
+                    In this tutorial, we comprehensively overview the SDP problem in the literature. We provide mathematical formalisation 
+                    to the different definitions proposed, and we introduce simple <a href="bibliography1">[1]</a>,<a href="bibliography2">[2]</a>,<a href="bibliography3">[3]</a>,<a href="bibliography6">[6]</a>,<a href="bibliography8">[8]</a>,<a href="bibliography14">[14]</a>,<a href="bibliography15">[15]</a>,<a href="bibliography16">[16]</a>,<a href="bibliography18">[18]</a>,<a href="bibliography19">[19]</a>,<a href="bibliography21">[21]</a>,<a href="bibliography22">[22]</a>,<a href="bibliography23">[23]</a>,<a href="bibliography24">[24]</a>,<a href="bibliography28">[28]</a> and complex <a href="bibliography9">[9]</a>,<a href="bibliography11">[11]</a>,<a href="bibliography12">[12]</a>,<a href="bibliography26">[26]</a>,<a href="bibliography30">[30]</a> predictive methods adhering 
+                    to the following:
+                <ul>
+                    <li>
+                        <i>Student dropout definition:</i> The type of dropout definition (i.e. one plain and several recurrent) 
+                        entails the most suitable input modelling strategies and, as a consequence, the adopted prediction methods.</li>
+
+                    <li>
+                        <i>Input modelling:</i> Most works focus on predicting the final dropout decision of students. Two main approaches can be adopted. 
+                        The first is plain time-irrelevant features modelisation, and the second consists of a phasic view (i.e. weekly in MOOCs, 
+                        and module-based in online courses) of e-tivities.</li>
+                    <li>
+                        <i>Underlying machine and deep learning techniques:</i> Past research lines focused on using off-the-shelf machine learning models
+                        to predict dropouts: i.e. Naive Bayes, Logistic Regression, Decision Tree, SVM. Recently, deep learning approaches
+                        (i.e. RNNs, CNNs and their combination) have gained the attention of the researcher community.
+                    </li>
+
+                    <li>
+                        <i>Evaluation measures:</i> Due to the disparity between persisting and dropout students, choosing the appropriate evaluation
+                        metric becomes a fundamental issue of the SDP. We will present the utility of each measurement (e.g. F-score, precision, recall,
+                        accuracy, AUCROC, and AUCPR) and how the literature exploits them to report performances.
+                    </li>
+
+                    <li>
+                        <i>Datasets:</i> Although lacking in numerosity, standard benchmark datasets are useful when comparing the performances of 
+                        the different SDP methods. Here, we will present all the available datasets in the literature that can be useful in the evaluation 
+                        and comparison phase.
+                    </li>
+
+                    <li><i>Privacy concerns:</i> Nowadays, a fundamental organisational aspect in the EDM domain is to cope effectively with privacy
+                        regulations, especially in the EU <a href="https://ec.europa.eu/info/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules/eu-data-protection-rules_en">(link)</a>, and the institutional policies.</li>
+                </ul>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="cikm2020-outline">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3">Tutorial Outline</h3>
+                
+                <p class="text-justify">This tutorial presents a comprehensive overview of student dropout prediction from online courses.
+                     In detail, this tutorial is divided in the following sections:</p>
+
+                <h5 class="pt-3 text-justify">Introduction and background to the theory of the SDP problem</h5>
+
+                <p class="text-justify"><i>Motivation</i>:
+                    <ul>
+                        <li>Discussion about the specific problem of student premature course dropout in online institutions. 
+                            We will demonstrate the interaction between the principal stakeholders, such as students, teachers, and tutors 
+                            via actions performed in learning platforms.</li>
+
+                        <li>We will essentially cope with the student e-tivities within an e-learning platform. 
+                            We will also show the impact that SDP has had on the Educational Data Mining (EDM) research area in the last decade.</li>
+                    </ul>
+                </p>
+
+                <p class="text-justify"><i>Theory and SDP definitions:</i>
+                    <ul>
+
+                        <li>We will provide conceptual annotations of courses, course phases, and students as a set of e-tivities taking into account the time dimension.</li>
+                        <li>The literature considers SDP as a binary plain and recurrent classification problem. Will provide a plain definition 
+                        for SDP and rely on the three recurrent definitions presented in <a href="#bibliography11">[11]</a> to keep track of the input
+                         modelisation and choice of the prediction model.</li>
+                        <li>Discussion about the advantages and disadvantages of the three dropout definitions with the focus on preemptive dropout identifications.</li>
+                    </ul>
+                </p>
+               
+                <h5 class="pt-3 text-justify">Input modelling techniques</h5>
+
+                <p class="text-justify">Depending on the chosen dropout definitions mentioned above, we can exploit either a plain input modelling technique or sequence
+                     labelling (i.e. time-series <a href="#bibliography4">[4]</a> and network-based inspired by 
+                     <a href="#bibliography5">[5]</a>,<a href="#bibliography31">[31]</a>). Both modelling approaches allow resolving the SDP problem 
+                     in two separate ways. The first copes with static data, meanwhile, the second handles time-dependent information (i.e. e-tivities). 
+                     We will cover both, but this tutorial focuses on time-relevant features.</p>
+
+                <p class="text-justify">
+                    <i>Plain modelisation:</i> Static features such as student background information and previous study-related data 
+                    (e.g. admission test scores, high school GPA) offer a robust input mechanism for the prediction strategies.
+                    <ul>
+                        <li>
+                            Illustration of the conceptual workflow of the transformation of raw data - usually student logs collected by the
+                            online institutions - into a plain modelisation format. We will discuss some techniques to flatten time-dependent e-tivity
+                            features into vectors of study-related characteristics.
+                        </li>
+                        <li> Description of the adoption of background and study-related features on the literature.</li>
+
+                        <li>Ad-hoc features are suitable when contextual information is provided <a href="#bibliography15">[15]</a>.
+                            MOOC datasets do not publish such information for privacy concerns.</li>
+                    </ul>
+                </p>
+
+                <p class="text-justify">
+                    <i>Sequence labelling:</i> Sequence labelling consists of shaping the raw data logs into discrete temporal series which include 
+                    student e-tivities. By relying on discrete-time temporal series <a href="#bibliography4">[4]</a>, temporal series and networks are 
+                    two input modelisation techniques to handle sequential data as is the case with e-tivities.
+                    <ul>
+                        <li>Introduction to the clickstream-based <a href="#bibliography9">[9]</a>,<a href="#bibliography16">[16]</a>,<a href="#bibliography18">[18]</a>,<a href="#bibliography21">[21]</a>,<a href="#bibliography24">[24]</a>,<a href="#bibliography26">[26]</a>,<a href="#bibliography28">[28]</a>,<a href="#bibliography30">[30]</a> and
+                        forum intervention-based <a href="#bibliography11">[11]</a>,<a href="#bibliography26">[26]</a> schema of sequence labelling with temporal series.
+                        We emphasise time-series peculiarities when taking into consideration gaps between course phases, making the sequence labelling more problematic.</li>
+                        
+                        <li>
+                            The underrepresented temporal network <a href="#bibliography14">[14]</a> approach has been used only as a preliminar
+                             investigation for other off-the-shelf machine learning models. The temporal and hierarchical structure of threads,
+                             comments, and replies provide graph-related metrics for prediction. We will give two different useful techniques 
+                             to construct networks based on two assumptions. The first states that every new student discussion on a particular 
+                             thread &theta; responds to every other message in &theta; <a href="#bibliography5">[5]</a>. The second supposes that 
+                             every comment and reply of a student is connected with the thread initiator, thus forming star networks <a href="#bibliography31">[31]</a>.
+                        </li>
+
+                    </ul>
+                </p>
+
+                <h5 class="pt-3 text-justify">Methods in SDP</h5>
+
+                <p class="text-justify">The various prediction strategies utilised for solving the SDP problem are classified into two major categories:
+                    surface machine learning and deep learning approaches. The selection of the prediction technique is strictly related to
+                    the adopted modelisation methodology. In other words, models based on sequence labelling are 
+                    <a href="#bibliography6">[6]</a>,<a href="#bibliography9">[9]</a>,<a href="#bibliography11">[11]</a>,<a href="#bibliography16">[16]</a>,<a href="#bibliography18">[18]</a>,<a href="#bibliography21">[21]</a>,<a href="#bibliography22">[22]</a>,<a href="#bibliography24">[24]</a>,<a href="#bibliography26">[26]</a>,<a href="#bibliography28">[28]</a>,<a href="#bibliography30">[30]</a>; whereas, those that rely on plain modelisation are <a href="#bibliography1">[1]</a>,<a href="#bibliography2">[2]</a>,<a href="#bibliography3">[3]</a>,<a href="#bibliography12">[12]</a>,<a href="#bibliography13">[13]</a>,<a href="#bibliography15">[15]</a>,<a href="#bibliography19">[19]</a>,<a href="#bibliography23">[23]</a>.
+                </p>
+
+                <p class="text-justify"><i>Machine Learning Methods:</i>
+                    <ul>
+                        <li>Presentation of methods based on logistic regressions <a href="#bibliography14">[14]</a>,<a href="#bibliography18">[18]</a>,<a href="#bibliography28">[28]</a>, SVM <a href="#bibliography2">[2]</a>,<a href="#bibliography21">[21]</a>, Decision Trees <a href="#bibliography1">[1]</a>,<a href="#bibliography8">[8]</a>,<a href="#bibliography24">[24]</a>, and Naive Bayes classifiers <a href="#bibliography13">[13]</a>,<a href="#bibliography22">[22]</a>.</li>
+                        <li>Ensemble methods use weak classifiers (i.e. AdaBoost) and make predictions according to a particular consensus function (e.g. majority voting) to obtain an overall robust classifier.
+                            Ensemble methods in the SDP literature include random forests <a href="#bibliography15">[15]</a>,<a href="#bibliography16">[16]</a>, AdaBoost <a href="#bibliography3">[3]</a>,<a href="#bibliography19">[19]</a> and custom types of ensembles <a href="#bibliography23">[23]</a>.
+                        </li>
+                        <li>One-hidden layer neural networks (NNs) have been utilised in an approach relying on extreme learning machine (ELM). Transforming and passing a decision tree classifier through an enhancement and mapping layers produce a sparsely connected one-hidden layer NN that can be used for prediction <a href="#bibliography6">[6]</a>.</li>
+                    </ul>
+                </p>
+
+                <p class="text-justify"><i>Deep Learning Methods</i>
+                    <ul>
+                        <li>Past student behaviour in terms of e-tivity engagement influences current behaviour. Therefore, classic RNNs and recurrent networks with LSTM cells <a href="#bibliography11">[11]</a> have been adopted in vaiours ways. LSTM-based autoencoders <a href="#bibliography9">[9]</a> ahve been utilised to construct a hidden spatial representation of the input which is then fed into a feed forward dense layer which predicts the outcome.</li>
+
+                        <li> The usage of attention mechanism on contextual data, feature augmentation and CNNs <a href="#bibliography12">[12]</a> demonstrates to have an impact on machine learning baselines as well as deep feed-forward neural networks. We also explore combinations of CNNs - without pooling - and several dense layers which preserve all the feature information <a href="#bibliography26">[26]</a>.</li>
+                        
+                        <li>The mixture of CNN and RNN layers into a single end-to-end network boosts performances <a href="#bibliography30">[30]</a>.</li>
+                    </ul>
+                </p>
+
+
+                <h5 class="pt-3 text-justify">Evaluation measures, dataset publication and open challenges</h5>
+
+                <p class="text-justify">We enlist the different evaluation measures used in the literature while acknowledging the unbalanced persister and dropout ratios. 
+                    Next, we discuss the scarcity of standard benchmarking datasets that leads to a lack of comparisons among the state-of-the-art 
+                    methodologies. We give details on how researchers can proceed to publish their data being compliant to several privacy regulations such 
+                    as GDPR in the EU. Finally, we present the open issues that are important but have not been
+                    well addressed in recent studies which can inspire future directions
+                    in this research field. Here we cover the generalisation issues and passing from a single online course (or MOOC) to
+                     several interrelated courses forming and online degrees. </p>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="cikm2020-relevance">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3 text-justify">Relevance, Audience, and Benefits</h3>
+                
+                <p class="text-justify">The community of <i>Information and Knowledge Management</i> - historically interested in 
+                    <i>Analytics and Machine Learning</i>, and in <i>Neural Information and Knowledge Processing</i> - will benefit by this tutorial,
+                    since, a rising interest to the e-learning area was expressed in the last decade <a href="#bibliography7">[7]</a>,<a href="#bibliography29">[29]</a>. 
+                    The need to increase the knowledge on topics discussed by the tutorial will be pushed much more in 
+                    the future by the rising demand (and implementation) of new systems dedicated to distance learning <a href="#bibliography10">[10]</a>.
+                    In this scenario, successfully detecting Student Drop Out will be a fundamental task of the <i>next generation</i> distance learning environment,
+                    by enabling the improvement of sustainability, transparency and fairness, from both the institutions' and students' perspectives.
+                    For these reasons, we think that the proposed tutorial will be an optimal fit with the central theme - <i>Data and knowledge for the next generation: sustainability, transparency and fairness</i> - of CIKM 2020.</p>
+
+               
+                <p class="text-justify">
+                    The tutorial is tailored to catalyse the attention of intermediate-level academicians,
+                    industry practitioners and institutional officers that want to increase or build their knowledge in the area of 
+                    Educational Data Mining. More specifically, the tutorial is dedicated to those who have some familiarity 
+                    with machine learning and basics of time-series modelisation techniques. However, we will not assume that the 
+                    audience has specific knowledge in the SDP nor the Learning Analytics <a href="#bibliography20">[20]</a> fields. 
+                    Hence, we will provide sufficient details such that the content is understandable, including the complex concepts of 
+                    the presented deep learning strategies.
+                </p>
+
+                <p class="text-justify">
+                    At the end of this tutorial, the participants will be able to understand and implement the best practice related to the student dropout prediction. In more detail, the participants will take away the following lesson according to their background:
+                    <ul>
+                        <li><i>Student in IKM:</i> You will learn how the SDP problem is formulated and how to model it according to time-series and plain modelisation. You will discover the most promising approaches in machine learning and deep learning used for prediction. We will provide you with a thorough explanation of the diversity of evaluation metrics used in the literature and comment on their usefulness. You will learn which are the available datasets in the literature and how they can be useful for evaluation and comparison.</li>
+                        <li><i>Academics:</i> You will obtain details on the formalisation of the dropout problem which provides the building-blocks for further research. You will take away the intrinsic difficulties that temporal series and temporal gaps portray when dealing with dropout prediction via sequence labelling. You will understand the importance of choosing the most suitable evaluation measure when coping with problems such as unbalanced data, feature sparsity, and temporal gaps. Finally, we will provide you with a simple yet sufficient privacy-compliant schema that obfuscates data if you want to make your dataset publicly available.</li>
+                        <li><i>Machine Learning Engineer:</i> You will see familiar off-the-shelf machine learning models built-in in most packages of modern programming languages. However, we will also introduce exciting ensemble models and sophisticated deep learning strategies (i.e. combination of convolutional and recurrent neural networks, and the incorporation of attention mechanisms). Furthermore, we treat the importance of time-series modelling according to the choice of the dropout definition. These concepts will leave you with general baggage of time-series analytics and its innate problematics.</li>
+                        <li><i>Education Manager:</i> You will understand which are the key and critical aspects related to the SDP, the involved technologies and the expertise needed to implement this task into your organisation. The gained knowledge will allow you, then, to properly decide which is the best approach that your organisation needs to implement to tackle the student dropout effectively. Having this broad overview will permit you to understand which are the benefits and the drawbacks of enabling one or the other kind of e-learning platform. Thus, you will produce more thoughtful planning and management of resources of your institution.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="cikm2020-bibliography">
+    <div class="py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-centered">
+                <h3 class="pt-3 text-justify">Bibliography</h3>
+                
+                <p class="text-justify">
+                <ol>
+                    <li id="bibliography1">Qasem A. Al-Radaideh, Emad M. Al-Shawakfa, and Mustafa I. Al-Najjar. 2006. Mining student data using decision trees. In International Arab Conference onInformation Technology (ACIT’2006), Yarmouk University, Jordan. 1–5.</li>
+                    <li id="bibliography2">Bussaba Amnueypornsakul, Suma Bhat, and Phakpoom Chinprutthiwong. 2014. Predicting attrition along the way: The UIUC model. In Proceedings of the EMNLP 2014 Workshop on Analysis of Large Scale Social Interaction in MOOCs. Association for Computational Linguistics, Doha, Qatar, 55–59.</li>
+                    <li id="bibliography3">Johannes  Berens,  Kerstin  Schneider,  Simon  Görtz,  Simon  Oster,  and  Julian Burghoff. 2018. Early Detection of Students at Risk–Predicting Student DropoutsUsing Administrative Student Data and Machine Learning Methods. CESifo Working Paper, Munich, German</li>
+                    <li id="bibliography4">Peter J. Brockwell, Richard A. Davis, and Matthew V. Calder. 2002. Introduction to time series and forecasting. Vol. 2. Springer, New York, NY, USA.</li>
+                    <li id="bibliography5">Rebecca Brown, Collin Lynch, Yuan Wang, Michael Eagle, Jennifer Albert, Tiffany Barnes, Ryan Shaun Baker, Yoav Bergner, and Danielle S. McNamara. 2015. Communities of Performance &amp; Communities of Preference. In CEUR Workshop Pro-ceedings, Vol. 1446. CEUR-WS, USA</li>
+                    <li id="bibliography6">Jing Chen, Jun Feng, Xia Sun, Nannan Wu, Zhengzheng Yang, and Sushing Chen.2019. MOOC Dropout Prediction Using a Hybrid Algorithm Based on Decision Tree and Extreme Learning Machine. Mathematical Problems in Engineering 2019 (2019).</li>
+                    <li id="bibliography7">KDD Cup. 2010.Educational Data Mining Challenge.<a href="https://pslcdatashop.web.cmu.edu/KDDCup/">(link)</a></li>
+                    <li id="bibliography8">Gerben W. Dekker, Mykola Pechenizkiy, and Jan M. Vleeshouwer. 2009. Predicting Students Drop Out: A Case Study. International Working Group on Educational Data Mining (2009)</li>
+                    <li id="bibliography9">Mucong Ding, Kai Yang, Dit-Yan Yeung, and Ting-Chuen Pong. 2018. Effective Feature Learning with Unsupervised Learning for Improving the Predictive Models in Massive Open Online Courses. <a href="https://arxiv.org/abs/1812.05044">(arXiv)</a></li>
+                    <li id="bibliography10">Times Higher Education. 2020. Will the coronavirus make online education go viral? <a href="https://www.timeshighereducation.com/features/will-coronavirus-make-online-education-go-viral#survey-answer">(link)</a></li>
+                    <li id="bibliography11">Mi Fei and Dit-Yan Yeung. 2015. Temporal models for predicting student dropout in massive open online courses. In 2015 IEEE International Conference on Data Mining Workshop (ICDMW). IEEE, 256–263.</li>
+                    <li id="bibliography12">Wenzheng Feng, Jie Tang, and Tracy Xiao Liu. 2019. Understanding Dropouts in MOOCs. In AAAI 2019.</li>
+                    <li id="bibliography13">Elena Gaudioso, Miguel Montero, and Felix Hernandez-Del-Olmo. 2012. Supporting teachers in adaptive educational systems through predictive models: A proof of concept. Expert Systems with Applications 39, 1 (2012), 621–625.</li>
+                    <li id="bibliography14">Niki Gitinabard, Farzaneh Khoshnevisan, Collin F. Lynch, and Elle Yuan Wang.2018. Your Actions or Your Associates? Predicting Certification and Dropout in MOOCs with Behavioral and Social Features. <a href="https://arxiv.org/abs/1809.00052">(arXiv)</a></li>
+                    <li id="bibliography15">Cameron C. Gray and Dave Perkins. 2019.   Utilizing early engagement andmachine learning to predict student outcomes. Computers &amp; Education 131 (2019), 22–32.</li>
+                    <li id="bibliography16">Liu Haiyang, Zhihai Wang, Phillip Benachour, and Philip Tubman. 2018. A Time Series Classification Method for Behaviour-Based Dropout Prediction. In 2018 IEEE 18th International Conference on Advanced Learning Technologies (ICALT). IEEE, 191–195.</li>
+                    <li id="bibliography17">HarvardX. 2014. HarvardX Person-Course Academic Year 2013 De-Identified dataset, version 3.0. <a href="https://doi.org/10.7910/DVN/26147">(link)</a></li>
+                    <li id="bibliography18">Jiazhen He, James Bailey, Benjamin I.P. Rubinstein, and Rui Zhang. 2015. Identifying at-risk students in massive open online courses. In 29th AAAI Conference on Artificial Intelligence.</li>
+                    <li id="bibliograpju19">Ya-Han Hu, Chia-Lun Lo, and Sheng-Pao Shih. 2014. Developing early warning systems to predict students’ online learning performance. Computers in Human Behavior 36 (2014), 469–478.</li>
+                    <li id="bibliography20">Usha Keshavamurthy and H. S. Guruprasad. 2014. Learning Analytics: A Survey. International Journal of Computer Trends and Technology (IJCTT) 18(6) (2014).</li>
+                    <li id="bibliography21">Marius Kloft, Felix Stiehler, Zhilin Zheng, and Niels Pinkwart. 2014. Predicting MOOC dropout over weeks using machine learning methods. In Proceedings ofthe EMNLP 2014 Workshop on Analysis of Large Scale Social Interaction in MOOCs. 60–65.</li>
+                    <li id="bibliography22">Wentao Li, Min Gao, Hua Li, Qingyu Xiong, Junhao Wen, and Zhongfu Wu. 2016.  Dropout prediction in MOOCs using behavior features and multi-view semi-supervised learning. In 2016 international joint conference on neural networks (IJCNN). IEEE, 3130–3137.</li>
+                    <li id="bibliography23">Ioanna Lykourentzou, Ioannis Giannoukos, Vassilis Nikolopoulos, George Mpardis, and Vassili Loumos. 2009. Dropout prediction in e-learning courses through the combination of machine learning techniques. Computers &amp; Education 53, 3 (2009), 950–965.</li>
+                    <li id="bibliography24">Saurabh Nagrecha, John Z. Dillon, and Nitesh V. Chawla. 2017. MOOC dropout prediction: lessons learned from making pipelines interpretable. In Proceedings of the 26th International Conference on World Wide Web Companion. International World Wide Web Conferences Steering Committee, 351–359.</li>
+                    <li id="bibliography25">Bardh Prenkaj, Paola Velardi, Giovanni Stilo, Damiano Distante, and Stefano Faralli. 2020.  A Survey of Machine Learning approaches for Student Dropout Prediction in Online Courses. Comput. Surveys 53-3 (2020).</li>
+                    <li id="bibliography26">Lin Qiu, Yanshen Liu, Quan Hu, and Yi Liu. 2018. Student dropout prediction in massive open online courses by convolutional neural networks. Soft Computing (2018), 1–15.</li>
+                    <li id="bibliography27">Belinda G. Smith. 2010. E-learning technologies: A comparative study of adult learners enrolled on blended and online campuses engaging in a virtual classroom. Ph.D. Dissertation. Capella University.</li>
+                    <li id="bibliography28">Colin Taylor, Kalyan Veeramachaneni, and Una-May O’Reilly. 2014.  Likely to stop? predicting stopout in massive open online courses. <a href="https://arxiv.org/abs/1408.3382">(arXiv)</a> </li>
+                    <li id="bibliography29">Hanghang Tong, Zhenhui Jessie Li, Feida Zhu, and Jeffrey Yu (Eds.). 2018. 2018 IEEE International Conference on Data Mining Workshops, ICDM Workshops, Singapore, Singapore, November 17-20, 2018. IEEE. <a href="https://ieeexplore.ieee.org/xpl/conhome/8626049/proceeding">(link)</a></li>
+                    <li id="bibliography30">Wei Wang, Han Yu, and Chuyan Miao. 2017. Deep model for dropout prediction in moocs. In Proceedings of the 2nd International Conference on Crowd Science and Engineering. ACM, ACM, New York, NY, USA, 26–32.</li>
+                    <li id="bibliography31">Mengxiao Zhu, Yoav Bergner, Yan Zhan, Ryan Baker, Yuan Wang, and Luc Paquette. 2016. Longitudinal engagement, performance, and social connectivity: a MOOC case study using exponential random graph models. In Proceedings of the Sixth International Conference on Learning Analytics &amp; Knowledge. ACM, ACM, New York, NY, USA, 223–230.</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<h2> People </h2>
+<section class="people project-people">
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://scholar.google.com/citations?user=JIidltYAAAAJ&amp;hl=en&amp;oi=ao"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Dr. Bardh Prenkaj"
+             title="Dr. Bardh Prenkaj"
+             src="/img/people/prenkaj.jpeg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://scholar.google.com/citations?user=JIidltYAAAAJ&amp;hl=en&amp;oi=ao"> Dr. Bardh Prenkaj </a>
+     </h6>
+            
+                <div class="bio">Sapienza University of Rome</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://scholar.google.com/citations?user=uTyaicMAAAAJ&amp;hl=en&amp;oi=ao"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Prof. Giovanni Stilo"
+             title="Prof. Giovanni Stilo"
+             src="/img/people/Stilo.jpeg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://scholar.google.com/citations?user=uTyaicMAAAAJ&amp;hl=en&amp;oi=ao"> Prof. Giovanni Stilo </a>
+     </h6>
+            
+                <div class="bio">University of L'Aquila</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://www.lorenzomadeddu.com/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Dr. Lorenzo Madeddu"
+             title="Dr. Lorenzo Madeddu"
+             src="/img/people/lmadeddu.jpeg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://www.lorenzomadeddu.com/"> Dr. Lorenzo Madeddu </a>
+     </h6>
+            
+                <div class="bio">Ph.D., 2022 Now at AstraZeneca.</div>
+            
+        </div>
+    </div>
+
+
+    
+</section>
+
+
+            <div class="footer">
+                <p>
+                    © Copyright 2019-2023 - Artificial Intelligence and Information Mining research group - All rights reserved.
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160388153-1"></script>
+	    <script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
+
+	        gtag('config', 'UA-160388153-1');
+	    </script>
+    </body>
+</html>
