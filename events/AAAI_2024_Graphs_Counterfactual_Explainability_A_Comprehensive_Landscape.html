@@ -157,7 +157,7 @@
                 
                 <a href="https://aaai.org/aaai-conference/" class="">
                 
-                <img src="/img/logos/AAAI2024.png"
+                <img src="/events/imgs/AAAI2024_banner.png"
                      alt="Graphs Counterfactual Explainability: A Comprehensive Landscape(AAAI 2024)"
                      style="max-width: 400px"
                      class="img-fluid mx-auto d-block mb-4"/>
@@ -382,12 +382,12 @@ We provide a brief outline of the tutorial in Figure 1. Here, we comprehensively
 </div>
 <p align="center"><strong>Figure 1: The brief outline of the proposed tutorial with its time scheduling.</strong></p>
 
-<p>During the first part of the tutorial, we introduce GNNs[<a href="#scarselli2008graph">2</a>] and their underlying message-passing mechanism to solve graph prediction problems. We will delve into the different types of GNNs and their application in real-world problems [<a href="#wu2020comprehensive">3</a>], such as protein-protein interaction, drug-target affinity prediction, and anomaly detection in social networks.</p>
+<p>During the first part of the tutorial, we introduce GNNs [<a href="#scarselli2008graph">2</a>] and their underlying message-passing mechanism to solve graph prediction problems. We will delve into the different types of GNNs and their application in real-world problems [<a href="#wu2020comprehensive">3</a>], such as protein-protein interaction, drug-target affinity prediction, and anomaly detection in social networks.</p>
 
-<p>In the second part, we provide the reader with the challenges of deploying black-box models in critical scenarios and how post-hoc interpretability helps uncover <em>“what is happening under the hood”</em>. Here, we introduce factual explanations[<a href="#yuan2022explainability">4</a>] and briefly revisit the most interesting methods in this category, namely GNNExplainer[<a href="#ying2019gnnexplainer">5</a>], and GraphLIME[<a href="#huang2022graphlime">6</a>].</p>
+<p>In the second part, we provide the reader with the challenges of deploying black-box models in critical scenarios and how post-hoc interpretability helps uncover <em>“what is happening under the hood”</em>. Here, we introduce factual explanations [<a href="#yuan2022explainability">4</a>] and briefly revisit the most interesting methods in this category, namely GNNExplainer [<a href="#ying2019gnnexplainer">5</a>], and GraphLIME [<a href="#huang2022graphlime">6</a>].</p>
 
 <p>In the third part, we formalise the definition of Graph Counterfactual Explanation (GCE). We present a taxonomy of the most important references [<a href="#prado2022survey">1</a>], categorised as in Table 1, including search-based explainers [<a href="#liu2021multi">7</a>] , heuristic-based ones 
-[<a href="#abrate2021counterfactual">8</a>,<a href="#bajaj2021robust">9</a>,<a href="#wellawatte2022model">10</a>], learning-based ones [<a href="#bajaj2021robust">9</a>,<a href="#cai2022probability">11</a>,<a href="#lucic2022cf">12</a>,<a href="#ma2022clear">13</a>,nguyen2022explaining,numeroso2021meg,sun2021preserve,tan2022learning,wu2021counterfactual], and global-level explanation methods \cite{huang2023global}. Additionally, we list the most common benchmarking datasets and a set of evaluation metrics [<a href="#yuan2022explainability">4</a>,<a href="#guidotti2022counterfactual">19</a>] necessary to assess the (dis)advantages of each counterfactual explainer in the literature. Furthermore, we submitted a lab session proposal that complements this tutorial by providing a hands-on experience.</p>
+[<a href="#abrate2021counterfactual">8</a>,<a href="#bajaj2021robust">9</a>,<a href="#wellawatte2022model">10</a>], learning-based ones [<a href="#bajaj2021robust">9</a>,<a href="#cai2022probability">11</a>,<a href="#lucic2022cf">12</a>,<a href="#ma2022clear">13</a>,<a href="#nguyen2022explaining">14</a>,<a href="#numeroso2021meg">15</a>,<a href="#sun2021preserve">16</a>,<a href="#tan2022learning">17</a>,<a href="#wu2021counterfactual">18</a>], and global-level explanation methods [<a href="#huang2023global">19</a>]. Additionally, we list the most common benchmarking datasets and a set of evaluation metrics [<a href="#yuan2022explainability">4</a>,<a href="#guidotti2022counterfactual">20</a>] necessary to assess the (dis)advantages of each counterfactual explainer in the literature. Furthermore, we submitted a lab session proposal that complements this tutorial by providing a hands-on experience.</p>
 
 <figure>
   <p align="center">
@@ -443,7 +443,26 @@ Ana Lucic, Maartje A. Ter Hoeve, Gabriele Tolomei, Maarten De Rijke, Fabrizio Si
 <p><a id="ma2022clear">[13]</a> 
 Ma, J.; Guo, R.; Mishra, S.; Zhang, A.; and Li, J., 2022. <em>CLEAR: Generative Counterfactual Explanations on Graphs</em>. Advances in neural information processing systems, 35, 25895–25907.</p>
 
-<p><a id="guidotti2022counterfactual">[19]</a> 
+<p><a id="nguyen2022explaining">[14]</a> 
+T. M. Nguyen, T. P. Quinn, T. Nguyen and T. Tran, <em>Explaining Black Box Drug Target Prediction Through Model Agnostic Counterfactual Samples</em>, in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 20, no. 2, pp. 1020-1029, 1 March-April 2023, <a href="https://doi.org/10.1109/TCBB.2022.3190266">https://doi.org/10.1109/TCBB.2022.3190266</a></p>
+
+<p><a id="numeroso2021meg">[15]</a> 
+Numeroso, Danilo and Bacciu, Davide, <em>MEG: Generating Molecular Counterfactual Explanations for Deep Graph Networks</em>, 2021 International Joint Conference on Neural Networks (IJCNN). <a href="https://doi.org/10.1109/IJCNN52387.2021.9534266">https://doi.org/10.1109/IJCNN52387.2021.9534266</a></p>
+
+<p><a id="sun2021preserve">[16]</a> 
+Sun, Y., Valente, A., Liu, S., &amp; Wang, D. (2021). Preserve, Promote, or Attack? GNN Explanation via Topology Perturbation. ArXiv. <a href="https://arxiv.org/abs/2103.13944">https://arxiv.org/abs/2103.13944</a></p>
+
+<p><a id="tan2022learning">[17]</a> 
+Juntao Tan, Shijie Geng, Zuohui Fu, Yingqiang Ge, Shuyuan Xu, Yunqi Li, and Yongfeng Zhang. 2022. <em>Learning and Evaluating Graph Neural Network Explanations based on Counterfactual and Factual Reasoning</em>. In Proceedings of the ACM Web Conference 2022 (WWW ‘22).<a href="https://doi.org/10.1145/3485447.3511948">https://doi.org/10.1145/3485447.3511948</a></p>
+
+<p><a id="wu2021counterfactual">[18]</a> 
+Wu, H.; Chen, W.; Xu, S.; and Xu, B. 2021. <em>Counterfactual Supporting Facts Extraction for Explainable Medical Record Based Diagnosis with Graph Network</em>. In Proc. of
+the 2021 Conf. of the North American Chapter of the Assoc. for Comp. Linguistics: Human Lang. Techs., 1942–1955. <a href="https://aclanthology.org/2021.naacl-main.156/">https://aclanthology.org/2021.naacl-main.156/</a></p>
+
+<p><a id="huang2023global">[19]</a>
+Zexi Huang, Mert Kosan, Sourav Medya, Sayan Ranu, and Ambuj Singh. 2023. <em>Global Counterfactual Explainer for Graph Neural Networks</em>. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (WSDM ‘23). Association for Computing Machinery, New York, NY, USA, 141–149. <a href="https://doi.org/10.1145/3539597.3570376">https://doi.org/10.1145/3539597.3570376</a></p>
+
+<p><a id="guidotti2022counterfactual">[20]</a> 
 Guidotti, R. <em>Counterfactual explanations and how to find them: literature review and benchmarking</em>. Data Min Knowl Disc (2022). <a href="https://doi.org/10.1007/s10618-022-00831-6">https://doi.org/10.1007/s10618-022-00831-6</a></p>
 
 <p><br /></p>
