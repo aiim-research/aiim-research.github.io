@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Artificial Intelligence and Information Mining - Research Group: Graphs Counterfactual Explainability: A Comprehensive Landscape (AAAI 2024)</title>
+        <title>Artificial Intelligence and Information Mining - Research Group: Digging into the Landscape of Graphs Counterfactual Explainability (AAAI 2024)</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
@@ -161,7 +161,7 @@
                 <a href="https://aaai.org/aaai-conference/" class="">
                 
                 <img src="/events/imgs/AAAI2024_banner_L.png"
-                     alt="Graphs Counterfactual Explainability: A Comprehensive Landscape (AAAI 2024)"
+                     alt="Digging into the Landscape of Graphs Counterfactual Explainability (AAAI 2024)"
                      style="max-width: 400px"
                      class="img-fluid mx-auto d-block mb-4"/>
                 
@@ -170,10 +170,10 @@
             
 
             
-                <h2 class="pt-3">Graphs Counterfactual Explainability: A Comprehensive Landscape (AAAI 2024)</h2>
+                <h2 class="pt-3">Digging into the Landscape of Graphs Counterfactual Explainability (AAAI 2024)</h2>
             
             
-                <h3 class="pt-3">Tutorial at the Thirty-Eighth AAAI Conference on Artificial Intelligence (AAAI-24) on 20-21, Feb. 2024</h3>
+                <h3 class="pt-3">Laboratory at the Thirty-Eighth AAAI Conference on Artificial Intelligence (AAAI-24) on 20-21, Feb. 2024</h3>
             
 
             <br>
@@ -314,95 +314,101 @@
 <ul>
   <li><a href="#Abstract">Abstract</a></li>
   <li><a href="#Duration">Duration</a></li>
-  <li><a href="#Scope">Scope of the tutorial</a></li>
-  <li><a href="#Prerequisites">Prerequisites</a></li>
+  <li><a href="#Scope">Scope of the laboratory</a></li>
+  <li><a href="#Tools">Prerequisites &amp; Tools</a></li>
   <li><a href="#Outline">Outline &amp; Contents</a></li>
+  <li><a href="#Acknowledgement">Acknowledgement</a></li>
   <li><a href="#Speakers">Meet the Speakers</a></li>
   <li><a href="#Bibliography">Bibliography</a></li>
 </ul>
 
 <h3 class="pt-3" id="Abstract">Abstract</h3>
-<p>Graph Neural Networks (GNNs) have proven highly effective in graph-related tasks, including Traffic Modeling, Learning Physical Simulations, Protein Modeling, and Large-scale Recommender Systems. The focus has shifted towards models that deliver accurate results and provide understandable and actionable insights into their predictions.
-Counterfactual explanations have emerged as crucial tools to meet these challenges and empower users. 
-For the reasons mentioned above, in this tutorial, we furnish the essential theoretical underpinnings for generating counterfactual explanations for GNNs, arming the audience with the resources to gain a deeper understanding of the outcomes produced by their systems and enabling users to interpret predictions effectively.
-First, we present an insight into GNNs, their underlying message-passing architecture, and the challenges of providing post-hoc explanations for their predictions across different domains.
-Then, we provide a formal definition of Graph Counterfactual Explainability (GCE) and its potential to provide recourse to users.
-Furthermore, we propose a taxonomy of existing GCE methods and give insights into every approach’s main idea, advantages, and limitations.
-Finally, we introduce the most frequently used benchmarking datasets, evaluation metrics, and protocols to analyze the future challenges in the field.
-<br /></p>
+<p>In this lab, we provide a hands-on experience to help users develop and evaluate novel Graph Counterfactual Explanation (GCE) methods using a simple and modular framework, GRETEL. 
+We will cover the main challenges of producing counterfactual explanations in the graph domain. We will show the participants how to build basic explanation pipelines in GRETEL.
+Furthermore, we show how the different categories of explainers can be implemented following the framework’s general logic and present an empirical study of their performance in different datasets.
+Moreover, we will instruct the participants on extending the frameworks’ main components to support custom GCE scenarios (i.e., new datasets, oracles, explainers, and evaluation measures).</p>
+
+<p>The attendants will dive into an immersive lab session combining hands-on exploration and captivating demonstrations. Our lab is designed to make them active participants in cutting-edge XAI frameworks. Here are the key highlights of the interactive experience (Excluding the demonstration parts):</p>
+
+<ul>
+  <li><strong>Configuration Mastery</strong>: The attendants will learn to craft precise configuration files to unleash the power of explanation and evaluation pipelines.</li>
+  <li><strong>Building Explanation Pipelines</strong>: The audience will engage in the systematic creation of an explanation pipeline utilizing the robust suite of tools provided by the framework</li>
+  <li><strong>Unlock Customization</strong>: The attendants will go beyond the ordinary and discover how to extend the framework’s modules for tailor-made solutions that fit their unique needs.</li>
+  <li><strong>Data Insights</strong>: The audience will uncover the secrets of performance analysis by delving into the world of explainers and oracles using the data analysis module. This module provides visualization and comparison tools that allow us to understand better the oracles’ performance and the explanation methods in different datasets.</li>
+</ul>
 
 <h3 class="pt-3" id="Duration">Duration</h3>
-<p>The tutorial will be carried on for a quarter-day, spanning 1 hour 45 minutes, as the most suitable format to introduce attendees to counterfactual explanations on graphs and their foundational concepts. This duration strikes a balance between providing a comprehensive understanding of the topic without overwhelming participants with unnecessary technical details that may be less relevant to those with limited technical backgrounds. To complement this tutorial, we offer an additional lab session on the same topic to satisfy those interested in diving into the technical aspects of Graph Counterfactual Explanations.
+<p>The laboratory will be carried on for a quarter-day, spanning 1 hour 45 minutes, as the most suitable format to introduce attendees to counterfactual explanations on graphs and the GRETEL framework [<a href="#prado2022gretel">1</a>].
+This duration will provide enough room to present the basic principles of the evaluation framework, analyze how different classes of explanation methods can be easily implemented into the general design, and provide examples of how to extend the framework for bespoke solutions.
+<em>Notice that this lab complements a tutorial on the same topic we propose in the same venue to satisfy those interested in more theoretical aspects of Graph Counterfactual Explanations.</em> <a href="/events/AAAI_2024_Digging_into_the_Landscape_of_Graphs_Counterfactual_Explainability.html">Tutorial Website</a>
 <br /></p>
 
-<h3 class="pt-3" id="Scope">Scope of the tutorial</h3>
+<h3 class="pt-3" id="Scope">Scope of the laboratory</h3>
 <p>The AAAI community has exhibited considerable interest in Graph Neural Networks and Explainable AI, as evidenced by the tutorials in previous editions. Graph Counterfactual Explainability (GCE) holds the potential to captivate a significantly broad audience of researchers and practitioners due to the pervasive nature of graphs and the inherent capacity of GCE methods to provide profound insights into intricate non-linear prediction systems. 
-Based on the recently published survey [<a href="#prado2022survey">1</a>], this tutorial will cover fundamental concepts related to Graph Neural Networks, Post-Hoc Explanation methods, and Counterfactual Explanations.
-Furthermore, the audience will be provided with a detailed classification of existing GCE methods, an in-depth analysis of their action mechanisms, a qualitative comparison, and a benchmark of their performance on synthetic and real datasets, including brain networks and molecular structures.</p>
+This lab will cover mostly the GRETEL framework for developing and evaluating Graph Counterfactual Explanations methods.
+This modular and extensible framework allows users to adapt the different components to their needs.</p>
 
-<p>The tutorial is aimed at practitioners in academia and industry interested in applying machine learning techniques to analyze graph data. Participants with a background in data mining will gain an understanding of the information provided by explanation methods to end users. Those with machine learning (ML) expertise will delve deeper into state-of-the-art counterfactual explainers, critically analyzing their strengths and weaknesses.
+<p>The lab is aimed at practitioners in academia and industry interested in applying machine learning techniques to analyze graph data. Participants with a background in data mining will gain an understanding of the information provided by explanation methods to end users and how to integrate their datasets into an explanation pipeline. Those with machine learning expertise will delve deeper into state-of-the-art counterfactual explainers, critically analyzing their strengths and weaknesses. They will also learn to integrate their oracles and develop new explanation methods using the GRETEL framework.
 <br /></p>
 
-<h3 class="pt-3" id="Prerequisites">Prerequisites</h3>
-<p>The tutorial is aimed at practitioners in academia and industry interested in applying machine learning techniques to analyze graph data. 
-Familiarity with basic ML concepts will be beneficial for thoroughly understanding the tutorial.
-<br /></p>
+<h3 class="pt-3" id="Tools">Prerequisites &amp; Tools</h3>
+<p>The lab is aimed at practitioners in academia and industry interested in applying machine learning techniques to analyze graph data.
+Familiarity with modern AI frameworks like PyTorch and scikit-learn and proficiency in Python will be beneficial.</p>
+
+<p>To fully follow the hands-on experience, the participants should bring their own laptops. We recommend a minimum of 8 GB of RAM for a better experience. It is necessary that the attendants pre-install a proper virtual environment on their computers. We will provide the necessary code and environment creation script for simplicity. An internet connection will be required only for downloading and installing the required tools. We encourage the participants to install and download the framework’s source code in advance. We will provide a simple “hello world” example inside the framework so the participants can check that everything is running smoothly before the lab. The source code can be downloaded from the GRETEL GitHub <a href="https://github.com/MarioTheOne/GRETEL">https://github.com/MarioTheOne/GRETEL</a>.</p>
 
 <h3 class="pt-3" id="Outline">Outline &amp; Contents</h3>
 <p>Counterfactual explanations shed light on the decision-making mechanisms and provide alternative scenarios that yield different outcomes, offering end users recourse—these distinctive characteristics position counterfactual explainability as a highly effective method in graph-based contexts. 
-We adopt a multifaceted approach, organizing and examining GCE from different perspectives, such as method taxonomy, classification along various dimensions, detailed descriptions of individual works (including their evaluation processes), discussions on evaluation measures, and commonly used benchmark datasets.
-We provide a brief outline of the tutorial in Figure 1. Here, we comprehensively review counterfactual explainability in graphs and their importance with other (factual) explainability methods.</p>
+A brief outline of the laboratory is provided in Figure 1. In the first part of this lab, the attendants will be introduced to the challenges of developing and evaluating GCE methods [<a href="#prado2022gretel">1</a>], including a lack of standardization in metrics and oracles, as well as benchmarking studies. Then, they will be introduced to the GRETEL framework for developing and evaluating GCE methods. Furthermore, we will provide hands-on examples of how to build the explanation pipeline using GRETEL.</p>
 
 <div class="notes">
   <ul>
-    <li><strong>Part I: Introduction and Background</strong> (20 mins)</li>
+    <li><strong>Part I: The GRETEL framework</strong> (30 mins)</li>
     <ul>
-      <li>Wide-spread adoption of GNNs in graph prediction problems</li>
-      <li>How do GNNs work?</li>
-      <li>Applications of different types of GNNs</li>
+      <li>Introduction to the challenges of developing and evaluating GCE methods</li>
+      <li>GRETEL’s design, core components, and their interaction</li>
+      <li>Basic explanation pipeline and evaluation</li>
     </ul>
-    <li><strong>Part II: XAI on Graphs</strong> (30 mins)</li>
+    <li><strong>Part II: Many explainers, one framework</strong> (30 mins)</li>
     <ul>
-      <li>Issues of black-box models and the importance of interpretability</li>
-      <li>What is a factual explanation?</li>
-      <li>(Briefly) Revisiting GNNExplaner and GraphLIME</li>
-    </ul>
-    <li><strong>Part III: Counterfactual Explainations in Graphs</strong> (55 mins)</li>
-    <ul>
-      <li>What is a graph counterfactual explanation (GCE)?</li>
-      <li>GCE taxonomy description and method classification</li>
+      <li>Analyzing how different SoTA approaches can be implemented into GRETEL</li>
       <ul>
-        <li>Instance-level explainers</li>
-        <ul>
-          <li>Search-based</li>
-          <li>Heuristic-based</li>
-          <li>Learning-based</li>
-        </ul>
+        <li>Search-based</li>
+        <li>Heuristic-based</li>
+        <li>Learning-based</li>
         <li>Model-level explainers</li>
       </ul>
-      <li>Benchmarking datasets and evaluation metrics (pro et contra)</li>
+      <li>Interpreting results of SoTA GCE methods</li>
+    </ul>
+    <li><strong>Part III: Extending the framework</strong> (30 mins)</li>
+    <ul>
+      <li>Extending the main components in custom scenarios</li>
+      <li>Analyzing the results to get further insights</li>
+      <li>Students Hands-on session using the SoBigData.it R.I.</li>
+    </ul>
+    <li><strong>Part IV: What’s Next?</strong> (15 mins)</li>
+    <ul>
+      <li>Open discussion on the future trends and development in the research/industry area</li>
     </ul>
   </ul>  
 </div>
-<p align="center"><strong>Figure 1: The brief outline of the tutorial with its time scheduling.</strong></p>
+<p align="center"><strong>Figure 1: The brief outline of the laboratory with its time scheduling.</strong></p>
 
-<p>During the first part of the tutorial, we introduce GNNs [<a href="#scarselli2008graph">2</a>] and their underlying message-passing mechanism to solve graph prediction problems. We will delve into the different types of GNNs and their application in real-world problems [<a href="#wu2020comprehensive">3</a>], such as protein-protein interaction, drug-target affinity prediction, and anomaly detection in social networks.</p>
+<p>Following the introduction, we will present how the different categories of explainers can be implemented into the framework, including search-based methods [<a href="#liu2021multi">2</a>], heuristic-based ones [<a href="#abrate2021counterfactual">3</a>,<a href="#bajaj2021robust">4</a>,<a href="#wellawatte2022model">5</a>], learning-based ones [<a href="#bajaj2021robust">4</a>,<a href="#cai2022probability">6</a>,<a href="#lucic2022cf">7</a>,<a href="#ma2022clear">8</a>,<a href="#nguyen2022explaining">9</a>,<a href="#numeroso2021meg">10</a>,<a href="#sun2021preserve">11</a>,<a href="#tan2022learning">12</a>,<a href="#wu2021counterfactual">13</a>] and global-level explainers [<a href="#huang2023global">14</a>]. Moreover, we will analyze an empirical comparison of some of these methods [<a href="#abrate2021counterfactual">3</a>,<a href="#wellawatte2022model">5</a>,<a href="#ma2022clear">8</a>,<a href="#numeroso2021meg">10</a>,<a href="#tan2022learning">12</a>,<a href="#prado2022survey">15</a>} in different datasets.</p>
 
-<p>In the second part, we provide the reader with the challenges of deploying black-box models in critical scenarios and how post-hoc interpretability helps uncover <em>“what is happening under the hood”</em>. Here, we introduce factual explanations [<a href="#yuan2022explainability">4</a>] and briefly revisit the most interesting methods in this category, namely GNNExplainer [<a href="#ying2019gnnexplainer">5</a>], and GraphLIME [<a href="#huang2022graphlime">6</a>].</p>
+<p>In the third part of the lab, we will focus on a hands-on experience showing the attendants how to extend the framework to fit their needs [<a href="#prado2023developing">16</a>]. This session will allow also the participants to access and use the <a href="https://pnrr.sobigdata.it/">SoBigData.it Research Infrastructure</a>.
+Industry practitioners will learn how to use the framework on their datasets and to explain their own ML models, while attendants interested in XAI will learn how to develop and evaluate their explainers using the ready-to-use datasets, oracles and evaluation metrics provided in GRETEL. Furthermore, we will show how to use the data analysis capabilities of the framework to get more insights into the explanations.</p>
 
-<p>In the third part, we formalise the definition of Graph Counterfactual Explanation (GCE). We present a taxonomy of the most important references [<a href="#prado2022survey">1</a>], categorised as in Table 1, including search-based explainers [<a href="#liu2021multi">7</a>] , heuristic-based ones 
-[<a href="#abrate2021counterfactual">8</a>,<a href="#bajaj2021robust">9</a>,<a href="#wellawatte2022model">10</a>], learning-based ones [<a href="#bajaj2021robust">9</a>,<a href="#cai2022probability">11</a>,<a href="#lucic2022cf">12</a>,<a href="#ma2022clear">13</a>,<a href="#nguyen2022explaining">14</a>,<a href="#numeroso2021meg">15</a>,<a href="#sun2021preserve">16</a>,<a href="#tan2022learning">17</a>,<a href="#wu2021counterfactual">18</a>], and global-level explanation methods [<a href="#huang2023global">19</a>]. Additionally, we list the most common benchmarking datasets and a set of evaluation metrics [<a href="#yuan2022explainability">4</a>,<a href="#guidotti2022counterfactual">20</a>] necessary to assess the (dis)advantages of each counterfactual explainer in the literature. Furthermore, we submitted a lab session proposal that complements this tutorial by providing a hands-on experience.</p>
+<p>To finalize the lab session, we will discuss the challenges of providing Graph Counterfactual Explanation and possible ways to tackle them. This part will allow the attendants to participate in the discussion actively.</p>
 
+<h3 class="pt-3" id="Acknowledgement">Acknowledgement</h3>
 <figure>
   <p align="center">
-    <a href="https://doi.org/10.1145/3618105">
-     <img style="width:  100%;" src="/events/imgs/gce_tutorial_references.png" alt="The most important references that will be covered in the tutorial." /></a>
-     <figcaption>  
-          <p align="center"><strong>Table 1: The most important references that will be covered in the tutorial.</strong></p>  
-     </figcaption> 
+    <a href="https://pnrr.sobigdata.it/">
+     <img style="width:  33%;" src="/events/imgs/SoBigData.svg" alt="The most important references that will be covered in the tutorial." /></a>
      </p>
- </figure>
-<p><br /></p>
+</figure>
+<p><em>“Digging into the Landscape of Graphs Counterfactual Explainability (Laboratory at AAAI 2024)” event was organised as part of the SoBigData.it project (Prot. IR0000013 - Call n. 3264 of 12/28/2021) initiatives aimed at training new users and communities in the usage of the research infrastructure (SoBigData.eu). SoBigData.it receives funding from European Union – NextGenerationEU – National Recovery and Resilience Plan (Piano Nazionale di Ripresa e Resilienza, PNRR) – Project: “SoBigData.it – Strengthening the Italian RI for Social Mining and Big Data Analytics” – Prot. IR0000013 – Avviso n. 3264 del 28/12/2021.</em></p>
 
 <h3 class="pt-3" id="Speakers">Meet the Speakers</h3>
 <h4 class="pt-3" id="Mario">Mario Alfonso Prado-Romero</h4>
@@ -420,71 +426,56 @@ During his academic growth, he devoted much of his attention to teaching and tut
 <!--Full CV available at the \href{https://www.disim.univaq.it/show.php?token=c174d4ed4396d5480f0da2dcfe13f94f&id=g.stilo}{link}--></p>
 
 <h3 class="pt-3" id="Bibliography">Bibliography</h3>
-<p><a id="prado2022survey">[1]</a> 
+<p><a id="prado2022gretel">[1]</a> 
+Mario Alfonso Prado-Romero and Giovanni Stilo. 2022. GRETEL: Graph Counterfactual Explanation Evaluation Framework. In Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management (CIKM ‘22). Association for Computing Machinery, New York, NY, USA, 4389–4393. <a href="https://doi.org/10.1145/3511808.3557608">https://doi.org/10.1145/3511808.3557608</a></p>
+
+<p><a id="liu2021multi">[2]</a> 
+Y. Liu, C. Chen, Y. Liu, X. Zhang and S. Xie, <em>Multi-objective Explanations of GNN Predictions</em>, 2021 IEEE International Conference on Data Mining (ICDM), Auckland, New Zealand, 2021, pp. 409-418, <a href="https://doi.org/10.1109/ICDM51629.2021.00052">https://doi.org/10.1109/ICDM51629.2021.00052</a></p>
+
+<p><a id="abrate2021counterfactual">[3]</a> 
+Carlo Abrate and Francesco Bonchi. 2021. <em>Counterfactual Graphs for Explainable Classification of Brain Networks</em>. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining (KDD ‘21). Association for Computing Machinery, New York, NY, USA, 2495–2504. <a href="https://doi.org/10.1145/3447548.3467154">https://doi.org/10.1145/3447548.3467154</a></p>
+
+<p><a id="bajaj2021robust">[4]</a> 
+Bajaj, M., Chu, L., Xue, Z., Pei, J., Wang, L., Lam, P.,and Zhang, Y. <em>Robust counterfactual explanations on graph neural networks</em>. Advances in neural information processing systems, 34.</p>
+
+<p><a id="wellawatte2022model">[5]</a> 
+Wellawatte GP, Seshadri A, White AD. <em>Model agnostic generation of counterfactual explanations for molecules</em>. Chem Sci. 2022 Feb 16;13(13):3697-3705. <a href="https://doi.org/10.1039/d1sc05259d">https://doi.org/10.1039/d1sc05259d</a></p>
+
+<p><a id="cai2022probability">[6]</a> 
+Cai, R., Zhu, Y., Chen, X., Fang, Y., Wu, M., Qiao,J., and Hao, Z. 2022. <em>On the Probability of Necessity and Sufficiency of Explaining Graph Neural Networks: A Lower Bound Optimization Approach</em>. arXiv preprint arXiv:2212.07056</p>
+
+<p><a id="lucic2022cf">[7]</a> 
+Ana Lucic, Maartje A. Ter Hoeve, Gabriele Tolomei, Maarten De Rijke, Fabrizio Silvestri, <em>CF-GNNExplainer: Counterfactual Explanations for Graph Neural Networks</em>, in  Proceedings of The 25th International Conference on Artificial Intelligence and Statistics, PMLR 151:4499-4511, 2022.</p>
+
+<p><a id="ma2022clear">[8]</a> 
+Ma, J.; Guo, R.; Mishra, S.; Zhang, A.; and Li, J., 2022. <em>CLEAR: Generative Counterfactual Explanations on Graphs</em>. Advances in neural information processing systems, 35, 25895–25907.</p>
+
+<p><a id="nguyen2022explaining">[9]</a> 
+T. M. Nguyen, T. P. Quinn, T. Nguyen and T. Tran, <em>Explaining Black Box Drug Target Prediction Through Model Agnostic Counterfactual Samples</em>, in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 20, no. 2, pp. 1020-1029, 1 March-April 2023, <a href="https://doi.org/10.1109/TCBB.2022.3190266">https://doi.org/10.1109/TCBB.2022.3190266</a></p>
+
+<p><a id="numeroso2021meg">[10]</a> 
+Numeroso, Danilo and Bacciu, Davide, <em>MEG: Generating Molecular Counterfactual Explanations for Deep Graph Networks</em>, 2021 International Joint Conference on Neural Networks (IJCNN). <a href="https://doi.org/10.1109/IJCNN52387.2021.9534266">https://doi.org/10.1109/IJCNN52387.2021.9534266</a></p>
+
+<p><a id="sun2021preserve">[11]</a> 
+Sun, Y., Valente, A., Liu, S., &amp; Wang, D. (2021). Preserve, Promote, or Attack? GNN Explanation via Topology Perturbation. ArXiv. <a href="https://arxiv.org/abs/2103.13944">https://arxiv.org/abs/2103.13944</a></p>
+
+<p><a id="tan2022learning">[12]</a> 
+Juntao Tan, Shijie Geng, Zuohui Fu, Yingqiang Ge, Shuyuan Xu, Yunqi Li, and Yongfeng Zhang. 2022. <em>Learning and Evaluating Graph Neural Network Explanations based on Counterfactual and Factual Reasoning</em>. In Proceedings of the ACM Web Conference 2022 (WWW ‘22).<a href="https://doi.org/10.1145/3485447.3511948">https://doi.org/10.1145/3485447.3511948</a></p>
+
+<p><a id="wu2021counterfactual">[13]</a> 
+Wu, H.; Chen, W.; Xu, S.; and Xu, B. 2021. <em>Counterfactual Supporting Facts Extraction for Explainable Medical Record Based Diagnosis with Graph Network</em>. In Proc. of
+the 2021 Conf. of the North American Chapter of the Assoc. for Comp. Linguistics: Human Lang. Techs., 1942–1955. <a href="https://aclanthology.org/2021.naacl-main.156/">https://aclanthology.org/2021.naacl-main.156/</a></p>
+
+<p><a id="huang2023global">[14]</a>
+Zexi Huang, Mert Kosan, Sourav Medya, Sayan Ranu, and Ambuj Singh. 2023. <em>Global Counterfactual Explainer for Graph Neural Networks</em>. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (WSDM ‘23). Association for Computing Machinery, New York, NY, USA, 141–149. <a href="https://doi.org/10.1145/3539597.3570376">https://doi.org/10.1145/3539597.3570376</a></p>
+
+<p><a id="prado2022survey">[15]</a> 
 Mario Alfonso Prado-Romero, Bardh Prenkaj, Giovanni Stilo, and Fosca Giannotti. 
 <em>A Survey on Graph Counterfactual Explanations: Definitions, Methods, Evaluation, and Research Challenges.</em>
 ACM Comput. Surv. (September 2023). <a href="https://doi.org/10.1145/3618105">https://doi.org/10.1145/3618105</a></p>
 
-<p><a id="scarselli2008graph">[2]</a> 
-F. Scarselli, M. Gori, A. C. Tsoi, M. Hagenbuchner and G. Monfardini, <em>The Graph Neural Network Model</em>, in IEEE Transactions on Neural Networks, vol. 20, no. 1, pp. 61-80, Jan. 2009, <a href="https://doi.org/10.1109/TNN.2008.2005605">https://doi.org/10.1109/TNN.2008.2005605</a></p>
-
-<p><a id="wu2020comprehensive">[3]</a> 
-Z. Wu, S. Pan, F. Chen, G. Long, C. Zhang and P. S. Yu, <em>A Comprehensive Survey on Graph Neural Networks</em>, in IEEE Transactions on Neural Networks and Learning Systems, vol. 32, no. 1, pp. 4-24, Jan. 2021, <a href="https://doi.org/10.1109/TNNLS.2020.2978386">https://doi.org/10.1109/TNNLS.2020.2978386</a></p>
-
-<p><a id="yuan2022explainability">[4]</a> 
-H. Yuan, H. Yu, S. Gui and S. Ji, <em>Explainability in Graph Neural Networks: A Taxonomic Survey</em>, in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, no. 5, pp. 5782-5799, 1 May 2023, <a href="https://doi.org/10.1109/TPAMI.2022.3204236">https://doi.org/10.1109/TPAMI.2022.3204236</a></p>
-
-<p><a id="ying2019gnnexplainer">[5]</a> 
-Ying, Z., Bourgeois, D., You, J., Zitnik, M., and Leskovec,J., 2019. <em>Gnnexplainer: Generating explanations for graph
-neural networks</em>. Advances in neural information processing systems, 32.</p>
-
-<p><a id="huang2022graphlime">[6]</a> 
-Q. Huang, M. Yamada, Y. Tian, D. Singh and Y. Chang, <em>GraphLIME: Local Interpretable Model Explanations for Graph Neural Networks</em>, in IEEE Transactions on Knowledge and Data Engineering, vol. 35, no. 7, pp. 6968-6972, 1 July 2023, <a href="https://doi.org/10.1109/TKDE.2022.3187455">https://doi.org/10.1109/TKDE.2022.3187455</a></p>
-
-<p><a id="liu2021multi">[7]</a> 
-Y. Liu, C. Chen, Y. Liu, X. Zhang and S. Xie, <em>Multi-objective Explanations of GNN Predictions</em>, 2021 IEEE International Conference on Data Mining (ICDM), Auckland, New Zealand, 2021, pp. 409-418, <a href="https://doi.org/10.1109/ICDM51629.2021.00052">https://doi.org/10.1109/ICDM51629.2021.00052</a></p>
-
-<p><a id="abrate2021counterfactual">[8]</a> 
-Carlo Abrate and Francesco Bonchi. 2021. <em>Counterfactual Graphs for Explainable Classification of Brain Networks</em>. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining (KDD ‘21). Association for Computing Machinery, New York, NY, USA, 2495–2504. <a href="https://doi.org/10.1145/3447548.3467154">https://doi.org/10.1145/3447548.3467154</a></p>
-
-<p><a id="bajaj2021robust">[9]</a> 
-Bajaj, M., Chu, L., Xue, Z., Pei, J., Wang, L., Lam, P.,and Zhang, Y. <em>Robust counterfactual explanations on graph neural networks</em>. Advances in neural information processing systems, 34.</p>
-
-<p><a id="wellawatte2022model">[10]</a> 
-Wellawatte GP, Seshadri A, White AD. <em>Model agnostic generation of counterfactual explanations for molecules</em>. Chem Sci. 2022 Feb 16;13(13):3697-3705. <a href="https://doi.org/10.1039/d1sc05259d">https://doi.org/10.1039/d1sc05259d</a></p>
-
-<p><a id="cai2022probability">[11]</a> 
-Cai, R., Zhu, Y., Chen, X., Fang, Y., Wu, M., Qiao,J., and Hao, Z. 2022. <em>On the Probability of Necessity and Sufficiency of Explaining Graph Neural Networks: A Lower Bound Optimization Approach</em>. arXiv preprint arXiv:2212.07056</p>
-
-<p><a id="lucic2022cf">[12]</a> 
-Ana Lucic, Maartje A. Ter Hoeve, Gabriele Tolomei, Maarten De Rijke, Fabrizio Silvestri, <em>CF-GNNExplainer: Counterfactual Explanations for Graph Neural Networks</em>, in  Proceedings of The 25th International Conference on Artificial Intelligence and Statistics, PMLR 151:4499-4511, 2022.</p>
-
-<p><a id="ma2022clear">[13]</a> 
-Ma, J.; Guo, R.; Mishra, S.; Zhang, A.; and Li, J., 2022. <em>CLEAR: Generative Counterfactual Explanations on Graphs</em>. Advances in neural information processing systems, 35, 25895–25907.</p>
-
-<p><a id="nguyen2022explaining">[14]</a> 
-T. M. Nguyen, T. P. Quinn, T. Nguyen and T. Tran, <em>Explaining Black Box Drug Target Prediction Through Model Agnostic Counterfactual Samples</em>, in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 20, no. 2, pp. 1020-1029, 1 March-April 2023, <a href="https://doi.org/10.1109/TCBB.2022.3190266">https://doi.org/10.1109/TCBB.2022.3190266</a></p>
-
-<p><a id="numeroso2021meg">[15]</a> 
-Numeroso, Danilo and Bacciu, Davide, <em>MEG: Generating Molecular Counterfactual Explanations for Deep Graph Networks</em>, 2021 International Joint Conference on Neural Networks (IJCNN). <a href="https://doi.org/10.1109/IJCNN52387.2021.9534266">https://doi.org/10.1109/IJCNN52387.2021.9534266</a></p>
-
-<p><a id="sun2021preserve">[16]</a> 
-Sun, Y., Valente, A., Liu, S., &amp; Wang, D. (2021). Preserve, Promote, or Attack? GNN Explanation via Topology Perturbation. ArXiv. <a href="https://arxiv.org/abs/2103.13944">https://arxiv.org/abs/2103.13944</a></p>
-
-<p><a id="tan2022learning">[17]</a> 
-Juntao Tan, Shijie Geng, Zuohui Fu, Yingqiang Ge, Shuyuan Xu, Yunqi Li, and Yongfeng Zhang. 2022. <em>Learning and Evaluating Graph Neural Network Explanations based on Counterfactual and Factual Reasoning</em>. In Proceedings of the ACM Web Conference 2022 (WWW ‘22).<a href="https://doi.org/10.1145/3485447.3511948">https://doi.org/10.1145/3485447.3511948</a></p>
-
-<p><a id="wu2021counterfactual">[18]</a> 
-Wu, H.; Chen, W.; Xu, S.; and Xu, B. 2021. <em>Counterfactual Supporting Facts Extraction for Explainable Medical Record Based Diagnosis with Graph Network</em>. In Proc. of
-the 2021 Conf. of the North American Chapter of the Assoc. for Comp. Linguistics: Human Lang. Techs., 1942–1955. <a href="https://aclanthology.org/2021.naacl-main.156/">https://aclanthology.org/2021.naacl-main.156/</a></p>
-
-<p><a id="huang2023global">[19]</a>
-Zexi Huang, Mert Kosan, Sourav Medya, Sayan Ranu, and Ambuj Singh. 2023. <em>Global Counterfactual Explainer for Graph Neural Networks</em>. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (WSDM ‘23). Association for Computing Machinery, New York, NY, USA, 141–149. <a href="https://doi.org/10.1145/3539597.3570376">https://doi.org/10.1145/3539597.3570376</a></p>
-
-<p><a id="guidotti2022counterfactual">[20]</a> 
-Guidotti, R. <em>Counterfactual explanations and how to find them: literature review and benchmarking</em>. Data Min Knowl Disc (2022). <a href="https://doi.org/10.1007/s10618-022-00831-6">https://doi.org/10.1007/s10618-022-00831-6</a></p>
-
-<p><br /></p>
+<p><a id="prado2023developing">[16]</a> 
+Mario Alfonso Prado-Romero, Bardh Prenkaj, and Giovanni Stilo. 2023. <em>Developing and Evaluating Graph Counterfactual Explanation with GRETEL</em>. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (WSDM ‘23). Association for Computing Machinery, New York, NY, USA, 1180–1183. <a href="https://doi.org/10.1145/3539597.3573026">https://doi.org/10.1145/3539597.3573026</a></p>
 
 
 
