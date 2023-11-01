@@ -172,17 +172,24 @@
 
             <p>Is an open source framework for Evaluating Graph Counterfactual Explanation Methods. It is implemented using the Object Oriented paradigm and the Factory Method design pattern. Our main goal is to create a generic platform that allows the researchers to speed up the process of developing and testing new Graph Counterfactual Explanation Methods. GRETEL provides all the necessary building blocks to create bespoke explanation pipelines.</p>
 
-<h2 id="why-counterfactual-explanations-on-graphs">Why Counterfactual Explanations on Graphs?</h2>
+<h3 class="pt-3" id="Motivation">Why Counterfactual Explanations on Graphs?</h3>
+<p>Machine Learning (ML) systems are a building part of the modern tools that impact our daily lives in several application domains. Graph Neural Networks (GNN), in particular, have demonstrated outstanding performance in domains like traffic modeling, fraud detection, large-scale recommender systems, and drug design. However, due to their black-box nature, those systems are hardly adopted in application domains where understanding the decision process is of paramount importance (e.g., health, finance). Explanation methods were developed to explain how the ML model has taken a specific decision for a given case/instance. Graph Counterfactual Explanations (GCE) is one of the explanation techniques adopted in the Graph Learning domain. GCEs provide explanations of the kind “What changes need to be done in the graphs to change the prediction of the GNN.” Counterfactuals provide recourse to users, allowing them to take actions to change the outcomes of the decision systems while allowing the developers to identify bias and errors in the models. The following figure shows how conterfactual explanations can be used in drug discovery be identifying molecular structures associated to undesired effects and changing them transforming cephallexin into amoxicillin.
+<br /></p>
+<figure>
+  <p align="center">
+    
+     <img style="width:  100%;" src="/img/projects/drug_repurpusing.jpeg" alt="Example on the drug discovery task." />
+     <figcaption>  
+          <p align="center"><strong>Figure 1: Example on the drug discovery task.</strong></p>  
+     </figcaption> 
+     </p>
+ </figure>
+<p><br /></p>
 
-<p>Machine Learning (ML) systems are a building part of the modern tools that impact our daily lives in several application domains. Graph Neural Networks (GNN), in particular, have demonstrated outstanding performance in domains like traffic modeling, fraud detection, large-scale recommender systems, and drug design. However, due to their black-box nature, those systems are hardly adopted in application domains where understanding the decision process is of paramount importance (e.g., health, finance). Explanation methods were developed to explain how the ML model has taken a specific decision for a given case/instance. Graph Counterfactual Explanations (GCE) is one of the explanation techniques adopted in the Graph Learning domain. GCEs provide explanations of the kind “What changes need to be done in the graphs to change the prediction of the GNN.” Counterfactuals provide recourse to users, allowing them to take actions to change the outcomes of the decision systems while allowing the developers to identify bias and errors in the models. The following figure shows how conterfactual explanations can be used in drug discovery be identifying molecular structures associated to undesired effects and changing them transforming cephallexin into amoxicillin.</p>
-
-<p><img src="/img/projects/drug_repurpusing.jpeg" alt="drug_discovery" /></p>
-
-<h2 id="resources-provided-by-the-framework">Resources provided by the Framework:</h2>
-
+<h3 class="pt-3" id="Resources">Resources included by the Framework:</h3>
 <p>GRETEL offers many out-of-the-box components that facilitate the use of the framework for creating custom-made explanation pipelines without the need to implement features beyond the user’s interest.</p>
 
-<h3 id="datasets">Datasets:</h3>
+<h4 class="pt-3" id="Datasets">Datasets:</h4>
 
 <ul>
   <li>
@@ -205,7 +212,7 @@
   </li>
 </ul>
 
-<h3 id="oracles">Oracles:</h3>
+<h4 class="pt-3" id="Oracles">Oracles:</h4>
 
 <ul>
   <li>
@@ -225,7 +232,7 @@
   </li>
 </ul>
 
-<h3 id="explainers">Explainers:</h3>
+<h4 class="pt-3" id="Explainers">Explainers:</h4>
 
 <ul>
   <li>
@@ -254,7 +261,7 @@
   </li>
 </ul>
 
-<h2 id="references">References</h2>
+<h3 class="pt-3" id="References">References:</h3>
 
 <ol>
   <li>
