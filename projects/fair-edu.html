@@ -1,127 +1,85 @@
-<p>Is an open source framework for Evaluating Graph Counterfactual Explanation Methods. It is implemented using the Object Oriented paradigm and the Factory Method design pattern. Our main goal is to create a generic platform that allows the researchers to speed up the process of developing and testing new Graph Counterfactual Explanation Methods. GRETEL provides all the necessary building blocks to create bespoke explanation pipelines.</p>
+<p>When a bias impacts human beings as individuals or as groups characterized by certain
+legally-protected sensitive attributes (e.g., gender), the inequalities reinforced by search and
+recommendation algorithms can lead to severe societal consequences, such as discrimination and
+unfairness. Considering also that the University of L’Aquila (UAQ) has adopted the “Gender
+equality plan” approved by the “Board of Directors” on 15/12/2021. We proposed FAIR-EDU:
+Promote FAIRness in EDUcation Institutions, a project of six months where we test and estimate
+the algorithmic bias present in the staff-related data generated and used by UAQ. We identified
+seven research questions that will be answered in four interleaved phases carried on with the
+support of the GEP’s WG and the IT staff of UAQ.</p>
 
-<p><a href="https://github.com/MarioTheOne/GRETEL" target="_blank">The GRETEL Framework is available at this link.</a></p>
+<h2 id="introduction">Introduction</h2>
 
-<h3 class="pt-3" id="Motivation">Why Counterfactual Explanations on Graphs?</h3>
-<p>Machine Learning (ML) systems are a building part of the modern tools that impact our daily lives in several application domains. Graph Neural Networks (GNN), in particular, have demonstrated outstanding performance in domains like traffic modeling, fraud detection, large-scale recommender systems, and drug design. However, due to their black-box nature, those systems are hardly adopted in application domains where understanding the decision process is of paramount importance (e.g., health, finance). Explanation methods were developed to explain how the ML model has taken a specific decision for a given case/instance. Graph Counterfactual Explanations (GCE) is one of the explanation techniques adopted in the Graph Learning domain. GCEs provide explanations of the kind “What changes need to be done in the graphs to change the prediction of the GNN.” Counterfactuals provide recourse to users, allowing them to take actions to change the outcomes of the decision systems while allowing the developers to identify bias and errors in the models. The following figure shows how conterfactual explanations can be used in drug discovery be identifying molecular structures associated to undesired effects and changing them transforming cephallexin into amoxicillin.
-<br /></p>
-<figure>
-  <p align="center">
-    
-     <img style="width:  100%;" src="/img/projects/drug_repurpusing.jpeg" alt="Example on the drug discovery task." />
-     <figcaption>  
-          <p align="center"><strong>Figure 1: Example on the drug discovery task.</strong></p>  
-     </figcaption> 
-     </p>
- </figure>
-<p><br /></p>
+<p>Both search and recommendation algorithms rank users with results that aim to match their needs
+and interests. Despite the (non-)personalized perspective that characterizes each class of
+algorithms, both learn patterns from data which often conveys biases regarding unbalances and
+inequalities.</p>
 
-<h3 class="pt-3" id="Resources">Resources included by the Framework:</h3>
-<p>GRETEL offers many out-of-the-box components that facilitate the use of the framework for creating custom-made explanation pipelines without the need to implement features beyond the user’s interest.</p>
+<p>In most cases, the trained models and, by extension, the final ranking capture and strengthen
+these biases in the learned patterns. When a bias impacts human beings as individuals or groups
+characterized by certain legally-protected sensitive attributes (e.g., their race, gender, or religion),
+the inequalities reinforced by search and recommendation algorithms even lead to severe societal
+consequences, such as discrimination and unfairness [1].</p>
 
-<h4 class="pt-3" id="Datasets">Datasets:</h4>
+<p>Detecting, characterizing, and mitigating biases while preserving effectiveness is thus a timely goal
+for modern search and recommendation algorithms that are becoming central in several
+application domains. Challenges that arise in real-world applications (e.g., justice [2], education [4],
+etc.) are focused on controlling the effects of popularity biases to improve users’ perceived quality
+of the results.</p>
 
+<p>Different methods have been proposed to mitigate bias at several levels of data processing, mostly
+focusing on classification problems. However, it must be noticed that the multi-class classification
+problem is still not effectively addressed, even if it is widely adopted and constitutes a building
+block for personalization and search systems in critical domains [5-7].</p>
+
+<p>Historically, the research community of Classic Academic Systems (CAS) was mainly focused on
+evaluating the bias in students-related tasks, such as their enrollment and the evaluation of their
+learning [8-10], rather than considering and assessing the bias related to the academic’s staff
+(e.g., researchers, professors, technicians, administrative, etc.).
+Moreover, in the past year, the University of L’Aquila (UAQ) has approved the “Gender equality
+plan” approved by the “Board of Directors” with resolution no. 389 of 15/12/2021 “.
+The Gender Equality Plan of UAQ is part of a path already started and now consolidated for the
+promotion of gender equality and the achievement of objectives of equality, participation, and
+non-discrimination.</p>
+
+<h2 id="planned-objectives">Planned Objectives</h2>
+<p>Considering the problems and scenarios in FAIR-EDU: Promote FAIRness in EDUcation
+Institutions project, we analyzed the algorithmic bias present in the staff-related data generated
+and used by the University of L’Aquila.
+We remark that the project aims to be an exploratory path that constitutes the basis for further
+development at the National and European levels.
+Hereafter we report the identified research questions to clarify later which are the specific
+deliverable made by the project that answers them:</p>
 <ul>
-  <li>
-    <p><strong>Tree-Cycles</strong> [3]: Synthetic data set where each instance is a graph. The instance can be either a tree or a tree with several cycle patterns connected to the main graph by one edge</p>
-  </li>
-  <li>
-    <p><strong>Tree-Infinity</strong>: It follows the approach of the Tree-Cycles, but instead of cycles, there is an infinity shape.</p>
-  </li>
-  <li>
-    <p><strong>ASD</strong> [4]: Autism Spectrum Disorder (ASD) taken from the Autism Brain Imagine Data Exchange (ABIDE).</p>
-  </li>
-  <li>
-    <p><strong>ADHD</strong> [4]: Attention Deficit Hyperactivity Disorder (ADHD), is taken from the USC Multimodal Connectivity Database (USCD).</p>
-  </li>
-  <li>
-    <p><strong>BBBP</strong> [5]: Blood-Brain Barrier Permeation is a molecular dataset. Predicting if a molecule can permeate the blood-brain barrier.</p>
-  </li>
-  <li>
-    <p><strong>HIV</strong> [5]: It is a molecular dataset that classifies compounds based on their ability to inhibit HIV.</p>
-  </li>
+  <li>RQ1: Which are the typical scenarios where the algorithmic bias is present in CAS?</li>
+  <li>RQ2: How is the algorithmic bias typically measured in CAS?</li>
+  <li>RQ3: Which are the best methods to mitigate algorithmic bias in CAS?</li>
+  <li>RQ4: Which UAQ data can be subjected to algorithmic bias?</li>
+  <li>RQ5: What is the level of algorithmic bias present in the data of UAQ?</li>
+  <li>RQ6: Which are the best methods to mitigate algorithmic bias in the data of UAQ?</li>
+  <li>RQ7: How the learned experience can be integrated at local (UAQ) and National Levels?</li>
 </ul>
 
-<h4 class="pt-3" id="Oracles">Oracles:</h4>
+<h2 id="final-remarks">Final Remarks</h2>
 
+<p>FAIR-EDU is focused on analyzing the algorithmic bias in the data of the University of L’Aquila
+thus, its contribution to the gender issue is twofold:</p>
 <ul>
-  <li>
-    <p><strong>KNN</strong></p>
-  </li>
-  <li>
-    <p><strong>SVM</strong></p>
-  </li>
-  <li>
-    <p><strong>GCN</strong></p>
-  </li>
-  <li>
-    <p><strong>ASD Custom Oracle</strong> [4] (Rules specific for the ASD dataset)</p>
-  </li>
-  <li>
-    <p><strong>Tree-Cycles Custom Oracle</strong> (Guarantees 100% accuracy on Tree-Cycles dataset)</p>
-  </li>
+  <li>in the literature, one of the sensible variables that are related to the algorithmic bias
+problem is the gender one. The pilot that we conducted in the FAIR-EDU project was
+focused on gender, and thus it will contribute to a better understanding of it at the University
+of L’Aquila;</li>
+  <li>the outcome of the project will be available and will be discussed within the working group
+of the Gender Equality Plan constituting a possible base to highlight further concrete
+actions able to improve the University policies and reduce any discrimination.
+Three main points can summarise the main advancement achieved by this project:</li>
+  <li>FAIR-EDU is focused mainly on the multi-class classification problem, which was not
+effectively addressed, even if it is widely adopted and constitutes a building block for
+personalization and search systems in several domains;</li>
+  <li>the research community is mainly focused on evaluating the bias on students oriented
+tasks such as their enrollment and the evaluation of the learning; instead, FAIR-EDU is
+focused on considering and assessing the bias related to the academic’s staff (e.g.,
+researchers, professors, technicians, administrative, etc.).</li>
+  <li>no project until now was specifically tailored to the Italian Classical Academic Systems;
+instead, FAIR-EDU is focused on the University of L’Aquila;</li>
 </ul>
-
-<h4 class="pt-3" id="Explainers">Explainers:</h4>
-
-<ul>
-  <li>
-    <p><strong>DCE Search</strong>: Distribution Compliant Explanation Search,  mainly used as a baseline, does not make any assumption about the underlying dataset and searches for a counterfactual instance in it.</p>
-  </li>
-  <li>
-    <p><strong>Oblivious Bidirectional Search (OBS)</strong> [4]: It is an heuristic explanation method that uses a 2-stage approach.</p>
-  </li>
-  <li>
-    <p><strong>Data-Driven Bidirectional Search (DDBS)</strong> [4]: It follows the same logic as OBS. The main difference is that this method uses the probability (computed on the original dataset) of each edge to appear in a graph of a certain class to drive the counterfactual search process.</p>
-  </li>
-  <li>
-    <p><strong>MACCS</strong> [5]: Model Agnostic Counterfactual Compounds with STONED (MACCS) is specifically designed to work with molecules.</p>
-  </li>
-  <li>
-    <p><strong>MEG</strong> [6]: Molecular Explanation Generator is an RL-based explainer for molecular graphs.</p>
-  </li>
-  <li>
-    <p><strong>CFF</strong> [7] Is a learning-based method that uses Counterfactual and Factual Reasoning in the perturbation mask generation process.</p>
-  </li>
-  <li>
-    <p><strong>CLEAR</strong> [8] is a learning based explanation method that provides Generative Counterfactual Explanations on Graphs.</p>
-  </li>
-  <li>
-    <p><strong>G-CounteRGAN</strong> [9] is a porting of a GAN-based explanation method for images</p>
-  </li>
-</ul>
-
-<h3 class="pt-3" id="References">References:</h3>
-
-<ol>
-  <li>
-    <p>Prado-Romero, M.A. and Stilo, G., 2022, October. Gretel: Graph counterfactual explanation evaluation framework. In Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management (pp. 4389-4393).</p>
-  </li>
-  <li>
-    <p>Prado-Romero, M.A., Prenkaj, B. and Stilo, G., 2023, February. Developing and Evaluating Graph Counterfactual Explanation with GRETEL. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (pp. 1180-1183).</p>
-  </li>
-  <li>
-    <p>Zhitao Ying, Dylan Bourgeois, Jiaxuan You, Marinka Zitnik, and Jure Leskovec. 2019. Gnnexplainer: Generating explanations for graph neural networks. Ad-
-vances in neural information processing systems 32 (2019)</p>
-  </li>
-  <li>
-    <p>Carlo Abrate and Francesco Bonchi. 2021. Counterfactual Graphs for Explainable Classification of Brain Networks. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining. 2495–2504</p>
-  </li>
-  <li>
-    <p>Geemi P Wellawatte, Aditi Seshadri, and Andrew D White. 2022. Model agnostic generation of counterfactual explanations for molecules. Chemical science 13, 13
-(2022), 3697–370</p>
-  </li>
-  <li>
-    <p>Numeroso, D. and Bacciu, D., 2021, July. Meg: Generating molecular counterfactual explanations for deep graph networks. In 2021 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE.</p>
-  </li>
-  <li>
-    <p>Tan, J., Geng, S., Fu, Z., Ge, Y., Xu, S., Li, Y. and Zhang, Y., 2022, April. Learning and evaluating graph neural network explanations based on counterfactual and factual reasoning. In Proceedings of the ACM Web Conference 2022 (pp. 1018-1027).</p>
-  </li>
-  <li>
-    <p>Ma, J., Guo, R., Mishra, S., Zhang, A. and Li, J., 2022. Clear: Generative counterfactual explanations on graphs. Advances in Neural Information Processing Systems, 35, pp.25895-25907.</p>
-  </li>
-  <li>
-    <p>Nemirovsky, D., Thiebaut, N., Xu, Y. and Gupta, A., 2022, August. CounteRGAN: Generating counterfactuals for real-time recourse and interpretability using residual GANs. In Uncertainty in Artificial Intelligence (pp. 1488-1497). PMLR.</p>
-  </li>
-</ol>
-
