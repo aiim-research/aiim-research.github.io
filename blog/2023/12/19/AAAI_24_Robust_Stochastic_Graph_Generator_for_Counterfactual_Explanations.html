@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Artificial Intelligence and Information Mining - Collective: Robust Stochastic Graph Generator for Counterfactual Explanations</title>
+        <title>Artificial Intelligence and Information Mining - Collective: Robust Stochastic Graph Generator for Counterfactual Explanations (AAAI-2024)</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
@@ -82,7 +82,7 @@
                         <li class="nav-item">
                             <a class="nav-link active"
                                href="/blogs.html">
-                                Blog
+                                Researches
                             </a>
                         </li>
 
@@ -100,7 +100,7 @@
                         <li class="nav-item">
                             <a class="nav-link "
                                href="/research.html">
-                                Research
+                                Projects
                             </a>
                         </li>
 
@@ -183,19 +183,15 @@
 
             
                 
-                <a href="/projects/Generative_Methods_for_Counterfactual_Explanations.html" class="">
-                
-                <img src="/img/projects/logo_gengce_bn.png"
-                     alt="Robust Stochastic Graph Generator for Counterfactual Explanations"
+                <img src="/img/projects/RSGG.jpeg"
+                     alt="Robust Stochastic Graph Generator for Counterfactual Explanations (AAAI-2024)"
                      style="max-width: 400px"
                      class="img-fluid mx-auto d-block mb-4"/>
-                
-                </a>
                 
             
 
             
-                <h2 class="pt-3">Robust Stochastic Graph Generator for Counterfactual Explanations</h2>
+                <h2 class="pt-3">Robust Stochastic Graph Generator for Counterfactual Explanations (AAAI-2024)</h2>
             
             
 
@@ -209,6 +205,38 @@
 <p>The preference for generative explainers stems from their capacity to generate counterfactual instances during inference, leveraging autonomously acquired perturbations of the input graph. Motivated by the rationales above, our study introduces RSGG-CE, a novel Robust Stochastic Graph Generator for Counterfactual Explanations able to produce counterfactual examples from the learned latent space considering a partially ordered generation sequence.</p>
 
 <p>Furthermore, we undertake both quantitative and qualitative analyses to compare RSGG-CE’s performance against SoA generative explainers, highlighting its increased abilities in engendering plausible counterfactual candidates.</p>
+
+<p><br />
+<br /></p>
+<figure>
+  <p align="center">
+    
+     <img style="width:  100%;" src="/img/projects/ASD_RSGG.png" alt="Qualitative illustration of the counterfactuals produced by RSGG-CE" />
+     <figcaption>  
+          <p align="center"><strong>Figure 1:  Qualitative illustration of the counterfactuals produced by RSGG-CE. Each element in the illustration represents the adjacency matrix of an instances. We colour with black those edges that are maintained as in the original instance; with green those that are added; and with red those that are removed. Blank spots are those instances for which the explainer does not produce a valid counterfactual.
+        </strong></p>  
+     </figcaption> 
+     </p>
+ </figure>
+<p><br /></p>
+
+<p><strong>Full paper (including supplementary materials) available at</strong>
+<a href="http://arxiv.org/abs/2312.11747"><img src="https://img.shields.io/badge/arXiv-2312.11747-b31b1b.svg" alt="arXiv" /></a></p>
+
+<h4 id="the-bibtex-reference">The BibTeX reference:</h4>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="err">@</span><span class="n">inproceedings</span><span class="p">{</span><span class="n">prado_prenkaj_stilo_aaai_24</span><span class="p">,</span>
+  <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="n">Robust</span> <span class="n">Stochastic</span> <span class="n">Graph</span> <span class="n">Generator</span> <span class="k">for</span> <span class="n">Counterfactual</span> <span class="n">Explanations</span><span class="p">},</span>
+  <span class="n">author</span><span class="o">=</span><span class="p">{</span><span class="n">Prado</span><span class="o">-</span><span class="n">Romero</span><span class="p">,</span> <span class="n">Mario</span> <span class="n">Alfonso</span> <span class="n">and</span> <span class="n">Prenkaj</span><span class="p">,</span> <span class="n">Bardh</span> <span class="n">and</span> <span class="n">Stilo</span><span class="p">,</span> <span class="n">Giovanni</span><span class="p">},</span>
+  <span class="n">year</span><span class="o">=</span><span class="p">{</span><span class="mi">2024</span><span class="p">},</span>
+  <span class="n">isbn</span> <span class="o">=</span> <span class="p">{</span><span class="n">xxxxxxxx</span><span class="p">},</span>
+  <span class="n">publisher</span> <span class="o">=</span> <span class="p">{</span><span class="n">AAAI</span> <span class="n">Press</span><span class="p">},</span>
+  <span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="n">xx</span><span class="p">.</span><span class="n">xxxx</span><span class="o">/</span><span class="n">xxxxxx</span><span class="p">.</span><span class="n">xxxxxxx</span><span class="p">},</span>
+  <span class="n">booktitle</span> <span class="o">=</span> <span class="p">{</span><span class="n">Proceedings</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Thirty</span><span class="o">-</span><span class="n">Eighth</span> <span class="n">AAAI</span> <span class="n">Conference</span> <span class="n">on</span> <span class="n">Artificial</span> <span class="n">Intelligence</span> <span class="n">and</span> <span class="n">Thirty</span><span class="o">-</span><span class="n">Sixth</span> <span class="n">Conference</span> <span class="n">on</span> <span class="n">Innovative</span> <span class="n">Applications</span> <span class="n">of</span> <span class="n">Artificial</span> <span class="n">Intelligence</span> <span class="n">and</span> <span class="n">Thirteenth</span> <span class="n">Symposium</span> <span class="n">on</span> <span class="n">Educational</span> <span class="n">Advances</span> <span class="n">in</span> <span class="n">Artificial</span> <span class="n">Intelligence</span><span class="p">},</span>
+  <span class="n">articleno</span> <span class="o">=</span> <span class="p">{</span><span class="n">xxxx</span><span class="p">},</span>
+  <span class="n">numpages</span> <span class="o">=</span> <span class="p">{</span><span class="mi">9</span><span class="p">},</span>
+  <span class="n">series</span> <span class="o">=</span> <span class="p">{</span><span class="n">AAAI</span><span class="err">'</span><span class="mi">24</span><span class="o">/</span><span class="n">IAAI</span><span class="err">'</span><span class="mi">24</span><span class="o">/</span><span class="n">EAAI</span><span class="err">'</span><span class="mi">24</span><span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
 
 
 </div>

@@ -82,7 +82,7 @@
                         <li class="nav-item">
                             <a class="nav-link "
                                href="/blogs.html">
-                                Blog
+                                Researches
                             </a>
                         </li>
 
@@ -100,7 +100,7 @@
                         <li class="nav-item">
                             <a class="nav-link active"
                                href="/research.html">
-                                Research
+                                Projects
                             </a>
                         </li>
 
@@ -200,128 +200,10 @@
 <p><a href="https://github.com/MarioTheOne/GRETEL" target="_blank">The GRETEL Framework is available at this link.</a></p>
 
 <h3 class="pt-3" id="Motivation">Why Counterfactual Explanations on Graphs?</h3>
-<p>Machine Learning (ML) systems are a building part of the modern tools that impact our daily lives in several application domains. Graph Neural Networks (GNN), in particular, have demonstrated outstanding performance in domains like traffic modeling, fraud detection, large-scale recommender systems, and drug design. However, due to their black-box nature, those systems are hardly adopted in application domains where understanding the decision process is of paramount importance (e.g., health, finance). Explanation methods were developed to explain how the ML model has taken a specific decision for a given case/instance. Graph Counterfactual Explanations (GCE) is one of the explanation techniques adopted in the Graph Learning domain. GCEs provide explanations of the kind “What changes need to be done in the graphs to change the prediction of the GNN.” Counterfactuals provide recourse to users, allowing them to take actions to change the outcomes of the decision systems while allowing the developers to identify bias and errors in the models. The following figure shows how conterfactual explanations can be used in drug discovery be identifying molecular structures associated to undesired effects and changing them transforming cephallexin into amoxicillin.
-<br /></p>
-<figure>
-  <p align="center">
-    
-     <img style="width:  100%;" src="/img/projects/drug_repurpusing.jpeg" alt="Example on the drug discovery task." />
-     <figcaption>  
-          <p align="center"><strong>Figure 1: Example on the drug discovery task.</strong></p>  
-     </figcaption> 
-     </p>
- </figure>
-<p><br /></p>
+<p>Machine Learning (ML) systems are a building part of the modern tools that impact our daily lives in several application domains. Graph Neural Networks (GNN), in particular, have demonstrated outstanding performance in domains like traffic modeling, fraud detection, large-scale recommender systems, and drug design. However, due to their black-box nature, those systems are hardly adopted in application domains where understanding the decision process is of paramount importance (e.g., health, finance). Explanation methods were developed to explain how the ML model has taken a specific decision for a given case/instance. Graph Counterfactual Explanations (GCE) is one of the explanation techniques adopted in the Graph Learning domain. GCEs provide explanations of the kind “What changes need to be done in the graphs to change the prediction of the GNN.” Counterfactuals provide recourse to users, allowing them to take actions to change the outcomes of the decision systems while allowing the developers to identify bias and errors in the models. The following figure shows how conterfactual explanations can be used in drug discovery be identifying molecular structures associated to undesired effects and changing them transforming cephallexin into amoxicillin.</p>
 
-<h3 class="pt-3" id="Resources">Resources included by the Framework:</h3>
-<p>GRETEL offers many out-of-the-box components that facilitate the use of the framework for creating custom-made explanation pipelines without the need to implement features beyond the user’s interest.</p>
-
+<h3 class="pt-3" id="Resources">Research works in thi research line:</h3>
 <h4 class="pt-3" id="Datasets">Datasets:</h4>
-
-<ul>
-  <li>
-    <p><strong>Tree-Cycles</strong> [3]: Synthetic data set where each instance is a graph. The instance can be either a tree or a tree with several cycle patterns connected to the main graph by one edge</p>
-  </li>
-  <li>
-    <p><strong>Tree-Infinity</strong>: It follows the approach of the Tree-Cycles, but instead of cycles, there is an infinity shape.</p>
-  </li>
-  <li>
-    <p><strong>ASD</strong> [4]: Autism Spectrum Disorder (ASD) taken from the Autism Brain Imagine Data Exchange (ABIDE).</p>
-  </li>
-  <li>
-    <p><strong>ADHD</strong> [4]: Attention Deficit Hyperactivity Disorder (ADHD), is taken from the USC Multimodal Connectivity Database (USCD).</p>
-  </li>
-  <li>
-    <p><strong>BBBP</strong> [5]: Blood-Brain Barrier Permeation is a molecular dataset. Predicting if a molecule can permeate the blood-brain barrier.</p>
-  </li>
-  <li>
-    <p><strong>HIV</strong> [5]: It is a molecular dataset that classifies compounds based on their ability to inhibit HIV.</p>
-  </li>
-</ul>
-
-<h4 class="pt-3" id="Oracles">Oracles:</h4>
-
-<ul>
-  <li>
-    <p><strong>KNN</strong></p>
-  </li>
-  <li>
-    <p><strong>SVM</strong></p>
-  </li>
-  <li>
-    <p><strong>GCN</strong></p>
-  </li>
-  <li>
-    <p><strong>ASD Custom Oracle</strong> [4] (Rules specific for the ASD dataset)</p>
-  </li>
-  <li>
-    <p><strong>Tree-Cycles Custom Oracle</strong> (Guarantees 100% accuracy on Tree-Cycles dataset)</p>
-  </li>
-</ul>
-
-<h4 class="pt-3" id="Explainers">Explainers:</h4>
-
-<ul>
-  <li>
-    <p><strong>DCE Search</strong>: Distribution Compliant Explanation Search,  mainly used as a baseline, does not make any assumption about the underlying dataset and searches for a counterfactual instance in it.</p>
-  </li>
-  <li>
-    <p><strong>Oblivious Bidirectional Search (OBS)</strong> [4]: It is an heuristic explanation method that uses a 2-stage approach.</p>
-  </li>
-  <li>
-    <p><strong>Data-Driven Bidirectional Search (DDBS)</strong> [4]: It follows the same logic as OBS. The main difference is that this method uses the probability (computed on the original dataset) of each edge to appear in a graph of a certain class to drive the counterfactual search process.</p>
-  </li>
-  <li>
-    <p><strong>MACCS</strong> [5]: Model Agnostic Counterfactual Compounds with STONED (MACCS) is specifically designed to work with molecules.</p>
-  </li>
-  <li>
-    <p><strong>MEG</strong> [6]: Molecular Explanation Generator is an RL-based explainer for molecular graphs.</p>
-  </li>
-  <li>
-    <p><strong>CFF</strong> [7] Is a learning-based method that uses Counterfactual and Factual Reasoning in the perturbation mask generation process.</p>
-  </li>
-  <li>
-    <p><strong>CLEAR</strong> [8] is a learning based explanation method that provides Generative Counterfactual Explanations on Graphs.</p>
-  </li>
-  <li>
-    <p><strong>G-CounteRGAN</strong> [9] is a porting of a GAN-based explanation method for images</p>
-  </li>
-</ul>
-
-<h3 class="pt-3" id="References">References:</h3>
-
-<ol>
-  <li>
-    <p>Prado-Romero, M.A. and Stilo, G., 2022, October. Gretel: Graph counterfactual explanation evaluation framework. In Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management (pp. 4389-4393).</p>
-  </li>
-  <li>
-    <p>Prado-Romero, M.A., Prenkaj, B. and Stilo, G., 2023, February. Developing and Evaluating Graph Counterfactual Explanation with GRETEL. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (pp. 1180-1183).</p>
-  </li>
-  <li>
-    <p>Zhitao Ying, Dylan Bourgeois, Jiaxuan You, Marinka Zitnik, and Jure Leskovec. 2019. Gnnexplainer: Generating explanations for graph neural networks. Ad-
-vances in neural information processing systems 32 (2019)</p>
-  </li>
-  <li>
-    <p>Carlo Abrate and Francesco Bonchi. 2021. Counterfactual Graphs for Explainable Classification of Brain Networks. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining. 2495–2504</p>
-  </li>
-  <li>
-    <p>Geemi P Wellawatte, Aditi Seshadri, and Andrew D White. 2022. Model agnostic generation of counterfactual explanations for molecules. Chemical science 13, 13
-(2022), 3697–370</p>
-  </li>
-  <li>
-    <p>Numeroso, D. and Bacciu, D., 2021, July. Meg: Generating molecular counterfactual explanations for deep graph networks. In 2021 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE.</p>
-  </li>
-  <li>
-    <p>Tan, J., Geng, S., Fu, Z., Ge, Y., Xu, S., Li, Y. and Zhang, Y., 2022, April. Learning and evaluating graph neural network explanations based on counterfactual and factual reasoning. In Proceedings of the ACM Web Conference 2022 (pp. 1018-1027).</p>
-  </li>
-  <li>
-    <p>Ma, J., Guo, R., Mishra, S., Zhang, A. and Li, J., 2022. Clear: Generative counterfactual explanations on graphs. Advances in Neural Information Processing Systems, 35, pp.25895-25907.</p>
-  </li>
-  <li>
-    <p>Nemirovsky, D., Thiebaut, N., Xu, Y. and Gupta, A., 2022, August. CounteRGAN: Generating counterfactuals for real-time recourse and interpretability using residual GANs. In Uncertainty in Artificial Intelligence (pp. 1488-1497). PMLR.</p>
-  </li>
-</ol>
-
 
 
 <h3> People </h3>
