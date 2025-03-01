@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artificial Intelligence and Information Mining - Collective: RAZOR - Sharpening Knowledge by Cutting Bias with Unsupervised Text Rewriting (AAAI 2025)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/be7d5ac8d8.js" crossorigin="anonymous"></script>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">  
+        <!-- our custom css -->
+        <link rel="stylesheet" href="/css/group.css">
+        <!-- site.canonical enabled -->
+        <link rel="canonical" href="https://aiimlab.org/blog/2025/03/01/AAAI_25_RAZOR-Sharpening-Knowledge-by-Cutting-Bias-with-Unsupervised-Text-Rewriting" /> 
+        
+    </head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVN2FKZRV"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-HRVN2FKZRV');
+     </script>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="sticky-top header d-flex 
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/AIIM-Logo.svg"
+                         srcset="/img/AIIM-Logo.svg 2x"
+                         alt="AIIM - Artificial Intelligence and Information Mining research group." id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/news.html">
+                                News
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="/blogs.html">
+                                Researches
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/research.html">
+                                Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/events.html">
+                                Events
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/code.html">
+                                Resources
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+                
+                <img src="/img/projects/RAZOR.jpeg"
+                     alt="RAZOR - Sharpening Knowledge by Cutting Bias with Unsupervised Text Rewriting (AAAI 2025)"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+                
+            
+
+            
+                <h2 class="pt-3">RAZOR - Sharpening Knowledge by Cutting Bias with Unsupervised Text Rewriting (AAAI 2025)</h2>
+            
+            
+
+            <p class="date">March 01, 2025</p>
+
+<div class="post">
+<p>Despite the widespread use of LLMs due to their superior performance in various tasks, their high computational costs often lead potential users to opt for the pretraining-finetuning pipeline. However, biases prevalent in manually constructed datasets can introduce spurious correlations between tokens and labels, creating so-called shortcuts and hindering the generalizability of fine-tuned models. Existing debiasing methods often rely on prior knowledge of specific dataset biases, which is challenging to acquire a priori.</p>
+
+<p>We propose RAZOR (Rewriting And Zero-bias Optimization Refinement), a novel, unsupervised, and data-focused debiasing approach based on text rewriting for shortcut mitigation. RAZOR leverages LLMs to iteratively rewrite potentially biased text segments by replacing them with heuristically selected alternatives in a shortcut space defined by token statistics and positional information. This process aims to align surface-level text features more closely with diverse label distributions, thereby promoting the learning of genuine linguistic patterns. Compared with unsupervised SoTA models, RAZOR improves by 3.5% on the FEVER and 6.5% on MNLI and SNLI datasets according to the F1 score. Additionally, RAZOR effectively mitigates specific known biases, reducing bias-related terms by x2 without requiring prior bias information, a result that is on par with SoTA models that leverage prior information.</p>
+
+<p>Our work prioritizes data manipulation over architectural modifications, emphasizing the pivotal role of data quality in enhancing model performance and fairness. This research contributes to developing more robust evaluation benchmarks for debiasing methods by incorporating metrics for bias reduction and overall model efficacy.</p>
+
+<p><strong>Preprinted paper (including supplementary materials) available at</strong>
+<a href="https://arxiv.org/abs/2412.07675"><img src="https://img.shields.io/badge/arXiv-2312.11747-b31b1b.svg" alt="arXiv" /></a></p>
+
+<p><strong>Code available at</strong>
+<a href="https://github.com/ShuoYangtum/RAZOR">https://github.com/ShuoYangtum/RAZOR</a></p>
+
+<h4 id="please-cite-us-using">Please cite us using:</h4>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="err">@</span><span class="n">article</span><span class="p">{</span><span class="n">yang2024razor</span><span class="p">,</span>
+  <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="n">RAZOR</span><span class="o">:</span> <span class="n">Sharpening</span> <span class="n">Knowledge</span> <span class="n">by</span> <span class="n">Cutting</span> <span class="n">Bias</span> <span class="n">with</span> <span class="n">Unsupervised</span> <span class="n">Text</span> <span class="n">Rewriting</span><span class="p">},</span>
+  <span class="n">author</span><span class="o">=</span><span class="p">{</span><span class="n">Yang</span><span class="p">,</span> <span class="n">Shuo</span> <span class="n">and</span> <span class="n">Prenkaj</span><span class="p">,</span> <span class="n">Bardh</span> <span class="n">and</span> <span class="n">Kasneci</span><span class="p">,</span> <span class="n">Gjergji</span><span class="p">},</span>
+  <span class="n">journal</span><span class="o">=</span><span class="p">{</span><span class="n">arXiv</span> <span class="n">preprint</span> <span class="n">arXiv</span><span class="o">:</span><span class="mf">2412.07675</span><span class="p">},</span>
+  <span class="n">year</span><span class="o">=</span><span class="p">{</span><span class="mi">2024</span><span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br />
+<br /></p>
+
+<p><strong>Poster presented at AAAI 2024</strong></p>
+<figure>
+  <p align="center">
+    
+     <img style="width:  95%;" src="/img/projects/RAZOR_poster.jpeg" alt="AAAI 2024 - RAZOR - Sharpening Knowledge by Cutting Bias with Unsupervised Text Rewriting - Poster" />
+     </p>
+ </figure>
+<p><br /></p>
+
+
+</div>
+<div>
+    <p>
+        <span class="fa fa-fw fa-history"></span>
+        <a href="/blogs.html">Back to all posts &hellip;</a>
+    </p>
+</div>
+
+            <div class="footer">
+                <p>
+                    © Copyright 2019-2025 - Artificial Intelligence and Information Mining - All rights reserved.
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160388153-1"></script>
+	    <script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
+
+	        gtag('config', 'UA-160388153-1');
+	    </script>
+
+       
+    </body>
+</html>
