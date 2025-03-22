@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artificial Intelligence and Information Mining - Collective: Synthetic Data for AI: Tackling Drift, Anomalies, and Streaming Challenges (STAIRS)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/be7d5ac8d8.js" crossorigin="anonymous"></script>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">  
+        <!-- our custom css -->
+        <link rel="stylesheet" href="/css/group.css">
+        <!-- site.canonical enabled -->
+        <link rel="canonical" href="https://aiimlab.org/events/ECML_PKDD_2025_STAIRS_Synthetic_Data_for_AO_Tackling_Drift_Anomalies_and_Streaming_Challenges%20" /> 
+        
+    </head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVN2FKZRV"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-HRVN2FKZRV');
+     </script>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="sticky-top header d-flex 
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/AIIM-Logo.svg"
+                         srcset="/img/AIIM-Logo.svg 2x"
+                         alt="AIIM - Artificial Intelligence and Information Mining research group." id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/news.html">
+                                News
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/blogs.html">
+                                Researches
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/research.html">
+                                Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="/events.html">
+                                Events
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/code.html">
+                                Resources
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+                
+                <a href="https://ecmlpkdd.org/2025/submissions-workshop-track/" class="">
+                
+                <img src="/events/imgs/delta_at_kdd24.png"
+                     alt="Synthetic Data for AI: Tackling Drift, Anomalies, and Streaming Challenges (STAIRS)"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+                
+                </a>
+                
+            
+
+            
+                <h2 class="pt-3">Synthetic Data for AI: Tackling Drift, Anomalies, and Streaming Challenges (STAIRS)</h2>
+            
+            
+                <h3 class="pt-3">Workshop at European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2025), September 15, 2025 - Porto, Portugal</h3>
+            
+
+            <br>
+<h3> Organisers </h3>
+<section class="people project-people">
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://marcopiangerelli.it"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Dr. Marco Piangerelli"
+             title="Dr. Marco Piangerelli"
+             src="/img/people/events/delta/marco.jpg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://marcopiangerelli.it"> Dr. Marco Piangerelli </a>
+     </h6>
+            
+                <div class="bio">University of Camerino</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://www.linkedin.com/in/ylenia-rotalinti/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Ylenia Rotalinti"
+             title="Ylenia Rotalinti"
+             src="/img/people/events/delta/ylenia.jpg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://www.linkedin.com/in/ylenia-rotalinti/"> Ylenia Rotalinti </a>
+     </h6>
+            
+                <div class="bio">Brunel University London</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://heitorgomes.com/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Prof. Heitor Murilo Gomes"
+             title="Prof. Heitor Murilo Gomes"
+             src="/events/imgs/peoples/Gomes.png" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://heitorgomes.com/"> Prof. Heitor Murilo Gomes </a>
+     </h6>
+            
+                <div class="bio">Victoria University of Wellington</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://sites.google.com/site/bahrimarouaa/home"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Prof. Maroua Bahari"
+             title="Prof. Maroua Bahari"
+             src="/img/people/evenets/stairs/maroua.png" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://sites.google.com/site/bahrimarouaa/home"> Prof. Maroua Bahari </a>
+     </h6>
+            
+                <div class="bio">Sorbonne Université</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://yhe15.people.wm.edu/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Yi He"
+             title="Yi He"
+             src="/img/people/events/stairs/yi_he.jpg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://yhe15.people.wm.edu/"> Yi He </a>
+     </h6>
+            
+                <div class="bio">William & Mary</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://bardhprenkaj.netlify.app/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Dr. Bardh Prenkaj"
+             title="Dr. Bardh Prenkaj"
+             src="/img/people/prenkaj.jpg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://bardhprenkaj.netlify.app/"> Dr. Bardh Prenkaj </a>
+     </h6>
+            
+                <div class="bio">Technical University of Munich</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://albertbifet.com/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Prof. Albert Bifet"
+             title="Prof. Albert Bifet"
+             src="/events/imgs/peoples/Bifet.png" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://albertbifet.com/"> Prof. Albert Bifet </a>
+     </h6>
+            
+                <div class="bio">Te Ipu o te Mahara AI Institute at University of Waikato</div>
+            
+        </div>
+    </div>
+
+
+    
+</section>
+<h3 class="pt-3">Table of contents</h3>
+<ul>
+  <li><a href="#aims_scope">Aims and Scope</a></li>
+  <li><a href="#dates">Important Dates</a></li>
+  <li><a href="#topics">Topics of Interests</a></li>
+  <li><a href="#submissions">Submission and Publication</a></li>
+  <li><a href="#registration">Registration and Presentation Policy</a></li>
+  <li><a href="#contacts">Contacts</a></li>
+</ul>
+
+<h3 class="pt-3" id="aims_scope">Aims and Scope</h3>
+<p>The rapid advancement of artificial intelligence (AI) relies heavily on access to large, diverse, and high-quality datasets for training and evaluation. However, the increasing scarcity of data, strict privacy regulations, and the high costs associated with collection and annotation are creating significant barriers to progress. Projections suggest that by 2050, we may face a shortage of fresh text data, and by 2060, image data may become similarly limited. These challenges make it imperative to explore alternatives that can sustain AI’s growth and effectiveness. Synthetic data presents itself as a compelling solution to these issues, offering the advantages of scalability, customisation, and inherent anonymisation. It allows for the generation of large volumes of tailored datasets without the same privacy and cost concerns of real data.</p>
+
+<h3 class="pt-3" id="dates">Important Dates</h3>
+<ul>
+  <li>Paper Submissions: <strong>June 14th, 2025</strong></li>
+  <li>Notifications: <strong>July 14st, 2025</strong></li>
+  <li>Camera-Ready: <strong>July 28th, 2025</strong></li>
+  <li>Workshop: <strong>September 15th, 2025</strong></li>
+</ul>
+
+<p>All deadlines are 11:59 pm, AoE.</p>
+
+<h3 class="pt-3" id="topics">Topics</h3>
+<p>STAIRS welcomes contributions on all topics related to (e.g., <em>finance, business, basic sciences, construction computational advertising, IoT, etc.</em>) and independent of data types such as (e.g., <em>networks, graphs, logs, spatiotemporal, multimedia, time series, genomic sequences, and streaming data</em>.):</p>
+<ul>
+  <li><strong>Synthetic Data Generation:</strong>
+    <ul>
+      <li>Techniques for high-fidelity, domain-specific synthetic data production.</li>
+      <li>Customisation for anomaly and rare-event detection.</li>
+      <li>Scalability and adaptability to various applications.</li>
+      <li>Ethical aspects of synthetic data.</li>
+    </ul>
+  </li>
+  <li><strong>Challenges in Synthetic Data Use:</strong>
+    <ul>
+      <li>Fidelity and accuracy concerns in real-world applications.</li>
+      <li>Bias detection and mitigation strategies.</li>
+      <li>Validation frameworks to ensure reliability and generalisation.</li>
+    </ul>
+  </li>
+  <li><strong>Dynamic and Temporal Contexts:</strong>
+    <ul>
+      <li>Generating data for streaming environments and micro-batch processing.</li>
+      <li>Incorporating temporal complexity and drift phenomena.</li>
+    </ul>
+  </li>
+  <li><strong>Learning Frameworks:</strong>
+    <ul>
+      <li>Online continual learning with synthetic datasets.</li>
+      <li>Data stream mining with synthetic drifts and anomalies.</li>
+      <li>Supervised and unsupervised learning with synthetic augmentation.</li>
+      <li>Evaluating synthetic data’s impact on model performance and robustness.</li>
+    </ul>
+  </li>
+  <li><strong>Anomaly, Novelty, and Drift Detection:</strong>
+    <ul>
+      <li>Leveraging synthetic data for rare-event detection in evolving datasets.</li>
+      <li>Mitigating challenges associated with concept drift and changing data distributions.</li>
+      <li>Using synthetic data to test and refine anomaly detection frameworks.</li>
+      <li>Simulating anomalies in stream/dynamic environments.</li>
+      <li>Applications of Data Synthesis for AI training (Healthcare, Finance, Transportation, Cybersecurity).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 class="pt-3" id="submissions">Submission and Publication</h3>
+<p>Papers must be written in English and formatted in LaTeX, following the outline of our author kit <a href="Springer LNCS Template">https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/2025/ECML_PKDD_2025_Author_Kit.zip</a>. The kit includes a readme document, a LaTeX file template containing author instructions, and style files. The maximum length of papers is 16 pages (including references) in this format. The program chairs reserve the right to reject any over-length papers without review. Papers that “cheat” the page limit by, including but not limited to, using smaller than specified margins or font sizes will also be treated as over-length. Note that, for example, negative vspaces are also not allowed by the formatting guidelines; further details can be found in the author kit. Up to 10 MB of additional materials (e.g., proofs, audio, images, video, data, or source code) can be uploaded with your submission. If there is an appendix, ensure it is submitted separately from your paper, which must adhere to the 16-page limit. The reviewers and the program committee reserve the right to judge the paper solely on the basis of the 16 pages of the paper; looking at any additional material is at the discretion of the reviewers and is not required.</p>
+
+<p>The submission must also be anonymized; authors must omit their names and affiliations from submissions and avoid obvious identifying statements (e.g., citations to the author’s own prior work should be made in the third person). Finally, the submission must not be currently under review at another publication venue. Failure to adhere to policies will result in desk rejection.</p>
+
+<p>We strongly recommend using the template above and providing paper code and data in an Anonymous GitHub repository <a href="https://anonymous.4open.science/">https://anonymous.4open.science/</a>.</p>
+
+<p>We encourage three types of submissions (reviewers will comment on whether the size is appropriate for each contribution):</p>
+<ul>
+<li><strong>Full papers (up to 16 pages)</strong> should be clearly placed concerning the state-of-the-art and state the proposal's contribution in the application domain, even if presenting preliminary results. In particular, research papers should describe the methodology in detail, experiments should be repeatable, and a comparison with the existing approaches in the literature should be made.</li><br />
+
+<li><strong>Reproducibility/Replicability papers (up to 16 pages)</strong> should repeat prior experiments using the original source code and datasets to show how, why, and when the methods work or not (replicability papers) or should repeat prior experiments, preferably using the original source code in new contexts (e.g., different domains and datasets, different evaluation and metrics) to generalize further and validate or not previous work (reproducibility papers).</li><br />
+
+<li><strong>Case Study papers (up to 16 pages)</strong> should provide in-depth analyses of real-world applications where synthetic data plays a crucial role in addressing challenges related to anomaly detection, streaming environments, and machine learning adaptation. These papers should present practical implementations, industry experiences, or applied research findings, offering insights into the effectiveness, limitations, and lessons learned from deploying synthetic data-driven solutions in dynamic AI systems.</li><br />
+
+<li><strong>Short or position papers (up to 10 pages)</strong> should introduce new points of view on the workshop topics or summarize a group's experience in the field. Practice and experience reports must detail real-world scenarios in which drifts are managed.</li>
+</ul>
+
+<p><strong>Generative AI Usage Policy</strong>. Generative AI models, including Chat-GPT, BARD, LLaMA, or similar LLMs, do not satisfy the criteria for authorship of papers accepted in the workshop. If authors use an LLM in any part of the paper-writing process, they assume full responsibility for all content, including checking for plagiarism and correctness of all text.</p>
+
+<p><strong>Originality and Concurrent Submissions</strong>. Submissions must present original work—this means that papers under review at or published/accepted to any peer-reviewed conference/journal with published proceedings cannot be submitted. Submissions that have been previously presented orally, as posters or abstracts-only, or in non-archival venues with no formal proceedings, including workshops or PhD symposia without proceedings, are allowed. Authors may submit anonymized work that is already available as a preprint (e.g., on arXiv or SSRN) without citing it. The ACM has a strict <a href="https://www.acm.org/publications/policies/plagiarism-overview">policy against plagiarism, misrepresentation, and falsification</a> that applies to all publications.</p>
+
+<p><strong>Submissions that do not follow these guidelines or do not view or print properly, will be desk-rejected.</strong></p>
+
+<p><strong>Post-Proceedings</strong>. The accepted papers and the material generated during the meeting will be available on the workshop website. As per ECML-PKDD’s guidelines, The Workshops and Tutorials will be included in a joint Post-Workshop proceeding published by Springer Communications in Computer and Information Science (indexed on Google Scholar, DBLP, and Scopus), in 1-2 volumes, organized by focused scope. <strong>Papers authors will have the faculty opt-in or opt-out.</strong></p>
+
+<h3 class="pt-3" id="registration">Registration and Presentation Policy</h3>
+<p>Each accepted paper must have at least one author registered for the full conference by the early registration deadline and must be presented at the workshop even if they opt-out of the post-proceedings. We expect the authors, the program committee, and the organizing committee to adhere to the <a href="https://ecmlpkdd.org/code-of-conduct/">ECML-PKDD Code of Conduct</a>.</p>
+
+<h3 class="pt-3" id="contacts">Contacts</h3>
+
+<p>For general inquiries about the workshop, please email <a href="mailto:marco.piangerelli@unicam.it">marco.piangerelli@unicam.it</a>, <a href="mailto:ylenia.rotalinti@mhra.gov.uk">ylenia.rotalinti@mhra.gov.uk</a>, <a href="mailto:heitor.gomes@vuw.ac.nz">heitor.gomes@vuw.ac.nz</a>, <a href="mailto:maroua.bahri@lip6.fr">maroua.bahri@lip6.fr</a>, <a href="mailto:yihe@wm.edu">yihe@wm.edu</a>, <a href="mailto:bardh.prenkaj@tum.de">bardh.prenkaj@tum.de</a>, and <a href="mailto:albert@albertbifet.com">albert@albertbifet.com</a></p>
+
+
+
+
+            <div class="footer">
+                <p>
+                    © Copyright 2019-2025 - Artificial Intelligence and Information Mining - All rights reserved.
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160388153-1"></script>
+	    <script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
+
+	        gtag('config', 'UA-160388153-1');
+	    </script>
+
+       
+    </body>
+</html>
