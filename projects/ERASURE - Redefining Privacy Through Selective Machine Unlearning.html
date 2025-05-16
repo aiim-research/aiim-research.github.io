@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artificial Intelligence and Information Mining - Collective: ERASURE - Redefining Privacy Through Selective Machine Unlearning</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/be7d5ac8d8.js" crossorigin="anonymous"></script>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">  
+        <!-- our custom css -->
+        <link rel="stylesheet" href="/css/group.css">
+        <!-- site.canonical enabled -->
+        <link rel="canonical" href="https://aiimlab.org/projects/ERASURE%20-%20Redefining%20Privacy%20Through%20Selective%20Machine%20Unlearning" /> 
+        
+    </head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVN2FKZRV"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-HRVN2FKZRV');
+     </script>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="sticky-top header d-flex 
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/AIIM-Logo.svg"
+                         srcset="/img/AIIM-Logo.svg 2x"
+                         alt="AIIM - Artificial Intelligence and Information Mining research group." id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/news.html">
+                                News
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/blogs.html">
+                                Researches
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="/research.html">
+                                Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/events.html">
+                                Events
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/code.html">
+                                Resources
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+                
+                <img src="https://raw.githubusercontent.com/aiim-research/ERASURE/refs/heads/main/ERASURE_LOGO.png"
+                     alt="ERASURE - Redefining Privacy Through Selective Machine Unlearning"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+                
+            
+
+            
+                <h2 class="pt-3">ERASURE - Redefining Privacy Through Selective Machine Unlearning</h2>
+            
+            
+
+            <h3 class="pt-3"><a href="https://github.com/aiim-research/ERASURE" target="_blank">The ERASURE Machine Unlearning framework is available here.</a></h3>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+  <li><a href="#general-information">General Information</a></li>
+  <li><a href="#team-information">Team Information</a></li>
+  <li><a href="#first-steps-with-erasure">First steps with ERASURE</a></li>
+  <li><a href="#resources-provided-with-the-framework">Resources Provided with the Framework</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+
+<h2 id="general-information">General Information</h2>
+<p>The challenge of ensuring privacy and compliance in machine learning models, such as those used in recommendation systems, healthcare, and financial forecasting, is exacerbated by the difficulty of removing specific data from trained models. Machine Unlearning (MU) techniques aim to address this by providing methods to selectively erase data from models, enhancing privacy, trustworthiness, and adaptability. However, the current landscape of MU research is fragmented, with inconsistencies in definitions, methodologies, datasets, and evaluation protocols.</p>
+
+<p>To tackle these challenges, we introduce ERASURE, a research framework designed to facilitate the research process of machine unlearning, focusing on efficiently and securely removing specific data or knowledge from machine learning models. This framework addresses privacy and compliance concerns by providing a way to systematically evaluate algorithms and methodologies that allow for the selective “erasure” of data, ensuring that the information has no residual influence on model predictions once removed.</p>
+
+<p>ERASURE offers fully extensible built-in components, allowing users to define custom unlearning techniques, integrate custom and synthetic datasets, implement tailored evaluation metrics, and meld seamlessly with state-of-the-art machine learning models.
+Additionally, it provides a flexible environment for defining and running unlearning experiments, enabling researchers to evaluate the effectiveness and efficiency of various unlearning methods systematically.</p>
+
+<h2 id="team-information">Team Information:</h2>
+<ul>
+  <li>Prof. Giovanni Stilo, PhD. [project leader/research advisor]</li>
+  <li>Flavio Giobergia, PhD. [research advisor]</li>
+  <li>Andrea D’Angelo [investigator]</li>
+  <li>Claudio Savelli [investigator]</li>
+  <li>Gabriele Tagliente [pivotal contributor]</li>
+</ul>
+
+<h2 id="first-steps-with-erasure">First steps with ERASURE</h2>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">foo@bar:~$</span><span class="w"> </span>python main.py configs/example.jsonc
+</code></pre></div></div>
+
+<h2 id="resources-provided-with-the-framework">Resources Provided with the Framework</h2>
+
+<h3 id="datasets">Datasets:</h3>
+
+<p>You can quickly implement any Dataset you like in ERASURE. At the moment, ERASURE has built-in DataSource classes for the following sources:</p>
+
+<p><img src="https://img.shields.io/badge/Datasource-TorchVision-blue" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Datasource-Hugging%20Face-blue" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Datasource-UCI%20Repository-blue" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Datasource-PyTorch%20Geometric-blue" alt="Static Badge" /></p>
+
+<h3 id="unlearners">Unlearners:</h3>
+
+<p>Developing your own custom Unlearner in ERASURE is easy.</p>
+
+<p>However, benchmarking your Unlearner in an unified environment is just as important. Right now, ERASURE comes built-in with the following Unlearners:</p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-Gold%20Model-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-Finetuning-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-Successive%20Random%20Labels-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-cfk-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-euk-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-NegGrad-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-Advanced%20NegGrad-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-UNSIR-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-Bad%20Teaching-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-SCRUB-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-Fisher%20Forgetting-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-Selective%20Synaptic%20Dampening-red" alt="Static Badge" /></p>
+
+<p><img src="https://img.shields.io/badge/Unlearner-SalUn-red" alt="Static Badge" /></p>
+
+<h2 id="references">References</h2>
+
+<!--  taken with Harvard reference style -->
+
+<ol>
+  <li>
+    <p><strong>cfk, euk</strong>: Shashwat Goel, Ameya Prabhu, Amartya Sanyal, Ser-Nam Lim, Philip Torr, and Ponnurangam Kumaraguru. 2022. Towards adversarial evaluations for inexact machine unlearning. arXiv preprint arXiv:2201.06640 (2022).</p>
+  </li>
+  <li>
+    <p><strong>NegGrad, Fisher Forgetting</strong>: Golatkar, A., Achille, A. and Soatto, S., 2019. Eternal sunshine of the spotless net: Selective forgetting in deep networks. In 2020 IEEE. In CVF Conference on Computer Vision and Pattern Recognition (CVPR) (pp. 9301-9309).</p>
+  </li>
+  <li>
+    <p><strong>Advanced NegGrad</strong>: Choi, D. and Na, D., 2023. Towards machine unlearning benchmarks: Forgetting the personal identities in facial recognition systems. arXiv preprint arXiv:2311.02240.</p>
+  </li>
+  <li>
+    <p><strong>UNSIR</strong>: Tarun, A.K., Chundawat, V.S., Mandal, M. and Kankanhalli, M., 2023. Fast yet effective machine unlearning. IEEE Transactions on Neural Networks and Learning Systems.</p>
+  </li>
+  <li>
+    <p><strong>Bad Teaching</strong>: Chundawat, V.S., Tarun, A.K., Mandal, M. and Kankanhalli, M., 2023, June. Can bad teaching induce forgetting? unlearning in deep networks using an incompetent teacher. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 37, No. 6, pp. 7210-7217).</p>
+  </li>
+  <li>
+    <p><strong>SCRUB</strong>: Kurmanji, M., Triantafillou, P., Hayes, J. and Triantafillou, E., 2024. Towards unbounded machine unlearning. Advances in neural information processing systems, 36.</p>
+  </li>
+  <li>
+    <p><strong>Selective Synaptic Dampening</strong>: Foster, J., Schoepf, S. and Brintrup, A., 2024, March. Fast machine unlearning without retraining through selective synaptic dampening. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 38, No. 11, pp. 12043-12051).</p>
+  </li>
+  <li>
+    <p><strong>SalUn</strong>: Fan, C., Liu, J., Zhang, Y., Wong, E., Wei, D. and Liu, S. (2024) ‘SalUn: Empowering machine unlearning via gradient-based weight saliency in both image classification and generation’, arXiv preprint, arXiv:2310.12508. Available at: https://arxiv.org/abs/2310.12508.</p>
+  </li>
+</ol>
+
+
+<h3> People </h3>
+<section class="people project-people">
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://dangeloandrea14.github.io/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Andrea D'Angelo"
+             title="Andrea D'Angelo"
+             src="/img/people/adangelo.png" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://dangeloandrea14.github.io/"> Andrea D'Angelo </a>
+     </h6>
+            
+                <div class="bio">University of L'Aquila</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://github.com/ClaudioSavelli"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Claudio Savelli"
+             title="Claudio Savelli"
+             src="/img/people/csavelli1.jpg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://github.com/ClaudioSavelli"> Claudio Savelli </a>
+     </h6>
+            
+                <div class="bio">Polytechnic of Turin</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://f.giobergia.com/"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Dr. Flavio Giobergia"
+             title="Dr. Flavio Giobergia"
+             src="https://smartdata.polito.it/wp-content/uploads/2019/07/flavio_giobergia.png" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://f.giobergia.com/"> Dr. Flavio Giobergia </a>
+     </h6>
+            
+                <div class="bio">Polytechnic of Turin</div>
+            
+        </div>
+    </div>
+
+
+    
+        
+        
+
+
+
+
+
+
+
+    <div class="person person-with-image row align-items-center">
+        <div class="col-auto">
+            
+
+
+
+
+
+
+
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=uTyaicMAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+       style="text-decoration: none">
+        
+        <img class="rounded-circle profile"
+             alt="Prof. Giovanni Stilo"
+             title="Prof. Giovanni Stilo"
+             src="/img/people/Stilo.jpeg" />
+    
+    </a>
+
+
+        </div>
+        <div class="col pl-0">
+            <h6 class="person-name"> 
+        <a target="_blank" href="https://scholar.google.com/citations?hl=en&amp;user=uTyaicMAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"> Prof. Giovanni Stilo </a>
+     </h6>
+            
+                <div class="bio">University of L'Aquila</div>
+            
+        </div>
+    </div>
+
+
+    
+</section>
+
+
+
+            <div class="footer">
+                <p>
+                    © Copyright 2019-2025 - Artificial Intelligence and Information Mining - All rights reserved.
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160388153-1"></script>
+	    <script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
+
+	        gtag('config', 'UA-160388153-1');
+	    </script>
+
+       
+    </body>
+</html>
