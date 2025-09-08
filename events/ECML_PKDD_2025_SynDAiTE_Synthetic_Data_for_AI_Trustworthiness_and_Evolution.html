@@ -742,9 +742,15 @@ All submissions must be done via Microsoft CMT <a href="https://cmt3.research.mi
   <li><a href="#aims_scope">Aims and Scope</a></li>
   <li><a href="#dates">Important Dates</a></li>
   <li><a href="#topics">Topics of Interests</a></li>
-  <li><a href="#submissions">Submission and Publication</a></li>
+  <li><a href="#speakers">Invited Talks</a>
+    <ul>
+      <li><a href="#tucker">Allan Tucker - 14:10</a></li>
+      <li><a href="#penedones">Hugo Penedones - TBD</a></li>
+    </ul>
+  </li>
+  <li><a href="#program">Program at a Glance</a></li>
   <li><a href="#registration">Registration and Presentation Policy</a></li>
-  <li><a href="#contacts">Contacts</a></li>
+  <li><a href="#acknowledgement">Acknowledgment</a></li>
 </ul>
 
 <h3 class="pt-3" id="aims_scope">Aims and Scope</h3>
@@ -759,21 +765,6 @@ All submissions must be done via Microsoft CMT <a href="https://cmt3.research.mi
 </ul>
 
 <p>All deadlines are 11:59 pm, AoE.</p>
-
-<h3 class="pt-3" id="program">Program at a Glance (room #120):</h3>
-
-<ul>
-  <li><b>14:00</b> - Welcome and Opening Remarks</li>
-  <li><b>14:10</b> - 1st Invited Talk</li>
-  <li><b>TBD</b> - 1st Oral Presentation Session</li>
-  <li><b>TBD</b> - 1st Poster Session</li>
-  <li><b>TBD</b> - Coffee Break</li>
-  <li><b>TBD</b> - 2nd Invited Talk</li>ù
-  <li><b>TBD</b> - 2nd Oral Presentation Session</li>
-  <li><b>TBD</b> - 2nd Poster Session</li>
-  <li><b>18:00</b> - Best Paper Award Announcement</li>
-  <li><b>18:00</b> - Concluding remarks</li>
-</ul>
 
 <h3 class="pt-3" id="topics">Topics</h3>
 <p>SynDAiTE welcomes contributions on the use of synthetic data on all topics below, independent of the application domain (e.g., <em>health, finance, business, basic sciences, construction computational advertising, IoT, etc.</em>) and of data types (e.g., <em>networks, graphs, logs, spatiotemporal, multimedia, time series, genomic sequences, and streaming data</em>.):</p>
@@ -834,14 +825,14 @@ All submissions must be done via Microsoft CMT <a href="https://cmt3.research.mi
 
 <h3 class="pt-3" id="speakers">Invited Talks:</h3>
 
-<h4 class="pt-3" id="gomes"><i>Lessons from Synthetic Health Data Generation: Fidelity, Privacy, Augmentation &amp; Time</i> - Allan Tucker
+<h4 class="pt-3" id="tucker"><i>Lessons from Synthetic Health Data Generation: Fidelity, Privacy, Augmentation &amp; Time</i> - Allan Tucker
  - TBD</h4>
 <table cellspacing="50">
   <tr>
       <td>
           <img src="./imgs/peoples/Tucker.jpg" alt="Professor Allan Tucker" width="160" />
       </td>
-      <td>
+      <td style="padding-left:20px;">
           <h5 class="pt-3">Abstract:</h5>
           <p> Primary healthcare care data offers huge value in modelling disease and illness. However, this data holds extremely private information about individuals and privacy concerns continue to limit the wide-spread use of such data, both by public research institutions and by the private health-tech sector. One possible solution is the use of synthetic data which mimics the underlying correlational structure and distributions of real data but avoids many of the privacy concerns. Brunel University London has been working in a long-term collaboration with the Medicine and Health Regulatory Authority in the UK to construct a high-fidelity synthetic data generator using probabilistic models with complex underlying latent variable structures. This work has led to multiple releases of synthetic data on a number of diseases including covid and cardiovascular disease, which are available for state-of-the-art AI research. Two major issues that have arisen from our synthetic data work are issues with bias, even when working with comprehensive national data, and with concept drift where subsequent batches of data move away from current models and what impact this may have on regulation. In this talk I will discuss some of the key results of the collaboration: on our experiences of synthetic data generation, on the detection of bias and how to better represent the true underlying UK population, and how to handle concept drift when building models of healthcare data that evolves over time.
           </p>
@@ -852,14 +843,14 @@ All submissions must be done via Microsoft CMT <a href="https://cmt3.research.mi
   </tr>
 </table>
 
-<h4 class="pt-3" id="gomes"><i>Simulation as a Data Engine for Physical AI</i> - Hugo Penedones
+<h4 class="pt-3" id="penedones"><i>Simulation as a Data Engine for Physical AI</i> - Hugo Penedones
  - TBD</h4>
 <table cellspacing="50">
   <tr>
       <td>
           <img src="./imgs/peoples/Penedones.jpg" alt="Hugo Penedones" width="160" />
       </td>
-      <td>
+      <td style="padding-left:20px;">
           <h5 class="pt-3">Abstract:</h5>
           <p> AI is having a remarkable impact on the physical sciences and engineering. From AI-driven material discovery and drug design to robotics and weather forecasting, the progress of Physical AI depends on high-quality data. This talk will show how we can leverage the mature field of numerical simulation to generate synthetic data for training machine learning models. Examples will be demonstrated using the Inductiva cloud HPC platform and its minimalist Python SDK, which is designed to be intuitive for the machine learning community.
           </p>
@@ -870,33 +861,54 @@ All submissions must be done via Microsoft CMT <a href="https://cmt3.research.mi
   </tr>
 </table>
 
-<h3 class="pt-3" id="submissions">Submission and Publication</h3>
-<p>Papers must be written in English and formatted in LaTeX, following the outline of our author kit <a href="https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/2025/ECML_PKDD_2025_Author_Kit.zip">https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/2025/ECML_PKDD_2025_Author_Kit.zip</a>. The kit includes a readme document, a LaTeX file template containing author instructions, and style files. The maximum length of papers is 16 pages (including references) besides for short papers where the limit is 10 in this format. The program chairs reserve the right to reject any over-length papers without review. Papers that “cheat” the page limit by, including but not limited to, using smaller than specified margins or font sizes will also be treated as over-length. Note that, for example, negative vspaces are also not allowed by the formatting guidelines; further details can be found in the author kit. Up to 10 MB of additional materials (e.g., proofs, audio, images, video, data, or source code) can be uploaded with your submission. If there is an appendix, ensure it is submitted separately from your paper, which combined with the main matter must adhere to the page limit. The reviewers and the program committee reserve the right to judge the paper solely on the basis of the 16 pages of the paper; looking at any additional material is at the discretion of the reviewers and is not required.</p>
+<h3 class="pt-3" id="program">Program at a Glance (room TBD):</h3>
 
-<p>The submission must also be anonymized; authors must omit their names and affiliations from submissions and avoid obvious identifying statements (e.g., citations to the author’s own prior work should be made in the third person). Finally, the submission must not be currently under review at another publication venue. Failure to adhere to policies will result in desk rejection.</p>
-
-<p>We strongly recommend using the template above and providing paper code and data in an Anonymous GitHub repository <a href="https://anonymous.4open.science/">https://anonymous.4open.science/</a>.</p>
-
-<p>We welcome four types of submissions, each with specific expectations regarding length and content. Reviewers will assess whether the size is appropriate for the type of contribution. Accepted papers may be selected for oral or poster presentations; short papers will be presented as posters only.</p>
 <ul>
-<li><strong>Full papers (up to 16 pages)</strong> should be clearly placed concerning the state-of-the-art and state the proposal's contribution in the application domain, even if presenting preliminary results. In particular, research papers should describe the methodology in detail, experiments should be repeatable, and a comparison with the existing approaches in the literature should be made.</li><br />
-
-<li><strong>Reproducibility/Replicability papers (up to 16 pages)</strong> should repeat prior experiments using the original source code and datasets to show how, why, and when the methods work or not (replicability papers) or should repeat prior experiments, preferably using the original source code in new contexts (e.g., different domains and datasets, different evaluation and metrics) to generalize further and validate or not previous work (reproducibility papers).</li><br />
-
-<li><strong>Case Study papers (up to 16 pages)</strong> should provide in-depth analyses of real-world applications where synthetic data plays a crucial role in addressing challenges related to anomaly detection, streaming environments, and machine learning adaptation. These papers should present practical implementations, industry experiences, or applied research findings, offering insights into the effectiveness, limitations, and lessons learned from deploying synthetic data-driven solutions in dynamic AI systems.</li><br />
-
-<li><strong>Short or position papers (up to 10 pages)</strong> should introduce new points of view on the workshop topics or summarize a group's experience in the field.</li>
+  <li><b>14:00</b> - Welcome and Opening Remarks</li>
+  <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a> - Allan Tucker - <i>Lessons from Synthetic Health Data Generation: Fidelity, Privacy, Augmentation &amp; Time</i></li>
+  <li><b>14:10</b> - Oral Presentations - Part A</li>
+  <ul>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Joanna Komorniczak et al. - <i>Synthetic Non-stationary Data Streams for Recognition of the Unknown</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Reza Paki et al. - <i>cPB: Continuous Piggyback for Streaming Continual Learning with Temporal Dependence</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Jonas van Elburg et al. - <i>Can we Evaluate RAGs with Synthetic Data?</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Miguel Aspin et al. - <i>DriftMoE: Streaming Mixture of Experts for Adaptive Learning under Concept Drift</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Benoît Ronval et al. - <i>TAGAL: Tabular Data Generation using Agentic LLM Methods</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Ivo Façoco et al. - <i>Adapting Stable Diffusion Models for Domain-Specific Medical Imaging: A Case Study in Synthetic Retinal Fundus Image Generation</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Melle Mendikowski et al. - <i>ReL8r: A New Benchmarking Framework for Tabular Data Generators Using Constructed Relationships</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Ghanem Bahrini et al. - <i>Generating Censored Data with Controlled and Real-World-Like Properties</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Ghadeer Alsharif et al. - <i>SMLT: A Synthetic Dataset for Stealthy Manipulation of Energy Market via False Data Injection Attacks (online)</i></li>
+  </ul>
+  <li><b>TBD</b> - Poster Session - Part A</li>
+  <li><b>TBD</b> - Coffee Break</li>
+  <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a> - Hugo Penedones - <i>Simulation as a Data Engine for Physical AI</i></li>
+  <li><b>14:10</b> - Oral Presentations - Part B</li>
+  <ul>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Mayank Nagda et al. - <i>Style Transfer for High-Fidelity Time Series Augmentation</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Mahmoud Ibrahim et al. - <i>Enabling Granular Subgroup Level Model Evaluations by Generating Synthetic Medical Time Series</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Pedro Sousa et al. - <i>Evaluating Predictive Maintenance Models in the Presence of Reflexivity: A Case Study in Pharmaceutical Manufacturing</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Lorenzo Peracchio et al. - <i>Mitigating Dataset Shift via Smart Augmentation with Conditional Diffusion Models</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - João Vitorino et al. - <i>SPATA: Systematic Pattern Analysis for Detailed and Transparent Data Cards</i></li>
+      <li><b>14:10</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Iqra Nosheen et al. - <i>Enhancing Synthetic Data Realism for Autonomous Vehicles Using Segmentation-Guided ControlNet</i></li>
+  </ul>
+  <li><b>TBD</b> - Poster Session - Part B</li>
+  <li><b>17:50</b> - Best Paper Awards Announcement</li>
+  <li><b>17:55</b> - Concluding remarks</li>
 </ul>
-
-<p><strong>Generative AI Usage Policy</strong>. Generative AI models, including Chat-GPT, BARD, LLaMA, or similar LLMs, do not satisfy the criteria for authorship of papers accepted in the workshop. If authors use an LLM in any part of the paper-writing process, they assume full responsibility for all content, including checking for plagiarism and correctness of all text.</p>
-
-<p><strong>Originality and Concurrent Submissions</strong>. Papers submitted should report original work. Papers that are identical or substantially similar to papers that have been published or submitted elsewhere may not be submitted to ECML PKDD, and the organizers will reject such papers without review. Authors are also NOT allowed to submit or have submitted their papers elsewhere during the review period. Submitting unpublished technical reports available online (such as on arXiv), or papers presented in workshops without formal proceedings, is allowed, but such reports or presentations should not be cited to preserve anonymity.</p>
-
-<p><strong>Submissions that do not follow these guidelines or do not view or print properly, will be desk-rejected.</strong></p>
-
-<p><strong>Post-Proceedings</strong>. The accepted papers and the material generated during the meeting will be available on the workshop website. As per ECML-PKDD’s guidelines, The Workshops and Tutorials will be included in a joint Post-Workshop proceeding published by Springer Communications in Computer and Information Science (indexed on Google Scholar, DBLP, and Scopus), in 1-2 volumes, organized by focused scope. <strong>Papers authors will have the faculty opt-in or opt-out.</strong></p>
-
-<p><strong>Where to submit</strong>. All submissions must be done via Microsoft CMT <a href="https://cmt3.research.microsoft.com/ECMLPKDDWorkshopTrack2025/Track/26/Submission/Create">here</a>.</p>
 
 <h3 class="pt-3" id="registration">Registration and Presentation Policy</h3>
 <p>Each accepted paper must have at least one author registered for the full conference by the early registration deadline and must be presented at the workshop even if they opt-out of the post-proceedings. We expect the authors, the program committee, and the organizing committee to adhere to the <a href="https://ecmlpkdd.org/code-of-conduct/">ECML-PKDD Code of Conduct</a>.</p>
@@ -909,14 +921,8 @@ All submissions must be done via Microsoft CMT <a href="https://cmt3.research.mi
      <img style="width:  33%;" src="/events/imgs/vici.png" alt="Vici &amp; C. SpA is an Italian company that has been operating since 1977 in the industrial automation sector and plans, produces and distributes electrical circuit boards and machines" /></a>
      </p>
 </figure>
-<figure>
-  <p align="center">
-    <a href="https://www.vicivision.com/it/">
-     <img style="width:  33%;" src="/events/imgs/vicivision.png" alt="Vici &amp; C. SpA is an Italian company that has been operating since 1977 in the industrial automation sector and plans, produces and distributes electrical circuit boards and machines" /></a>
-     </p>
-</figure>
 </div>
-<p><em>“The Synthetic Data for AI Trustworthiness and Evolution (SynDAiTE 2025)” workshop has been supported by VICI &amp; C and VICI Vision</em></p>
+<p><em>“The Synthetic Data for AI Trustworthiness and Evolution (SynDAiTE 2025)” workshop has been supported by VICI &amp; C</em></p>
 
 <h3 class="pt-3" id="contacts">Contacts</h3>
 
