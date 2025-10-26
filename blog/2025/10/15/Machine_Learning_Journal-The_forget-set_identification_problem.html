@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artificial Intelligence and Information Mining - Collective: When Machines Need to Forget - The Story Behind the Forget-Set Identification Problem</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/be7d5ac8d8.js" crossorigin="anonymous"></script>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">  
+        <!-- our custom css -->
+        <link rel="stylesheet" href="/css/group.css">
+        <!-- site.canonical enabled -->
+        <link rel="canonical" href="https://aiimlab.org/blog/2025/10/15/Machine_Learning_Journal-The_forget-set_identification_problem" /> 
+        
+    </head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVN2FKZRV"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-HRVN2FKZRV');
+     </script>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="sticky-top header d-flex 
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/AIIM-Logo.svg"
+                         srcset="/img/AIIM-Logo.svg 2x"
+                         alt="AIIM - Artificial Intelligence and Information Mining research group." id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/news.html">
+                                News
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="/blogs.html">
+                                Researches
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/research.html">
+                                Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/events.html">
+                                Events
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/code.html">
+                                Resources
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+                
+                <img src="/img/projects/ForSId.png"
+                     alt="When Machines Need to Forget - The Story Behind the Forget-Set Identification Problem"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+                
+            
+
+            
+                <h2 class="pt-3">When Machines Need to Forget - The Story Behind the Forget-Set Identification Problem</h2>
+            
+            
+
+            <p class="date">October 15, 2025</p>
+
+<div class="post">
+<p><strong>Story based on the “The forget-set identification problem” which is available at</strong>
+<a href="https://link.springer.com/article/10.1007/s10994-025-06897-9">Journal of Machine Learning - Springer</a></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="err">@</span><span class="n">Article</span><span class="p">{</span><span class="n">DAngelo_Gullo_Stilo_ForSId_2025</span><span class="p">,</span>
+<span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Andrea</span> <span class="n">D</span><span class="err">’</span><span class="n">Angelo</span> <span class="n">and</span> <span class="n">Francesco</span> <span class="n">Gullo</span> <span class="n">and</span> <span class="n">Giovanni</span> <span class="n">Stilo</span><span class="p">},</span>
+<span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">The</span> <span class="n">forget</span><span class="o">-</span><span class="n">set</span> <span class="n">identification</span> <span class="n">problem</span><span class="p">},</span>
+<span class="n">journal</span> <span class="o">=</span> <span class="p">{</span><span class="n">Machine</span> <span class="n">Learning</span><span class="p">},</span>
+<span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2025</span><span class="p">},</span>
+<span class="n">volume</span> <span class="o">=</span> <span class="p">{</span><span class="mi">114</span><span class="p">},</span>
+<span class="n">number</span> <span class="o">=</span> <span class="p">{</span><span class="mi">11</span><span class="p">},</span>
+<span class="n">pages</span> <span class="o">=</span> <span class="p">{</span><span class="mi">247</span><span class="p">},</span>
+<span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.1007</span><span class="o">/</span><span class="n">s10994</span><span class="o">-</span><span class="mo">025</span><span class="o">-</span><span class="mo">06</span><span class="mi">897</span><span class="o">-</span><span class="mi">9</span><span class="p">},</span>
+<span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="o">:</span><span class="c1">//doi.org/10.1007/s10994-025-06897-9},</span>
+<span class="n">issn</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1573</span><span class="o">-</span><span class="mo">0565</span><span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br />
+<br /></p>
+<figure>
+  <p align="center">
+    
+     <img style="width:  100%;" src="/img/projects/mu_workflow_2.png" alt="Qualitative illustration of the counterfactuals produced by RSGG-CE" />
+     <figcaption>  
+          <p align="center"><strong>Figure 1:  Overview of the overall Machine Unlearning (MU) process. Directly or indirectly (e.g., passing through some authority), users exercise their right to be forgotten (Step 1). To this end, in Step 2, they provide unwanted evidence that is required to
+be unlearned through a removal request to machine-learning model’s owner. Technically, in Step 3, the organization (that is supposed to hold the wanted evidence to be maintained too) identifies the forget set, as a subset of the upstream training set, and,
+optionally, a retain set. In Step 4, a MU technique is applied to the original model
+so as to produce the desired one where user’s unwanted evidence has been unlearned.
+So far, in the MU landscape, Steps 1–3 have been treated as a unique one, i.e., it has
+been assumed that users provide their unwanted evidence directly in the form of a
+forget set. This is unrealistic in many scenarios. The Forget-Set Identification
+(ForSId) problem we introduce in this work is aimed at overcoming precisely such a
+limitation, providing a principled way for identifying a forget set from more abstract
+forms of unwanted evidence (Step 3).
+        </strong></p>  
+     </figcaption> 
+     </p>
+ </figure>
+<p><br /></p>
+
+<p><br />
+Artificial intelligence systems have a remarkable talent for remembering. Every image, word, or example we feed them during training leaves an imprint in their digital memory. But what happens when we ask them to forget something?</p>
+
+<p>This is not a philosophical question. In recent years, a new field called Machine Unlearning has emerged to answer precisely that: how to make machine-learning models erase the influence of specific data once it’s no longer supposed to be there. The motivations range from privacy — as in the Right to be Forgotten granted by regulations such as the European GDPR — to fairness and ethics, where we might want to remove biased or harmful content that should never have been part of the training material in the first place.</p>
+
+<p>At first glance, unlearning might sound simple. Just delete the unwanted data and retrain the model. But in practice, retraining large models from scratch is often infeasible — it’s expensive, slow, and environmentally costly. Hence, researchers have been searching for smarter methods that can surgically “unlearn” without starting over. Yet there’s a deeper and subtler problem hiding underneath: before we can forget something, we need to know what exactly to forget.</p>
+
+<p><strong>The Missing Step</strong></p>
+
+<p>Most current Machine Unlearning methods assume that the user, or the organization managing the model, already knows which specific training samples should be removed — what researchers call the forget set. But this assumption rarely holds in real life. Users who ask a company to remove their personal data don’t have access to the model’s original training set. They can only describe what they want erased — for instance, by providing new examples that show the kind of information they wish the model to forget.</p>
+
+<p>This gap between what users can provide and what unlearning methods require has been largely ignored in the literature. Until now.</p>
+
+<p>In their 2025 paper published in Machine Learning, Andrea D’Angelo, Francesco Gullo, and Giovanni Stilo introduce a new problem that sits one step before unlearning itself: the Forget-Set Identification problem, or ForSId for short.
+The goal of ForSId is deceptively simple: given a trained machine-learning model, and some examples of what we don’t want it to know anymore, can we figure out which parts of the training data were responsible for teaching it that unwanted behavior in the first place?</p>
+
+<p><strong>Learning to Unlearn</strong></p>
+
+<p>The ForSId problem is like detective work for machine learning. Suppose you have a trained image classifier, and someone requests that it forget all photos containing a particular person. The user cannot provide the original training data — perhaps because it’s proprietary or anonymized — but they can submit a few images of themselves as “unwanted evidence.” The system’s job is to trace back through the model’s memory and infer which training examples most likely contributed to recognizing that person’s face. Those examples, once identified, become the forget set. Removing them (or their influence) from the model is what true unlearning requires.</p>
+
+<p>The researchers define ForSId formally as an optimization problem: find the smallest subset of training samples whose removal makes the model change its predictions on the “unwanted” examples while keeping its behavior as stable as possible on “wanted” examples — the data we still care about.
+This balance is delicate. Make the forget set too small, and the model won’t truly unlearn. Make it too large, and the model’s useful knowledge will collapse. The art lies in finding the sweet spot where the unwanted evidence is erased but the rest of the model remains intact.</p>
+
+<p><strong>From Theory to Algorithm</strong></p>
+
+<p>Under the hood, the authors show that ForSId is NP-hard — meaning that, like many combinatorial puzzles, it cannot be solved efficiently in all cases. To navigate this difficulty, they draw a fascinating connection to a classic problem in computer science known as the Red-Blue Set Cover. In this analogy, the “blue” elements represent the unwanted evidence we want to cover and eliminate, while the “red” ones symbolize the wanted evidence we must protect.</p>
+
+<p>Building on this idea, they design an algorithm called ForSId-via-RBSC, which cleverly estimates how much each training sample influences the model’s predictions and selects which ones to forget based on their impact. This approach avoids the need to retrain the model for every possible subset — something that would be computationally impossible — by using statistical influence measures as proxies.</p>
+
+<p><strong>Putting It to the Test</strong></p>
+
+<p>To test their method, the team ran extensive experiments on well-known datasets such as CIFAR-10, CIFAR-20, CIFAR-100, and the Wine Quality dataset. These datasets range from image classification to tabular prediction tasks, offering a broad view of the algorithm’s performance.</p>
+
+<p>The results were striking. Across all datasets and experimental conditions, the proposed ForSId-via-RBSC consistently outperformed several baseline strategies. It achieved high unlearning efficacy (meaning it successfully erased unwanted knowledge) while preserving the model’s accuracy on data it was meant to retain. Even when the line between “wanted” and “unwanted” examples was blurred — the hardest case — ForSId proved robust and stable.</p>
+
+<p>In the simplest terms, their algorithm could teach models to forget effectively, without forgetting too much.</p>
+
+<p><strong>Why This Matters</strong></p>
+
+<p>Machine learning is moving out of the lab and into every corner of society — from recommendation systems and chatbots to hiring tools and autonomous vehicles. As these systems become more pervasive, the ability to make them forget specific information responsibly becomes a cornerstone of trustworthy AI.</p>
+
+<p>ForSId is an essential step in that direction. It makes unlearning practical in cases where the precise training data is unknown or inaccessible — which is to say, in most real-world situations. It also opens new possibilities for ethical and regulatory compliance, allowing AI developers to respond to deletion requests or remove biased behavior without rebuilding their models from scratch.</p>
+
+<p><strong>A Small but Vital Step Toward Conscious Machines</strong></p>
+
+<p>The contribution of D’Angelo, Gullo, and Stilo is not merely technical. It reframes what forgetting means for artificial intelligence. Forgetting, in this context, is not about erasing memory blindly but about making informed choices about what to unlearn — choices guided by evidence, ethics, and responsibility.</p>
+
+<p>In human terms, that’s the difference between amnesia and deliberate reflection. In AI terms, it’s the foundation for systems that can evolve without perpetuating their past mistakes.</p>
+
+
+</div>
+<div>
+    <p>
+        <span class="fa fa-fw fa-history"></span>
+        <a href="/blogs.html">Back to all posts &hellip;</a>
+    </p>
+</div>
+
+            <div class="footer">
+                <p>
+                    © Copyright 2019-2025 - Artificial Intelligence and Information Mining - All rights reserved.
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160388153-1"></script>
+	    <script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
+
+	        gtag('config', 'UA-160388153-1');
+	    </script>
+
+       
+    </body>
+</html>
