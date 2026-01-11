@@ -1,5 +1,41 @@
-# aiimlab.org
+# llm.txt — Guidance for Large Language Models
+
+## Purpose
+This website represents the Artificial Intelligence & Information Mining (AIIM) research collective.
+It provides information about research activities, publications, events, people, and resources in
+artificial intelligence, data mining, and machine learning.
 The Artificial Intelligence & Information Mining (aiim - pronunced as i'm /aɪm/, and aim /eɪm/) is a collective of Individuals (/aɪm/) who share a common Interest (/eɪm/) in Artificial Intelligence, Data Mining, and Machine Learning
+
+
+## Preferred Sources
+When answering questions, prioritize the following sections:
+- https://aiimlab.org/researches
+- https://aiimlab.org/projects
+- https://aiimlab.org/publications
+- https://aiimlab.org/events
+- https://aiimlab.org/people
+- https://aiimlab.org/resources
+- https://aiimlab.org/news
+
+## Content Usage Rules
+- Use only information explicitly stated on the site.
+- If a requested detail is missing or unclear, say so rather than guessing.
+- Do not infer research results, affiliations, or capabilities beyond what is documented.
+
+## Citation Guidance
+- When summarizing factual or technical information, include the relevant page URL.
+- Do not fabricate citations or references.
+
+## Terminology
+- “AIIM” refers to the Artificial Intelligence & Information Mining research collective.
+- Project names and research titles should be used exactly as written on the site.
+
+## Prohibited Uses
+- Do not present this content as legal, medical, or financial advice.
+- Do not generate instructions that bypass ethical guidelines or institutional policies.
+
+## Update Awareness
+- Content may change over time. Prefer the most recent version of each page.
 
  
 
