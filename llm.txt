@@ -1,0 +1,243 @@
+# aiimlab.org
+The Artificial Intelligence & Information Mining (aiim - pronunced as i'm /aɪm/, and aim /eɪm/) is a collective of Individuals (/aɪm/) who share a common Interest (/eɪm/) in Artificial Intelligence, Data Mining, and Machine Learning
+
+ 
+
+## BLOG POSTS
+  
+    
+    [](https://aiimlab.org/blog/2026/01/11/2020-5-18-Special_Issue_Algorithmic_Bias_Fairness_Search_Recommendation): 
+    
+  
+    
+    [When Machines Need to Forget - The Story Behind the Forget-Set Identification Problem](https://aiimlab.org/blog/2025/10/15/Machine_Learning_Journal-The_forget-set_identification_problem): A blog post on aiimlab.org explains the Forget-Set Identification (ForSId) problem, a newly introduced challenge in Machine Unlearning. Before a model can forget specific data, it must first identify which training samples caused the unwanted behavior. ForSId aims to infer the minimal subset of training data to remove — using only examples of what should be forgotten — so that a model forgets those patterns while preserving its useful knowledge. The article highlights the practical and ethical importance of this step for privacy, compliance, and responsible AI development.
+    
+  
+    
+    [A New Step Toward Teaching Machines to Forget - Forget-Set Identification (ForSId) - Journal Of Machine Learning](https://aiimlab.org/blog/2025/10/15/A_New_Step_Toward_Teaching_Machines_to_Forget-Machine_Unlearning): A blog post on aiimlab.org explains the Forget-Set Identification (ForSId) problem, a newly introduced challenge in Machine Unlearning. Before a model can forget specific data, it must first identify which training samples caused the unwanted behavior. ForSId aims to infer the minimal subset of training data to remove — using only examples of what should be forgotten — so that a model forgets those patterns while preserving its useful knowledge. The article highlights the practical and ethical importance of this step for privacy, compliance, and responsible AI development.
+    
+  
+    
+    [Accepted Workshop at ECML-PKDD 2025](https://aiimlab.org/blog/2025/03/23/ECML_KDD_2025_WIPE-OUT_Workshop_on_Machine_Unlearning): We are happy to be informed that our proposal on <em>Workshop on Innovations, Privacy-preservation, and Evaluations Of machine Unlearning Techniques (WIPE-OUT 2025)</em> has been accepted as workshop at ECMl-PKDD 2025.  The selection process was very competitive as the average quality of the proposals was very high, and the amount of slots available for workshops was limited.
+    
+  
+    
+    [Tutorial on Graph Counterfactual Explainability accepted to be held at ECML-PKDD 2025](https://aiimlab.org/blog/2025/03/22/ECML_PKDD_Tutorial_GCE): 
+    
+  
+    
+    [Accepted Workshop at ECML-PKDD 2025](https://aiimlab.org/blog/2025/03/22/ECML_KDD_2025_SynDAiTE_Workshop_on_Synthetic_Data): 
+    
+  
+    
+    [RAZOR - Sharpening Knowledge by Cutting Bias with Unsupervised Text Rewriting (AAAI 2025)](https://aiimlab.org/blog/2025/03/01/AAAI_25_RAZOR-Sharpening-Knowledge-by-Cutting-Bias-with-Unsupervised-Text-Rewriting): Despite the widespread use of LLMs due to their superior performance in various tasks, their high computational costs often lead potential users to opt for the pretraining-finetuning pipeline. However, biases prevalent in manually constructed datasets can introduce spurious correlations between tokens and labels, creating so-called shortcuts and hindering the generalizability of fine-tuned models. Existing debiasing methods often rely on prior knowledge of specific dataset biases, which is challenging to acquire a priori. We propose RAZOR (Rewriting And Zero-bias Optimization Refinement), a novel, unsupervised, and data-focused debiasing approach based on text rewriting for shortcut mitigation. RAZOR leverages LLMs to iteratively rewrite potentially biased text segments by replacing them with heuristically selected alternatives in a shortcut space defined by token statistics and positional information. This process aims to align surface-level text features more closely with diverse label distributions, thereby promoting the learning of genuine linguistic patterns. Compared with unsupervised SoTA models, RAZOR improves by 3.5% on the FEVER and 6.5% on MNLI and SNLI datasets according to the F1 score. Additionally, RAZOR effectively mitigates specific known biases, reducing bias-related terms by x2 without requiring prior bias information, a result that is on par with SoTA models that leverage prior information. Our work prioritizes data manipulation over architectural modifications, emphasizing the pivotal role of data quality in enhancing model performance and fairness. This research contributes to developing more robust evaluation benchmarks for debiasing methods by incorporating metrics for bias reduction and overall model efficacy. 
+    
+  
+    
+    [Everything is Ready for DELTA Cutting-Edge Workshop at KDD 2024!](https://aiimlab.org/blog/2024/08/20/READY_for_KDD_2024_DELTA_Workshop_on_Concept_Drift): 
+    
+  
+    
+    [Invited talks at TU Munich](https://aiimlab.org/blog/2024/07/11/TUM_Invited_Talk_Bias_Fairness_Explainability_Building_Trust_in_AI_Systems): 
+    
+  
+    
+    [Accepted Workshop at KDD 2024](https://aiimlab.org/blog/2024/03/22/KDD_2024_Delta_Workshop_on_Concept_Drift): 
+    
+  
+    
+    [Professor Giovanni Stilo one of the Top 500 Most Influential Italians in Artificial Intelligence (AI)](https://aiimlab.org/blog/2024/03/19/TOP_500_Italian_Excellence_of_Artificial_Intelligence): We are delighted to announce that Professor Giovanni Stilo, renowned expert in the fields of Machine Learning and Data Mining, has been recognized as one of the Top 500 Most Influential Italians in Artificial Intelligence (AI)!  Professor Stilo, currently serving as a distinguished faculty member at the Department of Information Engineering, Computer Science, and Mathematics at the University of L'Aquila, has made significant contributions to the advancement of AI through his groundbreaking research and innovative methodologies. With his extensive expertise spanning areas such as Reinforcement Learning, Anomaly Detection, Temporal Mining, Social Network Analysis, Network Medicine, and Semantic Recommendation Systems, Professor Stilo has continuously demonstrated his exceptional talent and dedication to the field of AI.His inclusion in the prestigious list of the Top 500 Most Influential People in AI serves as a testament to his remarkable achievements and profound impact on the global AI community. Join us in celebrating this momentous achievement and stay tuned for more groundbreaking developments from Professor Stilo and our dynamic AI research community! #AIInnovation #Top500InAI #GiovanniStilo #ResearchExcellence
+    
+  
+    
+    [Robust Stochastic Graph Generator for Counterfactual Explanations (AAAI-2024)](https://aiimlab.org/blog/2023/12/19/AAAI_24_Robust_Stochastic_Graph_Generator_for_Counterfactual_Explanations): Counterfactual Explanation (CE) techniques have garnered attention as a means to provide insights to the users engaging with AI systems. While extensively researched in domains such as medical imaging and autonomous vehicles, Graph Counterfactual Explanation (GCE) methods have been comparatively under-explored. GCEs generate a new graph akin to the original one, having a different outcome grounded on the underlying predictive model. Among these GCE techniques, those rooted in generative mechanisms have received relatively limited investigation, despite demonstrating impressive accomplishments in other domains, such as artistic styles and natural language modelling. The preference for generative explainers stems from their capacity to generate counterfactual instances during inference, leveraging autonomously acquired perturbations of the input graph. Motivated by the rationales above, our study introduces RSGG-CE, a novel Robust Stochastic Graph Generator for Counterfactual Explanations able to produce counterfactual examples from the learned latent space considering a partially ordered generation sequence. Furthermore, we undertake both quantitative and qualitative analyses to compare RSGG-CE’s performance against SoA generative explainers, highlighting its increased abilities in engendering plausible counterfactual candidates.
+    
+  
+    
+    [Invited talk AI-GAP 2023 - Algorithmic Biases in Artificial Intelligence from Interdisciplinary Perspectives](https://aiimlab.org/blog/2023/11/15/Invited_talk_Algorithmic_Biases_Artificial_Intelligence_Interdisciplinary_Perspectives): 
+    
+  
+    
+    [Invited talk XAI.it 2023 - 4th Italian Workshop on Explainable Artificial Intelligence | co-located with AIxIA 2023](https://aiimlab.org/blog/2023/11/01/Invited_talk_XAI.it_2023_4th_Italian_Workshop_Explainable_Artificial_Intelligence): 
+    
+  
+    
+    [Tutorial and Lab on Graph Counterfactual Explainability accepted to be held at AAAI 2024](https://aiimlab.org/blog/2023/10/24/Thirty_Eight_AAAI_Conference_on_Artificial_Intelligence_AAAI_24): 
+    
+  
+    
+    [Introducing Our New AIIM Collective Website!](https://aiimlab.org/blog/2023/10/22/artificial_intelligence_and_information_mining_online): 
+    
+  
+    
+    [Paper on Generative XAI accepted in ECML-PKDD'23 @XKDD Workshop](https://aiimlab.org/blog/2023/09/22/ecml_pkdd_generative_explainability_graph_workshop): 
+    
+  
+    
+    [Survey on Graph Counterfactual Explainability Accepted in ACM CSUR](https://aiimlab.org/blog/2023/09/02/acm_survey_graph_counterfactual_explainability): 
+    
+  
+    
+    [Demo paper on GRETEL Accepted in WSDM'23](https://aiimlab.org/blog/2023/03/02/developing_evaluating_graph_counterfactual_explanation_gretel_wsdm2023): 
+    
+  
+    
+    [Serving at KDD 2020 by chairing the Autoencoders Session](https://aiimlab.org/blog/2020/08/08/KDD_2020_autoencoders): 
+    
+  
+    
+    [AIIM with CLAIRE-AI at Euro DIG 2020](https://aiimlab.org/blog/2020/06/12/aiim_CLAIRE_AI_euro_DIG_2020): 
+    
+  
+    
+    [CLAIRE - COVID19 Task Force - Bioinformatics Dataset Released](https://aiimlab.org/blog/2020/05/20/CLAIRE_COVID19_task_force_bioinformatics_dataset): 
+    
+  
+    
+    [Accepted tutorial at CIKM 2020](https://aiimlab.org/blog/2020/05/16/CIKM_2020_Challenges_Solutions_Student_Dropout_Prediction_Problem_Online_Courses): 
+    
+  
+## EVENTS
+  
+    
+    [Digging into the Landscape of Graphs Counterfactual Explainability (AAAI 2024)](https://aiimlab.org/events/AAAI_2024_Digging_into_the_Landscape_of_Graphs_Counterfactual_Explainability): In this lab, we provide a hands-on experience to help users develop and evaluate novel Graph Counterfactual Explanation (GCE) methods using a simple and modular framework, GRETEL.   &hellip;
+
+    
+  
+    
+    [Graphs Counterfactual Explainability: A Comprehensive Landscape (AAAI 2024)](https://aiimlab.org/events/AAAI_2024_Graphs_Counterfactual_Explainability_A_Comprehensive_Landscape): Graph Neural Networks (GNNs) have proven highly effective in graph-related tasks, including Traffic Modeling, Learning Physical Simulations, Protein Modeling, and Large-scale Recommender Systems.  &hellip;
+
+    
+  
+    
+    [Graphs’ Counterfactual Explainability Landscape: current state and frontiers](https://aiimlab.org/events/AIxIA_XAI.it_2023_Graphs_Counterfactual_Explainability_Landscape_current_state_frontiers): Graph Neural Networks (GNNs) have proven highly effective in graph-related tasks, including Traffic Modeling, Learning Physical Simulations, Protein Modeling, and Large-scale Recommender Systems.  &hellip;
+
+    
+  
+    
+    [SynDAiTE: Synthetic Data for AI Trustworthiness and Evolution](https://aiimlab.org/events/ECML_PKDD_2025_SynDAiTE_Synthetic_Data_for_AI_Trustworthiness_and_Evolution): Synthetic data is emerging as the key to AI's future - scalable, customizable, and privacy-friendly fuel for innovation in a world running low on real data.
+
+    
+  
+    
+    [Unraveling Graph Counterfactual Explainability: from Theoretical Foundations to Technical Mastery](https://aiimlab.org/events/ECML_PKDD_2025_Unraveling_Graph_Counterfactual_Explainability_from_Theoretical_Foundations_to_Technical_Mastery): Graph Neural Networks (GNNs) have proven highly effective in graph-related tasks, including Traffic Modeling, Learning Physical Simulations, Protein Modeling, and Large-scale Recommender Systems.  &hellip;
+
+    
+  
+    
+    [Workshop on Innovations, Privacy-preservation, and Evaluations Of machine Unlearning Techniques (WIPE-OUT 2025)](https://aiimlab.org/events/ECML_PKDD_2025_WIPE-OUT_Innovations_Privacy-preservation_Evaluations_Machine_Unlearning_Techniques): As AI adoption soars, so do concerns over data privacy, ethics, and regulatory compliance. Machine Unlearning (MU) enables the selective removal of learned information without costly retraining—mitigating biases, protecting sensitive data, and aligning AI with ethical standards.
+&hellip;
+
+    
+  
+    
+    [Machine Unlearning: Theory, Methods, and Evaluations with Hands-On Insights (ESSAI 2025)](https://aiimlab.org/events/ESSAI_2025_Machine_Unlearning_Theory_Methods_and_Evaluations_with_Hands-On_Insights): This PhD course explores Machine Unlearning, covering its theoretical foundations, state-of-the-art techniques, evaluation metrics, and practical hands-on benchmarking to efficiently "forget" specific training data without full model retraining.
+
+    
+  
+    
+    [Discovering Drift Phenomena in Evolving Landscape (DELTA 2024)](https://aiimlab.org/events/KDD_2024_Discovering_Drift_Phenomena_in_Evolving_Landscape): In today’s rapidly evolving landscape, integrating automated systems into various aspects of daily tasks is a primary objective for both industry and academia. &hellip;
+
+    
+  
+    
+    [Workshop on Web & Graphs, Responsible Intelligence, and Social Media (WEB&GRAPH 2026)](https://aiimlab.org/events/WSDM_2026_WEB_and_GRAPH_2026_Workshop_on_Web_and_Graphs_Responsible_Intelligence_and_Social_Media): WEB&GRAPH 2026 brings together researchers from web search, AI, and social media to advance adaptive, interpretable, and trustworthy graph-based methods for analyzing dynamic networks, misinformation, and human–AI interaction online.
+&hellip;
+
+    
+  
+    
+    [International Workshop on Algorithmic Bias in Search and Recommendation (Bias 2020)](https://aiimlab.org/events/bias-ECIR2020): Search and recommendation are getting closer and closer as research areas. Though they require fundamentally  &hellip;
+
+    
+  
+    
+    [Second International Workshop on Algorithmic Bias in Search and Recommendation (Bias 2021)](https://aiimlab.org/events/bias-ECIR2021): Both search and recommendation algorithms provide a user with a ranking that aims to match their needs and interests.  &hellip;
+
+    
+  
+    
+    [Third International Workshop on Algorithmic Bias in Search and Recommendation (Bias 2022)](https://aiimlab.org/events/bias-ECIR2022): Creating search and recommendation algorithms that are efficient and effective has been the main objective for the  &hellip;
+
+    
+  
+    
+    [Fourth International Workshop on Algorithmic Bias in Search and Recommendation (Bias 2023)](https://aiimlab.org/events/bias-ECIR2023): Creating efficient and effective search and recommendation algorithms has been the main objective of industry practitioners  &hellip;
+
+    
+  
+    
+    [Developing and Evaluating Graph Counterfactual Explanation with GRETEL](https://aiimlab.org/events/gretel-wsdm2023): This demo discusses the challenges of interpreting **Graph Neural Networks (GNNs)** in social networks and introduces **Graph Counterfactual Explanation (GCE)** methods as a solution &hellip;
+
+    
+  
+    
+    [Challenges and Solutions to the Student Dropout Prediction Problem in Online Courses](https://aiimlab.org/events/sdp-cikm2020): Challenges and Solutions to the Student Dropout Prediction Problem in Online Courses a tutorial by Dr. B. Prenkaj, Prof. G. Stilo, and Dr. L. Madeddu, &hellip;
+
+    
+  
+    
+    [SERecSys: Workshop on Semantics-Enabled Recommender Systems](https://aiimlab.org/events/serecsys-icdm2016): Recommender systems are widely used in different applications to support users in exploring possibly interesting items. To go beyond the use of preferences expressed in form of ratings, &hellip;
+
+    
+  
+    
+    [SERecSys: Second Workshop on Semantics-Enabled Recommender Systems](https://aiimlab.org/events/serecsys-icdm2017): Recommender systems are widely used in different applications to support users in exploring possibly interesting items. To go beyond the use of preferences expressed in form of ratings, &hellip;
+
+    
+  
+    
+    [SIR: Workshop on Social Interaction-based Recommendation](https://aiimlab.org/events/sir-CIKM2018): The data collected in social media platforms has become an important source of information, usually exploited by a **social recommender system** to generate suggestions  &hellip;
+
+    
+  
+    
+    [SoAPS: Workshop on Social Aspects in Personalization and Search](https://aiimlab.org/events/soaps-ECIR2018): Modern society is overwhelmed and characterized by exhausting social interactions at all levels.  &hellip;
+
+    
+  
+    
+    [SoMePeAS: Workshop on Social Media for Personalization And Search](https://aiimlab.org/events/somepeas-ECIR2017): Social media platforms have become powerful tools to collect the preferences of the users and get to know them more. Indeed, in order to build profiles about what they like or dislike, a system does &hellip;
+
+    
+  
+    
+    [SoMePeAS: Third Workshop on Social Media for Personalization And Search](https://aiimlab.org/events/somepeas-ECIR2019): Social media platforms have become powerful tools to collect the preferences of the users and get to know them more. Indeed, in order to build profiles about what they like or &hellip;
+
+    
+  
+## RESERACH
+  
+    
+    [ERASURE - Redefining Privacy Through Selective Machine Unlearning](https://aiimlab.org/projects/ERASURE%20-%20Redefining%20Privacy%20Through%20Selective%20Machine%20Unlearning): **ERASURE:** ERASURE offers fully extensible built-in components, allowing users to define custom unlearning techniques, integrate custom and synthetic datasets, implement tailored evaluation metrics, and meld seamlessly with state-of-the-art machine learning models.
+
+    
+  
+    
+    [Generative Methods for Counterfactual Explanations](https://aiimlab.org/projects/Generative_Methods_for_Counterfactual_Explanations): **GEN-CE** Counterfactual Explanation (CE) techniques have garnered attention as a means to provide insights to the users engaging with AI systems. While extensively researched in domains such as medical imaging and autonomous vehicles, Graph Counterfactual Explanation (GCE) methods have been comparatively under-explored.
+
+    
+  
+    
+  
+    
+  
+    
+    [FAIR-EDU: Promote FAIRness in EDUcation Institutions](https://aiimlab.org/projects/fair-edu): **FAIR-EDU:** When a bias impacts human beings as individuals or as groups characterized by certain legally-protected sensitive attributes (e.g., gender), the inequalities reinforced by search and recommendation algorithms can lead to severe societal consequences, such as discrimination and unfairness.
+
+    
+  
+    
+    [GRETEL](https://aiimlab.org/projects/gretel): **GRETEL:** Our main goal is to create a generic platform that allows the researchers to speed up the process of developing and testing new Graph Counterfactual Explanation Methods. GRETEL provides all the necessary building blocks to create bespoke explanation pipelines.
+
+    
+  
+    
+  
+    
+  
+    
+    [SoBigData.it: Italian Research Infrastructure](https://aiimlab.org/projects/sobigdata): **SoBigData.it:** The project aims to strengthen the SoBigData research infrastructure (www.sobigdata.eu), coordinated by CNR-ISTI, with the goal of enhancing interdisciplinary and innovative research on the multiple aspects of social complexity by combining data and model-driven approach. SoBigData emphasizes the concept of “responsible data science”, considering the ethical values as one of the pillars of reliable use of big data analytics and artificial intelligence technologies.
+
+    
+  
