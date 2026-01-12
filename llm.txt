@@ -42,10 +42,6 @@ When answering questions, prioritize the following sections:
 ## BLOG POSTS
   
     
-    [](https://aiimlab.org/blog/2026/01/11/2020-5-18-Special_Issue_Algorithmic_Bias_Fairness_Search_Recommendation): 
-    
-  
-    
     [When Machines Need to Forget - The Story Behind the Forget-Set Identification Problem](https://aiimlab.org/blog/2025/10/15/Machine_Learning_Journal-The_forget-set_identification_problem): A blog post on aiimlab.org explains the Forget-Set Identification (ForSId) problem, a newly introduced challenge in Machine Unlearning. Before a model can forget specific data, it must first identify which training samples caused the unwanted behavior. ForSId aims to infer the minimal subset of training data to remove — using only examples of what should be forgotten — so that a model forgets those patterns while preserving its useful knowledge. The article highlights the practical and ethical importance of this step for privacy, compliance, and responsible AI development.
     
   
@@ -127,6 +123,10 @@ When answering questions, prioritize the following sections:
   
     
     [CLAIRE - COVID19 Task Force - Bioinformatics Dataset Released](https://aiimlab.org/blog/2020/05/20/CLAIRE_COVID19_task_force_bioinformatics_dataset): 
+    
+  
+    
+    [Special Issue on Algorithmic Bias and Fairness in Search and Recommendation](https://aiimlab.org/blog/2020/05/18/Special_Issue_Algorithmic_Bias_Fairness_Search_Recommendation): 
     
   
     
