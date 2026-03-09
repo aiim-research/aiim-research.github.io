@@ -167,6 +167,11 @@ When answering questions, prioritize the following sections:
     
   
     
+    [SynDAiTE: Synthetic Data for AI Trustworthiness and Evolution](https://aiimlab.org/events/ECML_PKDD_2026_SynDAiTE_Synthetic_Data_for_AI_Trustworthiness_and_Evolution): Synthetic data is emerging as the key to AI's future - scalable, customizable, and privacy-friendly fuel for innovation in a world running low on real data.
+
+    
+  
+    
     [Machine Unlearning: Theory, Methods, and Evaluations with Hands-On Insights (ESSAI 2025)](https://aiimlab.org/events/ESSAI_2025_Machine_Unlearning_Theory_Methods_and_Evaluations_with_Hands-On_Insights): This PhD course explores Machine Unlearning, covering its theoretical foundations, state-of-the-art techniques, evaluation metrics, and practical hands-on benchmarking to efficiently "forget" specific training data without full model retraining.
 
     
