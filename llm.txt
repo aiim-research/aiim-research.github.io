@@ -172,6 +172,12 @@ When answering questions, prioritize the following sections:
     
   
     
+    [2nd Workshop on Machine Unlearning and Privacy Preservation (WIPE-OUT 2026)](https://aiimlab.org/events/ECML_PKDD_2026_WIPE-OUT_2): As AI adoption soars, so do concerns over data privacy, ethics, and regulatory compliance. Machine Unlearning (MU) enables the selective removal of learned information without costly retraining—mitigating biases, protecting sensitive data, and aligning AI with ethical standards.
+&hellip;
+
+    
+  
+    
     [Machine Unlearning: Theory, Methods, and Evaluations with Hands-On Insights (ESSAI 2025)](https://aiimlab.org/events/ESSAI_2025_Machine_Unlearning_Theory_Methods_and_Evaluations_with_Hands-On_Insights): This PhD course explores Machine Unlearning, covering its theoretical foundations, state-of-the-art techniques, evaluation metrics, and practical hands-on benchmarking to efficiently "forget" specific training data without full model retraining.
 
     
