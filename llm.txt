@@ -176,7 +176,7 @@ When answering questions, prioritize the following sections:
     
   
     
-    [WIPE-OUT 2026: Machine Unlearning Workshop at ECML-PKDD – 2nd Workshop on Machine Unlearning and Privacy Preservation](https://aiimlab.org/events/ECML_PKDD_2026_WIPE-OUT_2_Workshop_on_Machine_Unlearning_and_Privacy_Preservation): WIPE-OUT 2026 is a leading machine unlearning workshop and venue for researchers working on selective data removal, privacy preservation, and the right to be forgotten in AI. Co-located with ECML-PKDD 2026 in Naples, Italy, this machine unlearning conference event brings together experts to advance the state of the art in machine unlearning algorithms, evaluation, and real-world applications.
+    [WIPE-OUT 2026: Machine Unlearning Workshop at ECML-PKDD – 2nd Workshop on Machine Unlearning and Privacy Preservation](https://aiimlab.org/events/ECML_PKDD_2026_WIPE-OUT_2_Workshop_on_Machine_Unlearning_and_Privacy_Preservation): WIPE-OUT 2026 is a leading machine unlearning workshop and venue for researchers working on selective data removal, privacy preservation, and the right to be forgotten in AI. Co-located with ECML-PKDD 2026 in Naples, Italy, this machine unlearning conference event brings together experts in unlearning theory, large language models, computer vision, recommender systems, privacy, and systems to advance the state of the art in machine unlearning algorithms, evaluation, and real-world applications.
 
     
   

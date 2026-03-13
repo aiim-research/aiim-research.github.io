@@ -233,7 +233,7 @@
   "@context": "https://schema.org",
   "@type": "Event",
   "name": "WIPE-OUT 2026: Machine Unlearning Workshop at ECML-PKDD – 2nd Workshop on Machine Unlearning and Privacy Preservation",
-  "description": "WIPE-OUT 2026 is a leading machine unlearning workshop and venue for researchers working on selective data removal, privacy preservation, and the right to be forgotten in AI. Co-located with ECML-PKDD 2026 in Naples, Italy, this machine unlearning conference event brings together experts to advan...",
+  "description": "WIPE-OUT 2026 is a leading machine unlearning workshop and venue for researchers working on selective data removal, privacy preservation, and the right to be forgotten in AI. Co-located with ECML-PKDD 2026 in Naples, Italy, this machine unlearning conference event brings together experts in unlea...",
   "url": "https://aiimlab.org/events/ECML_PKDD_2026_WIPE-OUT_2_Workshop_on_Machine_Unlearning_and_Privacy_Preservation",
   "image": "https://aiimlab.org/events/imgs/WIPE-OUT_2.png",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -295,7 +295,7 @@
       "name": "What topics are covered at WIPE-OUT 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The workshop covers theoretical foundations of machine unlearning, new unlearning algorithms, scalable unlearning for big data, federated unlearning, concept erasure in generative models, model editing for large language models, evaluation metrics and benchmarks, and the ethical, legal, and societal implications of machine unlearning."
+        "text": "The workshop covers theoretical foundations of machine unlearning, unlearning in large language models and foundation models, concept erasure in computer vision and generative models, unlearning in recommender systems, privacy-preserving techniques and regulatory compliance, scalable systems for efficient unlearning, evaluation metrics and benchmarks, and the ethical, legal, and societal implications of machine unlearning."
       }
     }
     
@@ -559,7 +559,7 @@ Submission system opening soon — paper deadline: <strong>June 5, 2026</strong>
 
 <p>As AI adoption soars, so do concerns over data privacy, ethics, and regulatory compliance (e.g., GDPR, AI Act, CCPA, Bill C-27). <strong>Machine unlearning</strong> emerges as a critical capability, enabling selective removal of learned information without costly retraining — mitigating biases, protecting sensitive data, and aligning AI with ethical standards. Unlike differential privacy, which limits what a model learns during training, machine unlearning addresses the post-hoc removal of data influence, making it essential for enforcing the <strong>right to be forgotten</strong> in deployed AI systems.</p>
 
-<p>Building on the success of the <a href="/events/ECML_PKDD_2025_WIPE-OUT_Innovations_Privacy-preservation_Evaluations_Machine_Unlearning_Techniques">first edition at ECML-PKDD 2025</a> in Porto (~50 participants, keynotes by Google DeepMind researchers), this second edition explores cutting-edge methodologies, theoretical advancements, and practical applications of machine unlearning and related topics, including privacy preservation, that align with evolving regulatory standards and societal expectations.</p>
+<p>Building on the success of the <a href="/events/ECML_PKDD_2025_WIPE-OUT_Innovations_Privacy-preservation_Evaluations_Machine_Unlearning_Techniques">first edition at ECML-PKDD 2025</a> in Porto (~50 participants, keynotes by Google DeepMind researchers), this second edition explores cutting-edge methodologies, theoretical advancements, and practical applications of machine unlearning and related topics, including privacy preservation, that align with evolving regulatory standards and societal expectations. We especially encourage submissions from researchers working on <strong>unlearning theory</strong>, <strong>LLMs and foundation models</strong>, <strong>computer vision</strong>, <strong>recommender systems</strong>, <strong>privacy and compliance</strong>, and <strong>scalable systems</strong> — connecting these communities around the shared challenge of selective data removal.</p>
 
 <p><strong>What makes WIPE-OUT different:</strong> unlike traditional workshops, WIPE-OUT features pitch-style paper presentations, head-to-head paper comparison debates, and a closing roundtable bridging academia and industry — designed to maximize interaction and constructive discussion.</p>
 
@@ -575,11 +575,26 @@ Submission system opening soon — paper deadline: <strong>June 5, 2026</strong>
 <h3 class="pt-3" id="topics">Machine Unlearning Topics of Interest</h3>
 <p>This machine unlearning workshop welcomes contributions on all topics related to machine unlearning across domains (e.g., finance, business, basic sciences, construction, computational advertising, medical, etc.) and independent of data types (e.g., networks, tabular, unstructured, graphs, logs, spatiotemporal, multimedia, time series, genomic sequences, and streaming data). Contributions can also include research or perspectives regarding the following:</p>
 
-<ul> <li>Foundations of Machine Unlearning <ul> <li>Theoretical foundations, guarantees, and bounds for Machine Unlearning</li> <li>Development of new Machine Unlearning and Model Editing Algorithms</li> <li>Efficient and Scalable Machine Unlearning in Big Data Systems</li>  <li> Privacy-Preserving techniques for Machine Learning systems </li> </ul> </li> <li>Applications of Machine Unlearning <ul> <li>Real-Time and Streaming Data Unlearning Systems</li> <li>Geometrical and representation-level approaches to unlearning and editing</li> <li>Model editing for language models and other foundation models </li> <li>Federated and Decentralized Unlearning Processes</li> <li> Concept Erasure for Generative Models </li></ul> </li> <li>Evaluation and benchmarking <ul> <li>Evaluation Metrics for quantifying unlearning performance</li> <li>Development of new Evaluation protocol for Machine Unlearning</li> <li>Tools and Benchmarks for Unlearning Framework</li> <li> Robustness and verification of unlearning and editing guarantees </li> </ul> </li> <li>Implications of Machine Unlearning <ul> <li>Unlearning for Explainable and Interpretable AI</li> <li>Ethical, legal and societal aspects of Machine Unlearning</li> <li>Machine Unlearning in High-Stakes Applications (e.g., healthcare, finance, …)</li> </ul></li></ul>
+<ul> <li>Foundations and Theory of Machine Unlearning <ul> <li>Theoretical foundations, guarantees, and bounds for Machine Unlearning</li> <li>Certified and approximate unlearning: complexity, information-theoretic limits, and impossibility results</li> <li>Development of new Machine Unlearning and Model Editing Algorithms</li> <li>Connections between unlearning, influence functions, and data attribution</li> </ul> </li> <li>Unlearning in LLMs and Foundation Models <ul> <li>Knowledge removal and model editing in large language models</li> <li>Unlearning unsafe, copyrighted, or private content from pretrained LLMs</li> <li>Concept erasure and safety alignment via unlearning in generative models</li> <li>Unlearning in multimodal foundation models (vision-language, text-to-image)</li> </ul> </li> <li>Unlearning in Computer Vision <ul> <li>Class-level and instance-level forgetting in image classifiers and object detectors</li> <li>Concept erasure in diffusion models and GANs</li> <li>Unlearning for face recognition, de-identification, and visual privacy</li> <li>Continual and incremental unlearning in vision systems</li> </ul> </li> <li>Unlearning in Recommender Systems <ul> <li>User data removal in collaborative filtering and content-based recommenders</li> <li>Unlearning in sequential, session-based, and graph-based recommendation</li> <li>Impact of unlearning on recommendation quality and fairness</li> <li>Right-to-be-forgotten compliance in deployed recommendation platforms</li> </ul> </li> <li>Privacy and Compliance <ul> <li>Privacy-preserving techniques for Machine Learning systems</li> <li>Interactions between differential privacy, federated learning, and unlearning</li> <li>Federated and decentralized unlearning processes</li> <li>Membership inference, data auditing, and privacy verification after unlearning</li> <li>Regulatory compliance (GDPR, AI Act, CCPA) and the right to be forgotten</li> </ul> </li> <li>Systems and Scalability <ul> <li>Efficient and scalable machine unlearning in big data systems</li> <li>Real-time and streaming data unlearning systems</li> <li>Systems-level design for unlearning-ready ML pipelines</li> <li>Hardware-aware and resource-efficient unlearning methods</li> </ul> </li> <li>Evaluation and Benchmarking <ul> <li>Evaluation metrics for quantifying unlearning performance</li> <li>Development of new evaluation protocols for Machine Unlearning</li> <li>Tools and benchmarks for unlearning frameworks</li> <li>Robustness and verification of unlearning and editing guarantees</li> </ul> </li> <li>Implications of Machine Unlearning <ul> <li>Unlearning for Explainable and Interpretable AI</li> <li>Ethical, legal and societal aspects of Machine Unlearning</li> <li>Machine Unlearning in High-Stakes Applications (e.g., healthcare, finance, …)</li> </ul></li></ul>
 
 <h3 class="pt-3" id="speakers">Invited Speakers</h3>
 
-<p>We plan to have <strong>two keynote speakers</strong> from leading institutions in Machine Unlearning and Privacy Preservation. The invited speakers will be announced shortly — stay tuned!</p>
+<p>We plan to have <strong>up to two keynote speakers</strong> from leading institutions in Machine Unlearning and Privacy Preservation. The invited speakers will be announced shortly — stay tuned!</p>
+
+<h4 class="pt-3" id="sijia">Sijia Liu - TBA<br /> <i>TBA</i></h4>
+<table>
+        <tr>
+            <td style="padding: 0px 20px 0px 0px;">
+                <img src="./imgs/peoples/Sijia.png" alt="Sijia Liu" width="200" />
+            </td>
+            <td>
+                <h5 class="pt-3">Speaker's Bio:</h5>
+                <p>
+                    Sijia Liu is a Red Cedar Distinguished Associate Professor in the Department of Computer Science and Engineering at Michigan State University (MSU), and an Affiliated Professor at the MIT-IBM Watson AI Lab, IBM Research. His research centers on scalable and trustworthy AI, such as machine unlearning for vision and language models, scalable optimization for deep models, adversarial robustness, and data–model efficiency. He has received numerous honors, including the NSF CAREER Award (2024), INNS Aharon Katzir Young Investigator Award (2024), MSU Withrow Rising Scholar Award (2025), Best Paper Runner-Up at UAI (2022), and Best Student Paper Award at ICASSP (2017). He also co-founded the New Frontiers in Adversarial Machine Learning Workshop series (ICML/NeurIPS 2021–2024).
+                </p>
+            </td>
+        </tr>
+</table>
 
 <h3 class="pt-3" id="program">Preliminary Program at a Glance</h3>
 
@@ -779,7 +794,7 @@ Submission system opening soon — paper deadline: <strong>June 5, 2026</strong>
 
 <details>
 <summary><strong>What topics are covered at WIPE-OUT 2026?</strong></summary>
-<p>The workshop covers theoretical foundations of machine unlearning, new unlearning algorithms, scalable unlearning for big data, federated unlearning, concept erasure in generative models, model editing for large language models, evaluation metrics and benchmarks, and the ethical, legal, and societal implications of machine unlearning.</p>
+<p>The workshop covers theoretical foundations of machine unlearning, unlearning in large language models and foundation models, concept erasure in computer vision and generative models, unlearning in recommender systems, privacy-preserving techniques and regulatory compliance, scalable systems for efficient unlearning, evaluation metrics and benchmarks, and the ethical, legal, and societal implications of machine unlearning.</p>
 </details>
 
 <h3 class="pt-3" id="contacts">Organizers Contacts</h3>
