@@ -630,9 +630,12 @@ All submissions must be done via <a href="https://cmt3.research.microsoft.com/EC
 <ul>
   <li><a href="#aims_scope">Aims and Scope</a></li>
   <li><a href="#dates">Important Dates</a></li>
-  <li><a href="#submission_details">Submission Details</a></li>
   <li><a href="#topics">Topics of Interests</a></li>
-  <li><a href="#speakers">Invited Talks</a></li>
+  <li><a href="#speakers">Invited Talks</a>
+    <ul>
+      <li><a href="#pereira">Ricardo Cardoso Pereira - 12:20</a></li>
+    </ul>
+  </li>
   <li><a href="#program">Program at a Glance</a></li>
   <li><a href="#registration">Registration and Presentation Policy</a></li>
   <li><a href="#acknowledgement">Acknowledgment</a></li>
@@ -650,29 +653,6 @@ All submissions must be done via <a href="https://cmt3.research.microsoft.com/EC
 </ul>
 
 <p>All deadlines are 11:59 pm, Pacific Time.</p>
-
-<h3 class="pt-3" id="submission_details">Submission Details</h3>
-<p>Papers must be written in English and formatted in LaTeX, following the outline of the official <a href="https://drive.usercontent.google.com/u/2/uc?id=17e-xfz1UXP0jLbvdxob2H3MmAEaWL6xt&amp;export=download">author kit</a>. The kit includes a README document, a LaTeX file template containing author instructions, and style files. The maximum length of papers is 16 pages (including references) except for short papers, where the limit is 10 pages in this format. The program chairs reserve the right to reject any over-length papers without review. Papers that “cheat” the page limit by, including but not limited to, using smaller than specified margins or font sizes, will also be treated as over-length. Note that, for example, negative spaces are also not allowed by the formatting guidelines; further details can be found in the author kit. Up to 10 MB of additional materials (e.g., proofs, audio, images, video, data, or source code) can be uploaded with your submission. If there is an appendix, ensure it is submitted separately from your paper, which, combined with the main matter, must adhere to the page limit. The reviewers and the program committee reserve the right to judge the paper solely on the basis of the 16 pages; any additional material is at their discretion and not required.</p>
-
-<p>The submission must also be anonymized; authors must omit their names and affiliations from submissions and avoid obvious identifying statements (e.g., citations to the author’s own prior work should be made in the third person). Finally, the submission must not be under review at any other publication venue. Failure to adhere to policies will result in desk rejection.</p>
-
-<p>We strongly recommend using the template above and providing paper code and data in an Anonymous GitHub repository <a href="https://anonymous.4open.science/">https://anonymous.4open.science/</a>.</p>
-
-<p>We welcome <strong>four types of submissions</strong>, each with specific expectations regarding length and content. Reviewers will assess whether the size is appropriate for the type of contribution. <strong>Accepted papers may be selected for oral or poster presentations; short papers will be presented as posters.</strong></p>
-
-<ul>
-  <li><strong>Full papers (up to 16 pages)</strong> should be clearly placed in the context of the state of the art and state the proposal's contribution in the application domain, even if presenting preliminary results. In particular, research papers should describe the methodology in detail, experiments should be repeatable, and comparisons with existing approaches in the literature should be made.</li>
-  <li><strong>Reproducibility/Replicability papers (up to 16 pages)</strong> should repeat prior experiments using the original source code and datasets to show how, why, and when the methods work or not (replicability papers) or should repeat prior experiments, preferably using the original source code in new contexts (e.g., different domains and datasets, different evaluation and metrics) to generalize further and validate or not previous work (reproducibility papers).</li>
-  <li><strong>Case Study papers (up to 16 pages)</strong> should provide in-depth analyses of real-world applications in which synthetic data plays a crucial role in addressing challenges in anomaly detection, streaming environments, and machine learning adaptation. These papers should present practical implementations, industry experiences, or applied research findings, offering insights into the effectiveness, limitations, and lessons learned from deploying synthetic data-driven solutions in dynamic AI systems.</li>
-  <li><strong>Short or position papers (up to 10 pages)</strong> should introduce new perspectives on the workshop topics or summarize a group's experience in the field.</li>
-</ul>
-
-<p><strong>Generative AI Usage Policy.</strong> Generative AI models, including ChatGPT, BARD, LLaMA, or similar LLMs, do not meet the criteria for authorship of papers accepted for the workshop. If authors use an LLM in any part of the paper-writing process, they assume full responsibility for all content, including checking for plagiarism and the correctness of all text.</p>
-
-<p><strong>Originality and Concurrent Submissions.</strong> Papers submitted should report original work. Papers that are identical or substantially similar to papers that have been published or submitted elsewhere may not be submitted to ECML PKDD, and the organizers will reject such papers without review. Authors are also NOT allowed to submit or have submitted their papers elsewhere during the review period. Submitting unpublished technical reports available online (such as on arXiv), or papers presented in workshops without formal proceedings, is allowed, but such reports or presentations should not be cited to preserve anonymity.
-Submissions that do not follow these guidelines or do not view or print properly will be desk-rejected.</p>
-
-<p><strong>Post-Proceedings.</strong> The accepted papers and the material generated during the meeting will be available on the workshop website. As per ECML-PKDD’s guidelines, the Workshops and Tutorials will be included in a joint Post-Workshop proceeding published by Springer Communications in Computer and Information Science (indexed on Google Scholar, DBLP, and Scopus), in 1-2 volumes, organized by focused scope. Papers’ authors will have the option to opt in or out.</p>
 
 <h3 class="pt-3" id="topics">Topics</h3>
 <p>SynDAiTE welcomes contributions on the use of synthetic data on all topics below, independent of the application domain (e.g., <em>health, finance, business, basic sciences, construction, computational advertising, IoT, etc.</em>) and of data types (e.g., <em>networks, graphs, logs, spatiotemporal, multimedia, time series, genomic sequences, and streaming data</em>.):</p>
@@ -746,10 +726,56 @@ Submissions that do not follow these guidelines or do not view or print properly
 </ul>
 
 <h3 class="pt-3" id="speakers">Invited Talks:</h3>
-<p>TBD</p>
 
-<h3 class="pt-3" id="program">Program at a Glance:</h3>
-<p>TBD</p>
+<h4 class="pt-3" id="pereira"><i>The Interplay of Missing Data and Synthetic Data in Machine Learning</i> - Ricardo Cardoso Pereira
+ - 12:20</h4>
+<table cellspacing="50">
+  <tr>
+      <td>
+          <img src="./imgs/peoples/Pereira.png" alt="Ricardo Cardoso Pereira" width="160" />
+      </td>
+      <td style="padding-left:20px;">
+          <h5 class="pt-3">Abstract:</h5>
+          <p>Missing data refers to values we failed to collect, while synthetic data deals with values we generate on purpose. Consequently, the two fields are closely related. Imputation can be seen as conditional generation, and generative models are very often used to fill in incomplete data. In the other direction, missingness can impact synthetic data: generators trained on incomplete or badly imputed data can inherit their biases, while artificially injected missingness is useful for benchmarking and privacy. This talk covers both directions of this relationship, including open challenges.
+          </p>
+          <h5 class="pt-3">Speaker's Bio:</h5>
+          <p> Ricardo Cardoso Pereira is an Assistant Professor at the Department of Informatics Engineering at the University of Coimbra, where he is also affiliated with the Centre for Informatics and Systems (CISUC). His academic and research work is focused on artificial intelligence, with specific interests in machine learning, deep learning, data-centric AI, data quality (particularly addressing missing data), and fairness in machine learning. He holds a PhD in Artificial Intelligence and an MSc in Computer Science from the University of Coimbra.             
+          </p>  
+      </td>
+  </tr>
+</table>
+
+<h3 class="pt-3" id="program">Program at a Glance (Room TBD):</h3>
+
+<ul>
+  <li><b>10:35</b> - Welcome and Opening Remarks</li>
+  <li><b>10:45:45</b> - Short Talks (Part A)</li>
+  <ul>
+      <li><b>10:45</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Ibrahim et al. - <i>Demographically-Conditioned Synthetic Medical Images for Bias Mitigation and Bias Detection in Disease Classifiers</i></li>
+      <li><b>10:53</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Burlova et al. - <i>MechFaithBench: A Counterfactual Benchmark for Visual Grounding Diagnostics in Vision-Language Models</i></li>
+      <li><b>11:01</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Kapenekakis et al. - <i>Amalgam: Hybrid LLM-PGM Synthesis Algorithm for Accuracy and Realism</i></li>
+      <li><b>11:09</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Komorniczak et al. - <i>How well does Classification Accuracy capture Concept Drift Detection Quality? An overview of Concept Drift Detection evaluation</i></li>
+  </ul>
+  <li><b>11:20</b> - Poster Session (Part A)</li>
+  <li><b>11:20</b> - Oral Presentations (Part B)</li>
+  <ul>
+      <li><b>11:20</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Youssef et al. - <i>PATE-TabTransGAN: Differentially Private Synthetic Tabular Data Generation via Transformer-Based Student Discrimination</i></li>
+      <li><b>11:28</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Atmika et al. - <i>Train, Test, Re-evaluate: Schedule-Sensitive Evaluation of Generative Data for Hand Detection</i></li>
+      <li><b>11:36</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Kokkinogenis et al. - <i>Berry Picking Across Data Landscapes: Understanding Performance Sensitivity in Collaborative Filtering</i></li>
+      <li><b>11:44</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a>
+      - Oliveira et al. - <i>Data Complexity Effects on Synthetic Data Quality, Privacy, and Utility</i></li>
+  </ul>
+  <li><b>11:55</b> - Poster Sessions (Part B &amp; C) + Coffee Break</li>
+  <li><b>12:20</b> - <a target="_blank" href="#"><i class="fa fa-file-powerpoint-o" style="font-size:15px;color:red"></i></a> - Ricardo Cardoso Pereira - <i>The Interplay of Missing Data and Synthetic Data in Machine Learning</i></li>
+  <li><b>12:50</b> - Concluding remarks</li>
+</ul>
 
 <h3 class="pt-3" id="registration">Registration and Presentation Policy</h3>
 <p>Each accepted paper must have at least one author registered for the full conference by the early registration deadline and must be presented at the workshop even if they opt-out of the post-proceedings. We expect the authors, the program committee, and the organizing committee to adhere to the <a href="https://ecmlpkdd.org/code-of-conduct/">ECML-PKDD Code of Conduct</a>.</p>
