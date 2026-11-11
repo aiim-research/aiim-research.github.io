@@ -35,15 +35,6 @@
         <meta property="og:type" content="event">
 
     </head>
-     <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRVN2FKZRV"></script>
-     <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'G-HRVN2FKZRV');
-     </script>
     <body>
         <div class="container">
             <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
@@ -657,10 +648,37 @@
             <div class="footer">
                 <p>
                     © Copyright 2019-2026 - Artificial Intelligence and Information Mining - All rights reserved.
+                    · <a href="/cookies.html">Cookies</a>
+                    · <button type="button" class="text-button" data-cookie-settings>Cookie preferences</button>
                 </p>
             </div>
 
         </div> <!-- /container -->
+
+        <aside id="cookie-banner" class="cookie-banner" aria-labelledby="cookie-title"
+       data-ga-id="G-HRVN2FKZRV" data-version="1" hidden>
+    <button type="button" id="cookie-close" class="cookie-close" aria-label="Close without accepting">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+    <h2 id="cookie-title">Your privacy, your choice.</h2>
+    <p id="cookie-description">
+        With your consent we use Google Analytics to count visits and understand which pages are useful.
+        You can refuse and keep using the website normally.
+        <a href="/cookies.html">Cookie information</a>
+    </p>
+    <details id="cookie-preferences">
+        <summary>Customize</summary>
+        <label class="check"><input id="cookie-analytics" type="checkbox"> Optional statistics with Google Analytics</label>
+        <p class="muted">No advertising tracking. You can change your choice at any time from the footer.</p>
+        <button type="button" id="cookie-save">Save preferences</button>
+    </details>
+    <div class="cookie-actions">
+        <button type="button" id="cookie-reject">Reject</button>
+        <button type="button" id="cookie-accept">Accept statistics</button>
+    </div>
+    <p id="cookie-status" role="status"></p>
+</aside>
+
 
         <!-- Support retina images. -->
         <script type="text/javascript"
@@ -669,16 +687,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160388153-1"></script>
-	    <script>
-	        window.dataLayer = window.dataLayer || [];
-	        function gtag(){dataLayer.push(arguments);}
-	        gtag('js', new Date());
+        <!-- Consent banner and opt-in-only analytics (nothing is sent before acceptance) -->
+        <script src="/js/consent.js"></script>
 
-	        gtag('config', 'UA-160388153-1');
-	    </script>
-
-       
     </body>
 </html>
