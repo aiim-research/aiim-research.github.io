@@ -42,7 +42,7 @@ When answering questions, prioritize the following sections:
 ## BLOG POSTS
   
     
-    [Making Explanations Smaller - Minimizing Graph Counterfactual Explanations with Local Bounded Search](https://aiimlab.org/blog/2026/11/24/Machine_Learning_Journal-Minimization_of_Graph_Counterfactual_Explanations): A blog post on the paper 'On the Minimization of Graph Counterfactual Explanations: Theory and a Local Bounded Search Algorithm' (Machine Learning, 2026). Most graph counterfactual explainers first generate a valid counterfactual and then try to shrink it, yet the shrinking step had never been studied on its own. The paper formalizes it as the GC-min problem, proves it NP-hard, and introduces Local Bounded Search (LBS), a model-agnostic heuristic that refines any valid counterfactual and reduces the edits needed by up to 98% across nine datasets.
+    [Making Explanations Smaller - Minimizing Graph Counterfactual Explanations with Local Bounded Search](https://aiimlab.org/blog/2026/11/24/Machine_Learning_Journal-Minimization_of_Graph_Counterfactual_Explanations): Local Bounded Search (LBS) cuts the number of edits in graph counterfactual explanations by up to 98% on nine datasets. The paper 'On the Minimization of Graph Counterfactual Explanations' (Machine Learning, 2026) formalizes the minimization step of generate-and-minimize explainers as the GC-min problem, proves it NP-hard, and introduces LBS, a model-agnostic heuristic that refines any valid counterfactual.
     
   
     

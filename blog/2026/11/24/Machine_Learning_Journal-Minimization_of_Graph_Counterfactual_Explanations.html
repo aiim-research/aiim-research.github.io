@@ -20,14 +20,14 @@
         <!-- site.canonical enabled -->
         <link rel="canonical" href="https://aiimlab.org/blog/2026/11/24/Machine_Learning_Journal-Minimization_of_Graph_Counterfactual_Explanations" />
         
-        <meta name="description" content="A blog post on the paper 'On the Minimization of Graph Counterfactual Explanations: Theory and a Local Bounded Search Algorithm' (Machine Learning, 2026). Mo...">
+        <meta name="description" content="Local Bounded Search (LBS) cuts the number of edits in graph counterfactual explanations by up to 98% on nine datasets. The paper 'On the Minimization of Gra...">
         
         <!-- Open Graph -->
         <meta property="og:title" content="Making Explanations Smaller - Minimizing Graph Counterfactual Explanations with Local Bounded Search">
         <meta property="og:url" content="https://aiimlab.org/blog/2026/11/24/Machine_Learning_Journal-Minimization_of_Graph_Counterfactual_Explanations">
         <meta property="og:site_name" content="Artificial Intelligence and Information Mining - Collective">
         
-        <meta property="og:description" content="A blog post on the paper 'On the Minimization of Graph Counterfactual Explanations: Theory and a Local Bounded Search Algorithm' (Machine Learning, 2026). Most graph counterfactual explainers first...">
+        <meta property="og:description" content="Local Bounded Search (LBS) cuts the number of edits in graph counterfactual explanations by up to 98% on nine datasets. The paper 'On the Minimization of Graph Counterfactual Explanations' (Machine...">
         
         
         <meta property="og:image" content="https://aiimlab.org/img/projects/GCmin_generate_minimize.png">
@@ -229,6 +229,15 @@
 <span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="o">:</span><span class="c1">//doi.org/10.1007/s10994-026-07157-0}</span>
 <span class="p">}</span></code></pre></figure>
 
+<h2 id="in-short">In short</h2>
+
+<ul>
+  <li><strong>Problem.</strong> Graph counterfactual explainers usually generate a valid counterfactual and then shrink it, but the shrinking (minimization) step had never been formally studied.</li>
+  <li><strong>Theory.</strong> The paper defines the GC-min problem and proves it NP-hard.</li>
+  <li><strong>Method.</strong> Local Bounded Search (LBS) is a model-agnostic heuristic that refines any valid counterfactual through bounded edge and node-attribute edits.</li>
+  <li><strong>Result.</strong> Across nine datasets, LBS reduces the structural edit distance by up to 98% (for example 189.71 to 2.17 edits on Synthie) and outperforms the existing minimizers under the same model-call budget.</li>
+</ul>
+
 <p><br />
 <br /></p>
 <figure>
@@ -247,13 +256,13 @@
 
 <p>This is the idea behind <strong>counterfactual explanations</strong>: given an input and a black-box model, find a new input that is as close as possible to the original but gets a different prediction. The closer it is, the easier it is for a human to read it, check it, and act on it.</p>
 
-<p><strong>When the data are graphs</strong></p>
+<h2 id="when-the-data-are-graphs">When the data are graphs</h2>
 
 <p>Many of the most interesting data are not tables but graphs: molecules, brain connectivity networks, protein structures, social networks. A graph counterfactual is a modified graph, with some edges added or removed and, possibly, some node attributes changed, for which the model changes its mind. “Close to the original” then means “few edits”.</p>
 
 <p>In molecular or biomedical settings this matters a lot. A chemist who is told that removing two bonds changes the predicted toxicity of a compound can inspect the claim. If the explanation instead rewrites half the molecule, there is nothing to learn from it.</p>
 
-<p><strong>The step nobody studied</strong></p>
+<h2 id="the-step-nobody-studied">The step nobody studied</h2>
 
 <p>Most modern graph counterfactual explainers follow a <em>generate-and-minimize</em> recipe (Figure 1): first they produce <em>any</em> valid counterfactual, then they try to trim it so that it moves closer to the original graph while still fooling the model.</p>
 
@@ -261,13 +270,13 @@
 
 <p>That is the gap this paper, by Rodrigo García, Mario Alfonso Prado-Romero, Francesco Gullo and Giovanni Stilo, sets out to fill.</p>
 
-<p><strong>Theory: a hard problem, formally stated</strong></p>
+<h2 id="theory-a-hard-problem-formally-stated">Theory: a hard problem, formally stated</h2>
 
 <p>The authors define the <strong>GC-min</strong> problem: given a black-box model, a graph, and a valid counterfactual of it, modify the counterfactual so that it remains valid and the number of edits with respect to the original graph is as small as possible.</p>
 
 <p>They then prove that GC-min is <strong>NP-hard</strong>, by a reduction from the classic Feedback Arc Set problem. The result holds regardless of the task or the model, and holds also when restricted to undirected graphs. In plain words: no one should expect an efficient algorithm that always finds the best possible explanation, so good heuristics are the way forward.</p>
 
-<p><strong>Local Bounded Search</strong></p>
+<h2 id="local-bounded-search">Local Bounded Search</h2>
 
 <p>The proposed heuristic is <strong>Local Bounded Search (LBS)</strong>. It is model-agnostic, since it only needs to ask the model for predictions, and it works on top of <em>any</em> generator. Starting from a valid counterfactual, it repeatedly tries small moves, always accepting the first one that improves the solution, in a fixed order of priority:</p>
 
@@ -280,7 +289,7 @@
 
 <p>Two design choices keep it honest. The search never goes beyond the size of the best valid solution found, and the authors prove this bound never excludes an optimal solution. And since the model sees the whole graph, structural edits are tried together with a family of <em>node-attribute adjustments</em> (for example smoothing a node’s features towards its neighbours or diffusing them over the graph), so that edge changes and feature changes can help each other.</p>
 
-<p><strong>Does it work?</strong></p>
+<h2 id="does-it-work">Does it work?</h2>
 
 <p>The experiments cover <strong>nine datasets</strong>: synthetic ones (Tree-Cycles, Synthie, COLORS-3), brain networks of children with autism (ASD), molecules (BBBP, BZR, AIDS) and proteins (ENZYMES, PROTEINS). LBS is paired with three generators from different families (DCE, OFS, RSGG) and compared against the existing decoupled minimizer <em>obs</em>, plus two further baselines, one of which (RHC) is a plain hill-climber with the same edit operations and the same budget.</p>
 
@@ -306,15 +315,15 @@
  </figure>
 <p><br /></p>
 
-<p><strong>Ablations: every ingredient counts</strong></p>
+<h2 id="ablations-every-ingredient-counts">Ablations: every ingredient counts</h2>
 
 <p>The authors switch components off one at a time. Allowing node-attribute changes helps substantially on attributed graphs (on BBBP with the RSGG generator, GED drops from 5.29 to 0.69), at the price of somewhat larger feature changes. Removal moves alone fail on attributed data, while swap and addition moves alone fail badly on attribute-free graphs, so the two families are complementary. Finally, the order matters: deferring removals is catastrophic on attribute-free graphs (GED 81.58 against 3.02 on Tree-Cycles), so trying small removals first is the most robust choice.</p>
 
-<p><strong>Where it does not shine</strong></p>
+<h2 id="where-it-does-not-shine">Where it does not shine</h2>
 
 <p>The paper is candid about the limits. Gains are smaller when the initial counterfactual has little redundancy or when the class depends on a global property of a large, dense graph: on AIDS (tiny molecules) GED goes only from 15.09 to 11.90, and on PROTEINS from 67.45 to 45.86, because many edits are individually necessary. In those cases the search can get stuck in local optima, and the authors point to a learned strategy selector as future work. Other directions are comparison with simulated annealing or tabu search, domain-specific plausibility constraints, and richer edit spaces.</p>
 
-<p><strong>Why this matters</strong></p>
+<h2 id="why-this-matters">Why this matters</h2>
 
 <p>The practical message is a change of perspective for explainability systems: <strong>treat minimization as a first-class component</strong>. A decoupled minimizer can be plugged on top of any existing counterfactual generator, makes different generators comparable on fair ground, and can turn even a rough, valid counterfactual into a concise explanation a human can actually read.</p>
 
