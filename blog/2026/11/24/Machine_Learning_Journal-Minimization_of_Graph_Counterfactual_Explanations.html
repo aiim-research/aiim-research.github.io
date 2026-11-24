@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artificial Intelligence and Information Mining - Collective: Making Explanations Smaller - Minimizing Graph Counterfactual Explanations with Local Bounded Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <!-- bootstrap -->
+        <!-- all third-party assets are self-hosted under /vendor: no external requests -->
+        <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+        <!-- fontawesome 4.7 -->
+        <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">  
+        <!-- our custom css -->
+        <link rel="stylesheet" href="/css/group.css">
+        <!-- site.canonical enabled -->
+        <link rel="canonical" href="https://aiimlab.org/blog/2026/11/24/Machine_Learning_Journal-Minimization_of_Graph_Counterfactual_Explanations" />
+        
+        <meta name="description" content="A blog post on the paper 'On the Minimization of Graph Counterfactual Explanations: Theory and a Local Bounded Search Algorithm' (Machine Learning, 2026). Mo...">
+        
+        <!-- Open Graph -->
+        <meta property="og:title" content="Making Explanations Smaller - Minimizing Graph Counterfactual Explanations with Local Bounded Search">
+        <meta property="og:url" content="https://aiimlab.org/blog/2026/11/24/Machine_Learning_Journal-Minimization_of_Graph_Counterfactual_Explanations">
+        <meta property="og:site_name" content="Artificial Intelligence and Information Mining - Collective">
+        
+        <meta property="og:description" content="A blog post on the paper 'On the Minimization of Graph Counterfactual Explanations: Theory and a Local Bounded Search Algorithm' (Machine Learning, 2026). Most graph counterfactual explainers first...">
+        
+        
+        <meta property="og:image" content="https://aiimlab.org/img/projects/GCmin_generate_minimize.png">
+        
+        <meta property="og:type" content="website">
+
+    </head>
+    <body>
+        <div class="container">
+            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <div class="sticky-top header d-flex 
+                        flex-column
+                        flex-md-row justify-content-md-between">
+                <a href="/" class="">
+                    <img src="/img/AIIM-Logo.svg"
+                         srcset="/img/AIIM-Logo.svg 2x"
+                         alt="AIIM - Artificial Intelligence and Information Mining research group." id="logo">
+                </a>
+                <ul class="nav nav-pills justify-content-center">
+
+                    
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/">
+                                Home
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/news.html">
+                                News
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               href="/blogs.html">
+                                Researches
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/research.html">
+                                Projects
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/events.html">
+                                Events
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/code.html">
+                                Resources
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/people.html">
+                                People
+                            </a>
+                        </li>
+
+                    
+
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="/publications.html">
+                                Publications
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+            </div>
+
+            
+                
+                <img src="/img/projects/GCmin_generate_minimize.png"
+                     alt="Making Explanations Smaller - Minimizing Graph Counterfactual Explanations with Local Bounded Search"
+                     style="max-width: 400px"
+                     class="img-fluid mx-auto d-block mb-4"/>
+                
+            
+
+            
+                <h2 class="pt-3">Making Explanations Smaller - Minimizing Graph Counterfactual Explanations with Local Bounded Search</h2>
+            
+            
+
+            <p class="date">November 24, 2026</p>
+
+<div class="post">
+<p><strong>Story based on “On the Minimization of Graph Counterfactual Explanations: Theory and a Local Bounded Search Algorithm”, available (open access) at</strong>
+<a href="https://link.springer.com/article/10.1007/s10994-026-07157-0">Journal of Machine Learning - Springer</a></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="err">@</span><span class="n">Article</span><span class="p">{</span><span class="n">Garcia_PradoRomero_Gullo_Stilo_GCmin_2026</span><span class="p">,</span>
+<span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Rodrigo</span> <span class="n">Garc</span><span class="err">í</span><span class="n">a</span> <span class="n">and</span> <span class="n">Mario</span> <span class="n">Alfonso</span> <span class="n">Prado</span><span class="o">-</span><span class="n">Romero</span> <span class="n">and</span> <span class="n">Francesco</span> <span class="n">Gullo</span> <span class="n">and</span> <span class="n">Giovanni</span> <span class="n">Stilo</span><span class="p">},</span>
+<span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">On</span> <span class="n">the</span> <span class="n">Minimization</span> <span class="n">of</span> <span class="n">Graph</span> <span class="n">Counterfactual</span> <span class="n">Explanations</span><span class="o">:</span> <span class="n">Theory</span> <span class="n">and</span> <span class="n">a</span> <span class="n">Local</span> <span class="n">Bounded</span> <span class="n">Search</span> <span class="n">Algorithm</span><span class="p">},</span>
+<span class="n">journal</span> <span class="o">=</span> <span class="p">{</span><span class="n">Machine</span> <span class="n">Learning</span><span class="p">},</span>
+<span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2026</span><span class="p">},</span>
+<span class="n">volume</span> <span class="o">=</span> <span class="p">{</span><span class="mi">115</span><span class="p">},</span>
+<span class="n">pages</span> <span class="o">=</span> <span class="p">{</span><span class="mi">224</span><span class="p">},</span>
+<span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.1007</span><span class="o">/</span><span class="n">s10994</span><span class="o">-</span><span class="mo">026</span><span class="o">-</span><span class="mo">07157</span><span class="o">-</span><span class="mi">0</span><span class="p">},</span>
+<span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="o">:</span><span class="c1">//doi.org/10.1007/s10994-026-07157-0}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br />
+<br /></p>
+<figure>
+  <p align="center">
+
+     <img style="width:  100%;" src="/img/projects/GCmin_generate_minimize.png" alt="The generate-and-minimize pipeline for graph counterfactual explanations" />
+     <figcaption>
+          <p align="center"><strong>Figure 1: The generate-and-minimize pipeline. A generator first produces a valid counterfactual (red) that crosses the model's decision boundary. A minimizer then refines it into a minimal counterfactual (green), closer to the original graph. The paper focuses on this often-overlooked second step. (Figure from the paper, CC BY 4.0.)
+        </strong></p>
+     </figcaption>
+     </p>
+ </figure>
+<p><br /></p>
+
+<p>Imagine a model that rejects a loan application and, when asked why, answers with a different application: “had you been a completely different person, you would have been approved”. Technically correct, practically useless. A good explanation should tell us the <em>smallest</em> change that would have flipped the outcome.</p>
+
+<p>This is the idea behind <strong>counterfactual explanations</strong>: given an input and a black-box model, find a new input that is as close as possible to the original but gets a different prediction. The closer it is, the easier it is for a human to read it, check it, and act on it.</p>
+
+<p><strong>When the data are graphs</strong></p>
+
+<p>Many of the most interesting data are not tables but graphs: molecules, brain connectivity networks, protein structures, social networks. A graph counterfactual is a modified graph, with some edges added or removed and, possibly, some node attributes changed, for which the model changes its mind. “Close to the original” then means “few edits”.</p>
+
+<p>In molecular or biomedical settings this matters a lot. A chemist who is told that removing two bonds changes the predicted toxicity of a compound can inspect the claim. If the explanation instead rewrites half the molecule, there is nothing to learn from it.</p>
+
+<p><strong>The step nobody studied</strong></p>
+
+<p>Most modern graph counterfactual explainers follow a <em>generate-and-minimize</em> recipe (Figure 1): first they produce <em>any</em> valid counterfactual, then they try to trim it so that it moves closer to the original graph while still fooling the model.</p>
+
+<p>Generation has received almost all the attention. Minimization has been treated as an afterthought: either a simple random edge-swapping heuristic, or a step so tightly welded to one specific generator that it cannot be reused or improved on its own. There was not even a formal definition of what minimizing a counterfactual means.</p>
+
+<p>That is the gap this paper, by Rodrigo García, Mario Alfonso Prado-Romero, Francesco Gullo and Giovanni Stilo, sets out to fill.</p>
+
+<p><strong>Theory: a hard problem, formally stated</strong></p>
+
+<p>The authors define the <strong>GC-min</strong> problem: given a black-box model, a graph, and a valid counterfactual of it, modify the counterfactual so that it remains valid and the number of edits with respect to the original graph is as small as possible.</p>
+
+<p>They then prove that GC-min is <strong>NP-hard</strong>, by a reduction from the classic Feedback Arc Set problem. The result holds regardless of the task or the model, and holds also when restricted to undirected graphs. In plain words: no one should expect an efficient algorithm that always finds the best possible explanation, so good heuristics are the way forward.</p>
+
+<p><strong>Local Bounded Search</strong></p>
+
+<p>The proposed heuristic is <strong>Local Bounded Search (LBS)</strong>. It is model-agnostic, since it only needs to ask the model for predictions, and it works on top of <em>any</em> generator. Starting from a valid counterfactual, it repeatedly tries small moves, always accepting the first one that improves the solution, in a fixed order of priority:</p>
+
+<ol>
+  <li><strong>Single-edit removal</strong>: drop one edit and check the model still changes its prediction. Every success makes the explanation strictly smaller.</li>
+  <li><strong>Shrinking-overshooting</strong>: when no single edit can be dropped, remove an edit anyway and compensate with a different one, escaping dead ends.</li>
+  <li><strong>Replacement</strong>: swap one edit for another, keeping the size constant but restructuring the solution.</li>
+  <li><strong>Bounded addition</strong>: add an edit only while the explanation stays smaller than the best one found so far.</li>
+</ol>
+
+<p>Two design choices keep it honest. The search never goes beyond the size of the best valid solution found, and the authors prove this bound never excludes an optimal solution. And since the model sees the whole graph, structural edits are tried together with a family of <em>node-attribute adjustments</em> (for example smoothing a node’s features towards its neighbours or diffusing them over the graph), so that edge changes and feature changes can help each other.</p>
+
+<p><strong>Does it work?</strong></p>
+
+<p>The experiments cover <strong>nine datasets</strong>: synthetic ones (Tree-Cycles, Synthie, COLORS-3), brain networks of children with autism (ASD), molecules (BBBP, BZR, AIDS) and proteins (ENZYMES, PROTEINS). LBS is paired with three generators from different families (DCE, OFS, RSGG) and compared against the existing decoupled minimizer <em>obs</em>, plus two further baselines, one of which (RHC) is a plain hill-climber with the same edit operations and the same budget.</p>
+
+<p>The main results:</p>
+
+<ul>
+  <li><strong>Much smaller explanations.</strong> The structural edit distance (GED) falls by up to <strong>98%</strong> with respect to the initial counterfactual. With the DCE generator, the average number of edits on Synthie goes from <strong>189.71 to 2.17</strong>, on ENZYMES from <strong>55.24 to 2.60</strong>, and on COLORS-3 from <strong>91.22 to 8.97</strong>. The baseline <em>obs</em> barely moves: on Synthie it only gets down to 177.51.</li>
+  <li><strong>It is the strategy, not the budget.</strong> LBS asks the model more questions than <em>obs</em>, so is the gain just more queries? No. With the same budget of 2,500 model calls on Synthie, LBS reaches a GED of 16.23 while <em>obs</em> stays at 183.36. And <em>obs</em> simply spends the whole budget, while LBS typically converges and stops early, with diminishing returns beyond roughly 10,000 calls.</li>
+  <li><strong>The generator matters less than expected.</strong> Once minimization is done properly, the generator mostly provides a valid starting point. A cheap variant introduced in the paper, <strong>DCEM</strong>, whose generator-side cost is constant (one call per class), reaches minimality comparable to the full DCE.</li>
+  <li><strong>Stable across runs.</strong> Over three random seeds, the variation is small compared with the gains.</li>
+</ul>
+
+<p><br /></p>
+<figure>
+  <p align="center">
+
+     <img style="width:  100%;" src="/img/projects/GCmin_LBS_DCE_results.png" alt="Results of LBS and baseline minimizers on top of the DCE generator" />
+     <figcaption>
+          <p align="center"><strong>Figure 2: Results with the DCE generator on four datasets: structural edit distance (GED), feature edit distance (FED) and model calls, comparing the generator alone, LBS, OBS, DBS and RHC (lower is better). The GED axis is capped at 100. (Figure from the paper, CC BY 4.0.)
+        </strong></p>
+     </figcaption>
+     </p>
+ </figure>
+<p><br /></p>
+
+<p><strong>Ablations: every ingredient counts</strong></p>
+
+<p>The authors switch components off one at a time. Allowing node-attribute changes helps substantially on attributed graphs (on BBBP with the RSGG generator, GED drops from 5.29 to 0.69), at the price of somewhat larger feature changes. Removal moves alone fail on attributed data, while swap and addition moves alone fail badly on attribute-free graphs, so the two families are complementary. Finally, the order matters: deferring removals is catastrophic on attribute-free graphs (GED 81.58 against 3.02 on Tree-Cycles), so trying small removals first is the most robust choice.</p>
+
+<p><strong>Where it does not shine</strong></p>
+
+<p>The paper is candid about the limits. Gains are smaller when the initial counterfactual has little redundancy or when the class depends on a global property of a large, dense graph: on AIDS (tiny molecules) GED goes only from 15.09 to 11.90, and on PROTEINS from 67.45 to 45.86, because many edits are individually necessary. In those cases the search can get stuck in local optima, and the authors point to a learned strategy selector as future work. Other directions are comparison with simulated annealing or tabu search, domain-specific plausibility constraints, and richer edit spaces.</p>
+
+<p><strong>Why this matters</strong></p>
+
+<p>The practical message is a change of perspective for explainability systems: <strong>treat minimization as a first-class component</strong>. A decoupled minimizer can be plugged on top of any existing counterfactual generator, makes different generators comparable on fair ground, and can turn even a rough, valid counterfactual into a concise explanation a human can actually read.</p>
+
+<p>The experiments run on the open-source <a href="https://github.com/aiim-research/GRETEL">GRETEL</a> framework, and the experimental configurations are publicly released.</p>
+
+<p><strong>Final Version of the paper available at</strong>
+<a href="https://link.springer.com/article/10.1007/s10994-026-07157-0">https://link.springer.com/article/10.1007/s10994-026-07157-0</a></p>
+
+<h4 id="please-cite-us-using">Please cite us using:</h4>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="err">@</span><span class="n">Article</span><span class="p">{</span><span class="n">Garcia_PradoRomero_Gullo_Stilo_GCmin_2026</span><span class="p">,</span>
+<span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Rodrigo</span> <span class="n">Garc</span><span class="err">í</span><span class="n">a</span> <span class="n">and</span> <span class="n">Mario</span> <span class="n">Alfonso</span> <span class="n">Prado</span><span class="o">-</span><span class="n">Romero</span> <span class="n">and</span> <span class="n">Francesco</span> <span class="n">Gullo</span> <span class="n">and</span> <span class="n">Giovanni</span> <span class="n">Stilo</span><span class="p">},</span>
+<span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">On</span> <span class="n">the</span> <span class="n">Minimization</span> <span class="n">of</span> <span class="n">Graph</span> <span class="n">Counterfactual</span> <span class="n">Explanations</span><span class="o">:</span> <span class="n">Theory</span> <span class="n">and</span> <span class="n">a</span> <span class="n">Local</span> <span class="n">Bounded</span> <span class="n">Search</span> <span class="n">Algorithm</span><span class="p">},</span>
+<span class="n">journal</span> <span class="o">=</span> <span class="p">{</span><span class="n">Machine</span> <span class="n">Learning</span><span class="p">},</span>
+<span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2026</span><span class="p">},</span>
+<span class="n">volume</span> <span class="o">=</span> <span class="p">{</span><span class="mi">115</span><span class="p">},</span>
+<span class="n">pages</span> <span class="o">=</span> <span class="p">{</span><span class="mi">224</span><span class="p">},</span>
+<span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.1007</span><span class="o">/</span><span class="n">s10994</span><span class="o">-</span><span class="mo">026</span><span class="o">-</span><span class="mo">07157</span><span class="o">-</span><span class="mi">0</span><span class="p">},</span>
+<span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="o">:</span><span class="c1">//doi.org/10.1007/s10994-026-07157-0}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
+
+</div>
+<div>
+    <p>
+        <span class="fa fa-fw fa-history"></span>
+        <a href="/blogs.html">Back to all posts &hellip;</a>
+    </p>
+</div>
+
+            <div class="footer">
+                <p>
+                    © Copyright 2019-2026 - Artificial Intelligence and Information Mining - All rights reserved.
+                    · <a href="/cookies.html">Cookies</a>
+                    · <button type="button" class="text-button" data-cookie-settings>Cookie preferences</button>
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <aside id="cookie-banner" class="cookie-banner" aria-labelledby="cookie-title"
+       data-ga-id="G-HRVN2FKZRV" data-version="1" hidden>
+    <button type="button" id="cookie-close" class="cookie-close" aria-label="Close without accepting">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+    <h2 id="cookie-title">Your privacy, your choice.</h2>
+    <p id="cookie-description">
+        With your consent we use Google Analytics to count visits and understand which pages are useful.
+        You can refuse and keep using the website normally.
+        <a href="/cookies.html">Cookie information</a>.
+    </p>
+    <details id="cookie-preferences">
+        <summary>Customize</summary>
+        <label class="check"><input id="cookie-analytics" type="checkbox"> Optional statistics with Google Analytics</label>
+        <p class="muted">No advertising tracking. You can change your choice at any time from the footer.</p>
+        <button type="button" id="cookie-save">Save preferences</button>
+    </details>
+    <div class="cookie-actions">
+        <button type="button" id="cookie-reject">Reject</button>
+        <button type="button" id="cookie-accept">Accept statistics</button>
+    </div>
+    <p id="cookie-status" role="status"></p>
+</aside>
+
+
+        <!-- Support retina images. -->
+        <script type="text/javascript"
+                src="/js/srcset-polyfill.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="/vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="/vendor/popper/popper.min.js"></script>
+        <script src="/vendor/bootstrap/bootstrap.min.js"></script>
+        <!-- Embedded videos load only after a click -->
+        <script src="/js/click-to-load.js"></script>
+        <!-- Consent banner and opt-in-only analytics (nothing is sent before acceptance) -->
+        <script src="/js/consent.js"></script>
+
+    </body>
+</html>
